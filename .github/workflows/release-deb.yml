@@ -1,0 +1,63 @@
+# .github/workflows/release-deb.yml
+# Собирает устанавливаемый двойным кликом .deb на чистой Ubuntu и публикует его в
+# GitHub Release (asset keysclicks_amd64.deb — стабильное имя для прямой ссылки со скачиванием).
+name: Build & release .deb
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version, e.g. 0.1.0"
+        required: true
+        default: "0.1.0"
+
+permissions:
+  contents: write # создать релиз + загрузить ассет
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            meson ninja-build gcc gettext pkg-config dpkg-dev \
+            libgtk-4-dev libadwaita-1-dev libgtk4-layer-shell-dev \
+            libinput-dev libudev-dev libxkbcommon-dev libxkbregistry-dev \
+            libjson-glib-dev libevdev-dev libcurl4-openssl-dev
+
+      - name: Resolve version
+        id: ver
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            V="${GITHUB_REF_NAME#v}"
+          else
+            V="${{ github.event.inputs.version }}"
+          fi
+          echo "version=$V" >> "$GITHUB_OUTPUT"
+
+      - name: Build .deb
+        run: bash scripts/build-deb.sh "${{ steps.ver.outputs.version }}"
+
+      - name: Stable-named copy for a permanent download URL
+        run: cp "keysclicks_${{ steps.ver.outputs.version }}_amd64.deb" keysclicks_amd64.deb
+
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="v${{ steps.ver.outputs.version }}"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" \
+              "keysclicks_${{ steps.ver.outputs.version }}_amd64.deb" keysclicks_amd64.deb --clobber
+          else
+            gh release create "$TAG" \
+              --title "keysclicks $TAG" \
+              --notes "Double-click .deb for Pop!_OS (COSMIC), Ubuntu and Debian — open it and press Install. On first launch the input reader asks for your password once (it reads libinput). Other distros: build from source (see README)." \
+              "keysclicks_${{ steps.ver.outputs.version }}_amd64.deb" keysclicks_amd64.deb
+          fi

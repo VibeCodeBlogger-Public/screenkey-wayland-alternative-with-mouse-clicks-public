@@ -3,6 +3,10 @@
 /builddir/
 build*/
 
+# .deb packaging artifacts (built by scripts/build-deb.sh / release CI)
+/deb-stage/
+*.deb
+
 # Compiled objects / binaries
 *.o
 *.a

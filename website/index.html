@@ -167,6 +167,13 @@
   .foot-in{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
   footer a{color:var(--muted);text-decoration:none}
   footer a:hover{color:var(--text)}
+  .install-lead{display:flex;flex-wrap:wrap;gap:16px 22px;align-items:center;justify-content:space-between;margin:26px 0 6px;padding:20px 22px;border:1px solid var(--frame);border-radius:var(--radius);background:linear-gradient(180deg,color-mix(in srgb,var(--deep) 45%,var(--surface)),var(--surface))}
+  .install-lead .il-txt{flex:1 1 340px}
+  .install-lead h3{margin:0 0 5px;font-size:17px}
+  .install-lead .badge{font-family:var(--mono);font-size:11px;color:var(--green-bright);border:1px solid var(--frame);border-radius:6px;padding:1px 7px;margin-left:7px;vertical-align:middle;letter-spacing:.02em}
+  .install-lead p{margin:0;color:var(--muted);font-size:14.5px;max-width:60ch}
+  .install-lead .btn{flex:none;white-space:nowrap}
+  .install-or{margin:20px 0 12px;color:var(--muted-2);font-family:var(--mono);font-size:12.5px;text-transform:uppercase;letter-spacing:.14em}
 </style>
 </head>
 <body>
@@ -344,9 +351,19 @@
   <section id="install" class="wrap">
     <div class="sec-head">
       <span class="eyebrow">Get it running</span>
-      <h2>Build &amp; install in a minute.</h2>
-      <p>A small GTK4 app. Grab the build dependencies, then <code>meson</code> does the rest.</p>
+      <h2>Install it — download or build.</h2>
+      <p>On Pop!_OS, Ubuntu &amp; Debian, grab the ready-made package and double-click. Any other distro — build from source below.</p>
     </div>
+
+    <div class="install-lead">
+      <div class="il-txt">
+        <h3>Download &amp; double-click <span class="badge">.deb</span></h3>
+        <p>Pop!_OS (COSMIC), Ubuntu &amp; Debian — double-click the file, your software installer opens, press <b>Install</b>. First launch asks for your password once (the input reader needs libinput access).</p>
+      </div>
+      <a class="btn btn-primary" href="https://github.com/VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public/releases/latest/download/keysclicks_amd64.deb">Download .deb&nbsp;↓</a>
+    </div>
+    <p class="install-or">Or build from source — any distro</p>
+
     <div class="term">
       <div class="term-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="t">bash — build from source</span><button class="copy" id="copyBtn" data-target="cmd">Copy</button></div>
       <div class="term-body">
