@@ -26,10 +26,23 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
-            meson ninja-build gcc gettext pkg-config dpkg-dev \
-            libgtk-4-dev libadwaita-1-dev libgtk4-layer-shell-dev \
+            meson ninja-build gcc gettext pkg-config dpkg-dev patchelf git \
+            libgtk-4-dev libadwaita-1-dev \
+            libwayland-dev wayland-protocols \
             libinput-dev libudev-dev libxkbcommon-dev libxkbregistry-dev \
             libjson-glib-dev libevdev-dev libcurl4-openssl-dev
+
+      # gtk4-layer-shell отсутствует в репозиториях Ubuntu 24.04 → собираем shared из исходников
+      # и ставим в /usr; build-deb.sh потом вложит .so в пакет + rpath (см. скрипт).
+      - name: Build gtk4-layer-shell from source
+        run: |
+          git clone --depth 1 https://github.com/wmww/gtk4-layer-shell.git /tmp/g4ls
+          cd /tmp/g4ls
+          meson setup _b --prefix=/usr --buildtype=release \
+            -Dexamples=false -Ddocs=false -Dtests=false -Dintrospection=false -Dvapi=false
+          ninja -C _b
+          sudo ninja -C _b install
+          sudo ldconfig
 
       - name: Resolve version
         id: ver
@@ -43,6 +56,20 @@ jobs:
 
       - name: Build .deb
         run: bash scripts/build-deb.sh "${{ steps.ver.outputs.version }}"
+
+      - name: Verify the .deb is self-contained (bundled layer-shell, no external dep)
+        run: |
+          deb="keysclicks_${{ steps.ver.outputs.version }}_amd64.deb"
+          dpkg-deb -x "$deb" /tmp/x
+          echo "rpath: $(patchelf --print-rpath /tmp/x/usr/bin/keysclicks)"
+          test -f /tmp/x/usr/lib/keysclicks/libgtk4-layer-shell.so.0 \
+            || { echo "FAIL: gtk4-layer-shell не вложен в пакет"; exit 1; }
+          patchelf --print-rpath /tmp/x/usr/bin/keysclicks | grep -q '/usr/lib/keysclicks' \
+            || { echo "FAIL: rpath на приватную папку не выставлен"; exit 1; }
+          if dpkg-deb -f "$deb" Depends | grep -q 'layer-shell'; then
+            echo "FAIL: layer-shell не должен быть внешней зависимостью (он вложен)"; exit 1
+          fi
+          echo "OK: gtk4-layer-shell вложен, rpath выставлен, внешней зависимости нет"
 
       - name: Stable-named copy for a permanent download URL
         run: cp "keysclicks_${{ steps.ver.outputs.version }}_amd64.deb" keysclicks_amd64.deb

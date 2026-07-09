@@ -35,12 +35,29 @@ DEPENDS="$(
 )"
 rm -rf "$SHLIB"
 [ -n "$DEPENDS" ] || { echo "ОШИБКА: dpkg-shlibdeps не дал зависимостей" >&2; exit 1; }
-# gtk4-layer-shell на dev-машинах часто собран из исходников (без пакета) → shlibdeps его
-# пропустит (--ignore-missing-info); на apt-системе (CI/юзер) пакет есть. Гарантируем ключевую зависимость.
-case ",${DEPENDS// /}," in *,libgtk4-layer-shell0,*|*libgtk4-layer-shell0*) ;; *) DEPENDS="$DEPENDS, libgtk4-layer-shell0" ;; esac
 # pkexec — бинарь спавнит бэкенд через него (не слинкованная либа); провайдер этой системы
 pkexec_pkg="$(dpkg -S "$(command -v pkexec 2>/dev/null)" 2>/dev/null | head -1 | cut -d: -f1 || true)"
 [ -n "$pkexec_pkg" ] && DEPENDS="$DEPENDS, $pkexec_pkg"
+
+# gtk4-layer-shell НЕТ в apt Ubuntu 24.04 / Pop!_OS → пакет с зависимостью на него не поставится.
+# Статически линковать нельзя: либа перехватывает символы libwayland, а статические символы бинарь
+# не экспортирует в .dynsym → перехват не сработает (оверлей молча не станет always-on-top).
+# Решение: ВЛОЖИТЬ рабочую shared-.so в приватную папку пакета + rpath (тот же проверенный механизм).
+FRONTEND="$STAGE/usr/bin/keysclicks"
+if objdump -p "$FRONTEND" 2>/dev/null | grep -q 'NEEDED.*libgtk4-layer-shell'; then
+  ls_so="$(ldd "$FRONTEND" 2>/dev/null | awk '/libgtk4-layer-shell/{print $3}' | head -1)"
+  if command -v patchelf >/dev/null 2>&1 && [ -n "$ls_so" ]; then
+    echo "==> вкладываю gtk4-layer-shell в пакет (/usr/lib/keysclicks) + rpath"
+    install -d "$STAGE/usr/lib/keysclicks"
+    cp -L "$ls_so" "$STAGE/usr/lib/keysclicks/libgtk4-layer-shell.so.0"
+    chmod 644 "$STAGE/usr/lib/keysclicks/libgtk4-layer-shell.so.0"
+    patchelf --set-rpath '/usr/lib/keysclicks' "$FRONTEND"
+    echo "    вложено + rpath=$(patchelf --print-rpath "$FRONTEND")"
+  else
+    echo "==> patchelf/ldd недоступны — dev-сборка: объявляю libgtk4-layer-shell0 в Depends (не для раздачи)"
+    DEPENDS="$DEPENDS, libgtk4-layer-shell0"
+  fi
+fi
 echo "    Depends: $DEPENDS"
 
 INSTALLED_KB="$(du -sk "$STAGE/usr" | cut -f1)"
