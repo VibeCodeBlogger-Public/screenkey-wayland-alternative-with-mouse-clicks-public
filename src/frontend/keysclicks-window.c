@@ -270,14 +270,27 @@ on_keyboard_layout(GObject *row, GParamSpec *pspec, gpointer user_data)
 		return;
 
 	guint sel = adw_combo_row_get_selected(ADW_COMBO_ROW(row));
+	// Two segments after "System (default)" (row 0): first the language rows (native
+	// name → its xkb layout), then the full xkb registry. nlang marks the boundary.
+	guint nlang = GPOINTER_TO_UINT(g_object_get_data(G_OBJECT(row), "nlang"));
 	const char *layout = "";
 	const char *variant = "";
-	if (sel > 0) {
+	if (sel > 0 && sel <= nlang) {
+		guint n;
+		const KeysClicksLanguage *langs = keysclicks_languages(&n);
+		const char *v = NULL;
+		const char *l = keysclicks_language_xkb_layout(langs[sel - 1].code, &v);
+		if (l != NULL) {
+			layout = l;
+			variant = v != NULL ? v : "";
+		}
+	} else if (sel > nlang) {
 		guint n;
 		const KeysClicksLayout *list = keysclicks_layouts(&n);
-		if (sel - 1 < n) {
-			layout = list[sel - 1].layout;
-			variant = list[sel - 1].variant != NULL ? list[sel - 1].variant : "";
+		guint xi = sel - 1 - nlang;
+		if (xi < n) {
+			layout = list[xi].layout;
+			variant = list[xi].variant != NULL ? list[xi].variant : "";
 		}
 	}
 
@@ -381,6 +394,24 @@ on_spin_focus_leave(GtkEventControllerFocus *ctrl, gpointer user_data)
 		gtk_spin_button_update(sb); // parse the entry text into the adjustment
 }
 
+// Reject non-numeric input in a number field. Digits and a leading minus pass;
+// anything else cancels the insertion, so a typed or pasted letter never lands in the
+// field. This is a belt over AdwSpinRow's numeric mode, which on some libadwaita
+// versions still lets letters through.
+static void
+on_numeric_insert(GtkEditable *editable, const char *text, int length, int *position,
+		  gpointer user_data)
+{
+	(void)position;
+	(void)user_data;
+	for (int i = 0; i < length; i++) {
+		if (!g_ascii_isdigit((guchar)text[i]) && text[i] != '-') {
+			g_signal_stop_emission_by_name(editable, "insert-text");
+			return;
+		}
+	}
+}
+
 static GtkWidget *
 add_spin(AdwPreferencesGroup *group, WinCtx *ctx, const char *title, FieldId field,
 	 double min, double max, double step, double value)
@@ -405,6 +436,12 @@ add_spin(AdwPreferencesGroup *group, WinCtx *ctx, const char *title, FieldId fie
 	// the whole row.
 	GtkSpinButton *sb = find_spin_button(row);
 	if (sb != NULL) {
+		gtk_spin_button_set_numeric(sb, TRUE); // reject non-digits at the embedded button
+		// Belt over numeric mode: filter the editable delegate so a typed/pasted letter
+		// never lands here even if this libadwaita's numeric mode lets it through.
+		GtkEditable *deleg = gtk_editable_get_delegate(GTK_EDITABLE(sb));
+		if (deleg != NULL)
+			g_signal_connect(deleg, "insert-text", G_CALLBACK(on_numeric_insert), NULL);
 		gtk_editable_set_width_chars(GTK_EDITABLE(sb), 5);
 		gtk_editable_set_max_width_chars(GTK_EDITABLE(sb), 5);
 		// hexpand TRUE gives the control a full-width cell; halign END then draws
@@ -482,6 +519,12 @@ add_language_combo(AdwPreferencesGroup *group, WinCtx *ctx)
 {
 	GtkWidget *row = adw_combo_row_new();
 	g_object_set(row, "title", _("Language"), NULL);
+	adw_combo_row_set_enable_search(ADW_COMBO_ROW(row), TRUE); // 31 languages — make them searchable
+	// Same requirement as the keyboard-layout picker: the search box needs an expression
+	// that yields each row's text, otherwise typing filters nothing (AdwComboRow).
+	adw_combo_row_set_expression(
+		ADW_COMBO_ROW(row),
+		gtk_property_expression_new(GTK_TYPE_STRING_OBJECT, NULL, "string"));
 
 	guint n;
 	const KeysClicksLanguage *langs = keysclicks_languages(&n);
@@ -525,23 +568,51 @@ add_keyboard_layout_combo(AdwPreferencesGroup *group, WinCtx *ctx)
 		ADW_COMBO_ROW(row),
 		gtk_property_expression_new(GTK_TYPE_STRING_OBJECT, NULL, "string"));
 
-	guint n;
-	const KeysClicksLayout *list = keysclicks_layouts(&n);
+	// Two segments after "System (default)": first the supported LANGUAGES by their
+	// native name (mapped to their xkb layout) — restored so a per-language keyboard
+	// display never silently disappears again (guarded by tests/unit/test_layout_map.c);
+	// then the full xkb registry from libxkbregistry (deliberately richer). Independent
+	// of the UI-language picker above.
+	guint nlang, nxkb;
+	const KeysClicksLanguage *langs = keysclicks_languages(&nlang);
+	const KeysClicksLayout *list = keysclicks_layouts(&nxkb);
 	GPtrArray *items = g_ptr_array_new();
 	g_ptr_array_add(items, g_strdup(_("System (default)")));
-	for (guint i = 0; i < n; i++)
+	for (guint i = 0; i < nlang; i++)
+		g_ptr_array_add(items, g_strdup(langs[i].native_name));
+	for (guint i = 0; i < nxkb; i++)
 		g_ptr_array_add(items, g_strdup(list[i].name));
 	g_ptr_array_add(items, NULL);
 	char **strv = (char **)g_ptr_array_free(items, FALSE);
 	GtkStringList *model = gtk_string_list_new((const char *const *)strv);
 	g_strfreev(strv);
 	adw_combo_row_set_model(ADW_COMBO_ROW(row), G_LIST_MODEL(model));
+	g_object_set_data(G_OBJECT(row), "nlang", GUINT_TO_POINTER(nlang));
 
+	// Initial selection: prefer the LANGUAGE row whose xkb matches the saved layout,
+	// otherwise the matching xkb-registry row.
 	guint selected = 0; // "System (default)"
-	int idx = keysclicks_layouts_index_of(ctx->settings->keyboard_layout,
-					      ctx->settings->keyboard_variant);
-	if (idx >= 0)
-		selected = (guint)idx + 1;
+	const char *cur = ctx->settings->keyboard_layout;
+	const char *curv = ctx->settings->keyboard_variant;
+	if (cur != NULL && *cur != '\0') {
+		int li = -1;
+		for (guint i = 0; i < nlang; i++) {
+			const char *v = NULL;
+			const char *l = keysclicks_language_xkb_layout(langs[i].code, &v);
+			if (l != NULL && g_strcmp0(l, cur) == 0 &&
+			    g_strcmp0(v != NULL ? v : "", curv != NULL ? curv : "") == 0) {
+				li = (int)i;
+				break;
+			}
+		}
+		if (li >= 0) {
+			selected = 1 + (guint)li;
+		} else {
+			int idx = keysclicks_layouts_index_of(cur, curv);
+			if (idx >= 0)
+				selected = 1 + nlang + (guint)idx;
+		}
+	}
 	adw_combo_row_set_selected(ADW_COMBO_ROW(row), selected);
 	g_signal_connect(row, "notify::selected", G_CALLBACK(on_keyboard_layout), ctx);
 	adw_preferences_group_add(group, row);
@@ -777,6 +848,20 @@ win_ctx_free(gpointer data)
 	g_free(ctx);
 }
 
+// Click-to-defocus: clicking empty page space grabs focus to the page, releasing any
+// focused number entry (which commits its value on focus-leave) — so you are never
+// stuck typing into a number field you can't click out of.
+static void
+on_page_defocus_click(GtkGestureClick *gesture, int n_press, double x, double y,
+		      gpointer user_data)
+{
+	(void)gesture;
+	(void)n_press;
+	(void)x;
+	(void)y;
+	gtk_widget_grab_focus(GTK_WIDGET(user_data));
+}
+
 // Build (or rebuild) the whole window content in the current UI language. Called
 // once at creation and again whenever the language changes, so every string is
 // re-run through _(). Reassigns the per-widget pointers in ctx.
@@ -830,6 +915,13 @@ populate_content(WinCtx *ctx)
 	}
 
 	AdwPreferencesPage *page = ADW_PREFERENCES_PAGE(adw_preferences_page_new());
+
+	// Click-to-defocus: focusable page + a click gesture that grabs focus to it, so a
+	// click on empty page space releases a focused number entry (commits it on leave).
+	gtk_widget_set_focusable(GTK_WIDGET(page), TRUE);
+	GtkGesture *page_defocus = gtk_gesture_click_new();
+	g_signal_connect(page_defocus, "pressed", G_CALLBACK(on_page_defocus_click), page);
+	gtk_widget_add_controller(GTK_WIDGET(page), GTK_EVENT_CONTROLLER(page_defocus));
 
 	GtkWidget *toolbar = adw_toolbar_view_new();
 	adw_toolbar_view_add_top_bar(ADW_TOOLBAR_VIEW(toolbar), header);

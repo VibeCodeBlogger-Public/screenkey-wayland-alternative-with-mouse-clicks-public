@@ -9,38 +9,43 @@
 // project. Native names are endonyms (shown in their own script) and are never
 // translated, so this file is intentionally excluded from the gettext scan
 // (po/POTFILES) and from the i18n hardcode linter.
+// Fields: code, native name (endonym), RTL, xkb layout, xkb variant. The xkb
+// layout/variant drive the overlay's keyboard-layout picker (a display-only choice).
+// For languages whose script is entered via an IME or is plain Latin (CJK, Amharic,
+// Haitian, Swahili…) the xkb layout is only an approximation — the picker keeps the
+// entry (order preserved) but the rendered symbols may match the base layout.
 static const KeysClicksLanguage LANGUAGES[] = {
-	{ "en", "English", FALSE },
-	{ "es-419", "Español", FALSE },
-	{ "zh-Hans", "简体中文", FALSE },
-	{ "fil", "Filipino", FALSE },
-	{ "vi", "Tiếng Việt", FALSE },
-	{ "ru", "Русский", FALSE },
-	{ "ar", "العربية", TRUE },
-	{ "ko", "한국어", FALSE },
-	{ "hi", "हिन्दी", FALSE },
-	{ "ht", "Kreyòl Ayisyen", FALSE },
-	{ "pt-BR", "Português (Brasil)", FALSE },
-	{ "fr", "Français", FALSE },
-	{ "fa", "فارسی", TRUE },
-	{ "ja", "日本語", FALSE },
-	{ "am", "አማርኛ", FALSE },
-	{ "te", "తెలుగు", FALSE },
-	{ "ur", "اردو", TRUE },
-	{ "pl", "Polski", FALSE },
-	{ "bn", "বাংলা", FALSE },
-	{ "gu", "ગુજરાતી", FALSE },
-	{ "pa", "ਪੰਜਾਬੀ", FALSE },
-	{ "sw", "Kiswahili", FALSE },
-	{ "uk", "Українська", FALSE },
-	{ "hy", "Հայերեն", FALSE },
-	{ "ro", "Română", FALSE },
-	{ "uz", "Oʻzbekcha", FALSE },
-	{ "ka", "ქართული", FALSE },
-	{ "az", "Azərbaycan", FALSE },
-	{ "be", "Беларуская", FALSE },
-	{ "kk", "Қазақша", FALSE },
-	{ "zh-Hant", "繁體中文", FALSE },
+	{ "en", "English", FALSE, "us", NULL },
+	{ "es-419", "Español", FALSE, "latam", NULL },
+	{ "zh-Hans", "简体中文", FALSE, "cn", NULL },
+	{ "fil", "Filipino", FALSE, "ph", NULL },
+	{ "vi", "Tiếng Việt", FALSE, "vn", NULL },
+	{ "ru", "Русский", FALSE, "ru", NULL },
+	{ "ar", "العربية", TRUE, "ara", NULL },
+	{ "ko", "한국어", FALSE, "kr", NULL },
+	{ "hi", "हिन्दी", FALSE, "in", NULL },
+	{ "ht", "Kreyòl Ayisyen", FALSE, "us", NULL },
+	{ "pt-BR", "Português (Brasil)", FALSE, "br", NULL },
+	{ "fr", "Français", FALSE, "fr", NULL },
+	{ "fa", "فارسی", TRUE, "ir", NULL },
+	{ "ja", "日本語", FALSE, "jp", NULL },
+	{ "am", "አማርኛ", FALSE, "et", NULL },
+	{ "te", "తెలుగు", FALSE, "in", "tel" },
+	{ "ur", "اردو", TRUE, "pk", NULL },
+	{ "pl", "Polski", FALSE, "pl", NULL },
+	{ "bn", "বাংলা", FALSE, "bd", NULL },
+	{ "gu", "ગુજરાતી", FALSE, "in", "guj" },
+	{ "pa", "ਪੰਜਾਬੀ", FALSE, "in", "guru" },
+	{ "sw", "Kiswahili", FALSE, "us", NULL },
+	{ "uk", "Українська", FALSE, "ua", NULL },
+	{ "hy", "Հայերեն", FALSE, "am", NULL },
+	{ "ro", "Română", FALSE, "ro", NULL },
+	{ "uz", "Oʻzbekcha", FALSE, "uz", NULL },
+	{ "ka", "ქართული", FALSE, "ge", NULL },
+	{ "az", "Azərbaycan", FALSE, "az", NULL },
+	{ "be", "Беларуская", FALSE, "by", NULL },
+	{ "kk", "Қазақша", FALSE, "kz", NULL },
+	{ "zh-Hant", "繁體中文", FALSE, "tw", NULL },
 };
 
 const KeysClicksLanguage *
@@ -66,6 +71,20 @@ gboolean
 keysclicks_language_is_supported(const char *code)
 {
 	return keysclicks_language_index(code) >= 0;
+}
+
+const char *
+keysclicks_language_xkb_layout(const char *code, const char **variant_out)
+{
+	int idx = keysclicks_language_index(code);
+	if (idx < 0) {
+		if (variant_out != NULL)
+			*variant_out = NULL;
+		return NULL;
+	}
+	if (variant_out != NULL)
+		*variant_out = LANGUAGES[idx].xkb_variant;
+	return LANGUAGES[idx].xkb_layout;
 }
 
 gboolean

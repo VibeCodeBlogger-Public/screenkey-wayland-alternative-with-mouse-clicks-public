@@ -17,6 +17,8 @@ typedef struct {
 	const char *code;        // canonical code, e.g. "pt-BR" (matches po/ + parity)
 	const char *native_name; // endonym, shown in its own script, never translated
 	gboolean rtl;            // right-to-left script (ar, fa, ur)
+	const char *xkb_layout;  // xkb layout for the overlay keyboard-layout picker (e.g. "ru")
+	const char *xkb_variant; // xkb variant, or NULL for the layout's default
 } KeysClicksLanguage;
 
 // The full table (31 entries), in the canonical order shared with the reference
@@ -44,5 +46,10 @@ const char *keysclicks_language_native_name(const char *code);
 
 // Zero-based index of `code` in the table, or -1 when unsupported.
 int keysclicks_language_index(const char *code);
+
+// The xkb layout (and, via *variant_out, the xkb variant) that renders keys for this
+// language in the overlay's keyboard-layout picker. Returns NULL for an unknown code
+// (caller keeps the system default); *variant_out is set to NULL/the layout's variant.
+const char *keysclicks_language_xkb_layout(const char *code, const char **variant_out);
 
 G_END_DECLS
