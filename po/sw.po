@@ -1,0 +1,448 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR VibeCodeBlogger
+# This file is distributed under the same license as the keysclicks package.
+# FIRST AUTHOR <keysclicks>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keysclicks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: keysclicks\n"
+"Language-Team: keysclicks\n"
+"Language: sw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/frontend/keysclicks-feedback.c:303
+msgid "Screenshot attached."
+msgstr "Picha ya skrini imeambatishwa."
+
+#: src/frontend/keysclicks-feedback.c:307
+msgid "Screenshot unavailable — your description still helps."
+msgstr "Picha ya skrini haipatikani — maelezo yako bado yanasaidia."
+
+#: src/frontend/keysclicks-feedback.c:414
+#, c-format
+msgid "Report #%s sent — thank you!"
+msgstr "Ripoti #%s imetumwa — asante!"
+
+#: src/frontend/keysclicks-feedback.c:416
+msgid "Report sent — thank you!"
+msgstr "Ripoti imetumwa — asante!"
+
+#: src/frontend/keysclicks-feedback.c:424
+msgid "Could not send your report."
+msgstr "Imeshindwa kutuma ripoti yako."
+
+#: src/frontend/keysclicks-feedback.c:428
+msgid "Network error — please try again."
+msgstr "Hitilafu ya mtandao — tafadhali jaribu tena."
+
+#: src/frontend/keysclicks-feedback.c:451
+msgid "Capturing screenshot…"
+msgstr "Inanasa picha ya skrini…"
+
+#: src/frontend/keysclicks-feedback.c:502
+msgid "Sending…"
+msgstr "Inatuma…"
+
+#: src/frontend/keysclicks-feedback.c:541
+#: src/frontend/keysclicks-feedback.c:557
+msgid "Report a bug or idea"
+msgstr "Ripoti hitilafu au wazo"
+
+#: src/frontend/keysclicks-feedback.c:565
+msgid "🐞 Bug"
+msgstr "🐞 Hitilafu"
+
+#: src/frontend/keysclicks-feedback.c:566
+msgid "💡 Idea"
+msgstr "💡 Wazo"
+
+#: src/frontend/keysclicks-feedback.c:574
+msgid "What happened? (optional)"
+msgstr "Nini kilitokea? (hiari)"
+
+#: src/frontend/keysclicks-feedback.c:593
+msgid "Attach screenshot of my screen"
+msgstr "Ambatisha picha ya skrini yangu"
+
+#: src/frontend/keysclicks-feedback.c:598
+msgid "A screenshot may show sensitive on-screen content. Off by default."
+msgstr ""
+"Picha ya skrini inaweza kuonyesha maudhui nyeti yaliyo kwenye skrini. "
+"Imezimwa kwa chaguo-msingi."
+
+#: src/frontend/keysclicks-feedback.c:612
+msgid "Attach diagnostics (build, OS, monitors)"
+msgstr "Ambatisha uchunguzi (toleo, OS, vichunguzi)"
+
+#: src/frontend/keysclicks-feedback.c:626
+msgid "Cancel"
+msgstr "Ghairi"
+
+#: src/frontend/keysclicks-feedback.c:628
+msgid "Send"
+msgstr "Tuma"
+
+#: src/frontend/keysclicks-feedback.c:651
+msgid "Report a bug"
+msgstr "Ripoti hitilafu"
+
+#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+msgid "On-Screen Keys & Clicks Visualizer"
+msgstr "Kionyeshi cha Vitufe na Mibofyo Skrinini"
+
+#: src/frontend/keysclicks-window.c:140
+msgid "Close to switch monitor"
+msgstr "Funga ili kubadilisha kichunguzi"
+
+#: src/frontend/keysclicks-window.c:141
+msgid ""
+"The overlay moves to the new monitor the next time you open the app. Your "
+"settings are already saved — closing now is safe."
+msgstr ""
+"Kiwekeleo kitahamia kwenye kichunguzi kipya wakati ujao utakapofungua "
+"programu. Mipangilio yako tayari imehifadhiwa — kufunga sasa ni salama."
+
+#: src/frontend/keysclicks-window.c:151
+msgid "Close"
+msgstr "Funga"
+
+#. Language --------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+msgid "Language"
+msgstr "Lugha"
+
+#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+msgid "System (default)"
+msgstr "Mfumo (chaguo-msingi)"
+
+#: src/frontend/keysclicks-window.c:512
+msgid "Keyboard layout"
+msgstr "Mpangilio wa kibodi"
+
+#: src/frontend/keysclicks-window.c:547
+msgid "Automatic"
+msgstr "Kiotomatiki"
+
+#: src/frontend/keysclicks-window.c:553
+#, c-format
+msgid "Monitor %u"
+msgstr "Kifuatiliaji %u"
+
+#: src/frontend/keysclicks-window.c:572
+msgid "Overlay monitor"
+msgstr "Kichunguzi cha kiwekeleo"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Pin to dock"
+msgstr "Bandika kwenye gati"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Unpin from dock"
+msgstr "Ondoa kwenye gati"
+
+#: src/frontend/keysclicks-window.c:605
+msgid "Remove this app from the COSMIC dock"
+msgstr "Ondoa programu hii kwenye gati la COSMIC"
+
+#: src/frontend/keysclicks-window.c:606
+msgid "Pin this app to the COSMIC dock"
+msgstr "Bandika programu hii kwenye gati la COSMIC"
+
+#: src/frontend/keysclicks-window.c:644
+msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
+msgstr "Hakuna — bofya Weka, kisha shikilia njia ya mkato (k.m. Ctrl+Shift+H)"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+msgid "Press keys…"
+msgstr "Bonyeza vitufe…"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+msgid "Set"
+msgstr "Weka"
+
+#: src/frontend/keysclicks-window.c:702
+msgid "Hold the shortcut…  "
+msgstr "Shikilia njia ya mkato…  "
+
+#: src/frontend/keysclicks-window.c:750
+msgid "Hold the shortcut, then release to save. Esc cancels."
+msgstr "Shikilia njia ya mkato, kisha achia ili kuhifadhi. Esc inaghairi."
+
+#: src/frontend/keysclicks-window.c:780
+msgid "On-Screen Keys & Clicks Visualizer — Settings"
+msgstr "Kionyeshi cha Vitufe na Mibofyo Skrinini — Mipangilio"
+
+#. Privacy master toggle, prominent on the left of the header.
+#: src/frontend/keysclicks-window.c:798
+msgid "Hide keys"
+msgstr "Ficha vitufe"
+
+#: src/frontend/keysclicks-window.c:801
+msgid "Hide keystrokes (privacy): show • instead of keys"
+msgstr "Ficha mibonyezo (faragha): onyesha • badala ya vitufe"
+
+#. overlay display layout, right below
+#. Privacy ---------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:833
+msgid "Privacy"
+msgstr "Faragha"
+
+#: src/frontend/keysclicks-window.c:835
+msgid "Hide keystrokes (privacy)"
+msgstr "Ficha mibonyezo (faragha)"
+
+#: src/frontend/keysclicks-window.c:844
+msgid "Automatic password hiding"
+msgstr "Kuficha nywila kiotomatiki"
+
+#: src/frontend/keysclicks-window.c:852
+msgid ""
+"On (PRO) — passwords are hidden automatically in password fields. This "
+"module is still in development."
+msgstr ""
+"Imewashwa (PRO) — nywila hufichwa kiotomatiki katika sehemu za nywila. "
+"Moduli hii bado inaendelezwa."
+
+#: src/frontend/keysclicks-window.c:854
+msgid ""
+"PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
+"\"Hide keys\" toggle/shortcut works now."
+msgstr ""
+"PRO — inaendelezwa. Kuficha kiotomatiki huja na nyongeza ya PRO; swichi/njia "
+"ya mkato ya \"Hide keys\" ya mwongozo inafanya kazi sasa."
+
+#: src/frontend/keysclicks-window.c:863
+msgid "Hide-keys shortcut"
+msgstr "Njia ya mkato ya kuficha vitufe"
+
+#: src/frontend/keysclicks-window.c:868
+msgid "Click, then hold a key combination to assign it"
+msgstr "Bofya, kisha shikilia mchanganyiko wa vitufe ili kuukabidhi"
+
+#: src/frontend/keysclicks-window.c:877
+msgid "System keyboard shortcuts"
+msgstr "Njia za mkato za kibodi za mfumo"
+
+#: src/frontend/keysclicks-window.c:880
+msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
+msgstr ""
+"Njia za mkato za kimataifa huwekwa katika OS — fungua COSMIC → Kibodi → Njia "
+"za mkato"
+
+#: src/frontend/keysclicks-window.c:882
+msgid "Open settings"
+msgstr "Fungua mipangilio"
+
+#. Keys & clicks display -------------------------------------------------
+#: src/frontend/keysclicks-window.c:889
+msgid "Keys and clicks display"
+msgstr "Onyesho la vitufe na mibofyo"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Compact"
+msgstr "Fupi"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Composed"
+msgstr "Iliyotungwa"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Raw"
+msgstr "Ghafi"
+
+#: src/frontend/keysclicks-window.c:891
+msgid "Label style"
+msgstr "Mtindo wa lebo"
+
+#: src/frontend/keysclicks-window.c:892
+msgid "Font size"
+msgstr "Ukubwa wa fonti"
+
+#: src/frontend/keysclicks-window.c:893
+msgid "Show keyboard"
+msgstr "Onyesha kibodi"
+
+#: src/frontend/keysclicks-window.c:895
+msgid "Show mouse"
+msgstr "Onyesha kipanya"
+
+#: src/frontend/keysclicks-window.c:896
+msgid "Show Shift separately"
+msgstr "Onyesha Shift kando"
+
+#: src/frontend/keysclicks-window.c:898
+msgid "Draw border"
+msgstr "Chora mpaka"
+
+#. Position & behaviour --------------------------------------------------
+#: src/frontend/keysclicks-window.c:901
+msgid "Position and behaviour"
+msgstr "Nafasi na tabia"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Bottom"
+msgstr "Chini"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Top"
+msgstr "Juu"
+
+#: src/frontend/keysclicks-window.c:903
+msgid "Screen edge"
+msgstr "Ukingo wa skrini"
+
+#. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
+#: src/frontend/keysclicks-window.c:905
+msgid "Horizontal margin (%)"
+msgstr "Ukingo mlalo (%)"
+
+#: src/frontend/keysclicks-window.c:907
+msgid "Vertical margin (%)"
+msgstr "Ukingo wima (%)"
+
+#: src/frontend/keysclicks-window.c:910
+msgid "Keep visible (no timeout)"
+msgstr "Endelea kuonekana (bila muda wa kuisha)"
+
+#: src/frontend/keysclicks-window.c:913
+msgid "Timeout (ms)"
+msgstr "Muda wa kuisha (ms)"
+
+#: src/frontend/keysclicks-window.c:916
+msgid "Bar opacity (%)"
+msgstr "Uwazi wa upau (%)"
+
+#: src/frontend/main.c:106
+msgid "Left Click"
+msgstr "Bofya Kushoto"
+
+#: src/frontend/main.c:108
+msgid "Right Click"
+msgstr "Bofya Kulia"
+
+#: src/frontend/main.c:110
+msgid "Middle Click"
+msgstr "Bofya Kati"
+
+#: src/frontend/main.c:122
+#, c-format
+msgid "Mouse(%u)"
+msgstr "Kipanya(%u)"
+
+#: src/frontend/main.c:407
+msgid "Start without opening the settings window"
+msgstr "Anza bila kufungua dirisha la mipangilio"
+
+#, c-format
+#~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"
+#~ msgstr "Urekebishaji: bofya alama  (%u / %u)   —   bofya-kulia ili kughairi"
+
+#~ msgid "Monitor"
+#~ msgstr "Kifuatiliaji"
+
+#~ msgid "Show overlay"
+#~ msgstr "Onyesha uwekeleaji"
+
+#~ msgid "Privacy provider"
+#~ msgstr "Mtoa huduma wa faragha"
+
+#, c-format
+#~ msgid "Loaded: %s"
+#~ msgstr "Imepakiwa: %s"
+
+#~ msgid "(unnamed)"
+#~ msgstr "(haina jina)"
+
+#~ msgid "Not loaded — manual toggle only (optional add-on module)"
+#~ msgstr ""
+#~ "Haijapakiwa — kigeuzo cha mikono pekee (moduli ya nyongeza ya hiari)"
+
+#~ msgid "Panic chord"
+#~ msgstr "Mchanganyiko wa dharura"
+
+#~ msgid ""
+#~ "Optional global chord to toggle hiding (disabled by default). Set "
+#~ "\"panic_chord\" in settings.ini to '+'-joined evdev keycodes, e.g. "
+#~ "29+56+63. Detected read-only from input; never injected."
+#~ msgstr ""
+#~ "Mchanganyiko wa vitufe wa jumla wa hiari wa kugeuza ufichaji (umezimwa "
+#~ "kwa chaguo-msingi). Weka \"panic_chord\" katika settings.ini kuwa misimbo "
+#~ "ya vitufe ya evdev iliyounganishwa kwa '+', k.m. 29+56+63. Hutambuliwa "
+#~ "kwa kusoma-tu kutoka kwa ingizo; haidungwi kamwe."
+
+#~ msgid "Center"
+#~ msgstr "Katikati"
+
+#~ msgid "Left"
+#~ msgstr "Kushoto"
+
+#~ msgid "Right"
+#~ msgstr "Kulia"
+
+#~ msgid "Alignment"
+#~ msgstr "Mpangilio"
+
+#~ msgid "Click flash"
+#~ msgstr "Mweko wa mbofyo"
+
+#~ msgid "Enable click flash"
+#~ msgstr "Wezesha mweko wa mbofyo"
+
+#~ msgid "Left-click colour"
+#~ msgstr "Rangi ya bofya-kushoto"
+
+#~ msgid "Right-click colour"
+#~ msgstr "Rangi ya bofya-kulia"
+
+#~ msgid "Flash radius"
+#~ msgstr "Nusukipenyo cha mweko"
+
+#~ msgid "Flash duration (ms)"
+#~ msgstr "Muda wa mweko (ms)"
+
+#~ msgid "Flash opacity (%)"
+#~ msgstr "Uwazi wa mweko (%)"
+
+#~ msgid "Cursor calibration"
+#~ msgstr "Urekebishaji wa mshale"
+
+#~ msgid "Calibrate click position"
+#~ msgstr "Rekebisha nafasi ya mbofyo"
+
+#~ msgid ""
+#~ "The flash is positioned from relative motion and can drift. Click the on-"
+#~ "screen markers (centre + four corners) on each monitor to correct it."
+#~ msgstr ""
+#~ "Mweko huwekwa kutokana na mwendo linganishi na unaweza kuteleza. Bofya "
+#~ "alama zilizo skrinini (katikati + pembe nne) kwenye kila kifuatiliaji ili "
+#~ "kuurekebisha."
+
+#~ msgid "Calibrate"
+#~ msgstr "Rekebisha"
+
+#~ msgid "Reset calibration"
+#~ msgstr "Weka upya urekebishaji"
+
+#~ msgid "Reset"
+#~ msgstr "Weka upya"
+
+#~ msgid "Global hotkey"
+#~ msgstr "Njia ya mkato ya jumla"
+
+#~ msgid "Toggle overlay"
+#~ msgstr "Geuza uwekeleaji"
+
+#~ msgid ""
+#~ "Wayland has no client-side global hotkeys. Use the \"Show overlay\" "
+#~ "switch above, or bind a compositor shortcut. On COSMIC: Settings → "
+#~ "Keyboard → Custom shortcuts."
+#~ msgstr ""
+#~ "Wayland haina njia za mkato za jumla upande wa mteja. Tumia swichi ya "
+#~ "\"Onyesha uwekeleaji\" hapo juu, au funga njia ya mkato ya kompozita. "
+#~ "Kwenye COSMIC: Mipangilio → Kibodi → Njia za mkato maalum."

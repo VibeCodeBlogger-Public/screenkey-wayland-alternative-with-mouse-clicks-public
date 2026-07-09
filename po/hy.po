@@ -1,0 +1,450 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR VibeCodeBlogger
+# This file is distributed under the same license as the keysclicks package.
+# FIRST AUTHOR <keysclicks>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keysclicks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: keysclicks\n"
+"Language-Team: keysclicks\n"
+"Language: hy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/frontend/keysclicks-feedback.c:303
+msgid "Screenshot attached."
+msgstr "Սքրինշոթը կցված է։"
+
+#: src/frontend/keysclicks-feedback.c:307
+msgid "Screenshot unavailable — your description still helps."
+msgstr "Սքրինշոթը հասանելի չէ — ձեր նկարագրությունը դեռ օգտակար է։"
+
+#: src/frontend/keysclicks-feedback.c:414
+#, c-format
+msgid "Report #%s sent — thank you!"
+msgstr "Հաշվետվություն #%s ուղարկվեց — շնորհակալությու՜ն"
+
+#: src/frontend/keysclicks-feedback.c:416
+msgid "Report sent — thank you!"
+msgstr "Հաշվետվությունն ուղարկվեց — շնորհակալությու՜ն"
+
+#: src/frontend/keysclicks-feedback.c:424
+msgid "Could not send your report."
+msgstr "Չհաջողվեց ուղարկել ձեր հաշվետվությունը։"
+
+#: src/frontend/keysclicks-feedback.c:428
+msgid "Network error — please try again."
+msgstr "Ցանցի սխալ — խնդրում ենք նորից փորձել։"
+
+#: src/frontend/keysclicks-feedback.c:451
+msgid "Capturing screenshot…"
+msgstr "Սքրինշոթ է արվում…"
+
+#: src/frontend/keysclicks-feedback.c:502
+msgid "Sending…"
+msgstr "Ուղարկվում է…"
+
+#: src/frontend/keysclicks-feedback.c:541
+#: src/frontend/keysclicks-feedback.c:557
+msgid "Report a bug or idea"
+msgstr "Հաղորդել վրիպակի կամ գաղափարի մասին"
+
+#: src/frontend/keysclicks-feedback.c:565
+msgid "🐞 Bug"
+msgstr "🐞 Վրիպակ"
+
+#: src/frontend/keysclicks-feedback.c:566
+msgid "💡 Idea"
+msgstr "💡 Գաղափար"
+
+#: src/frontend/keysclicks-feedback.c:574
+msgid "What happened? (optional)"
+msgstr "Ի՞նչ պատահեց (ըստ ցանկության)"
+
+#: src/frontend/keysclicks-feedback.c:593
+msgid "Attach screenshot of my screen"
+msgstr "Կցել իմ էկրանի սքրինշոթը"
+
+#: src/frontend/keysclicks-feedback.c:598
+msgid "A screenshot may show sensitive on-screen content. Off by default."
+msgstr ""
+"Սքրինշոթը կարող է ցույց տալ էկրանի զգայուն բովանդակությունը։ Լռելյայն "
+"անջատված է։"
+
+#: src/frontend/keysclicks-feedback.c:612
+msgid "Attach diagnostics (build, OS, monitors)"
+msgstr "Կցել ախտորոշիչ տվյալները (կառուցում, OS, մոնիտորներ)"
+
+#: src/frontend/keysclicks-feedback.c:626
+msgid "Cancel"
+msgstr "Չեղարկել"
+
+#: src/frontend/keysclicks-feedback.c:628
+msgid "Send"
+msgstr "Ուղարկել"
+
+#: src/frontend/keysclicks-feedback.c:651
+msgid "Report a bug"
+msgstr "Հաղորդել վրիպակի մասին"
+
+#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+msgid "On-Screen Keys & Clicks Visualizer"
+msgstr "Ստեղների և սեղմումների էկրանային ցուցադրիչ"
+
+#: src/frontend/keysclicks-window.c:140
+msgid "Close to switch monitor"
+msgstr "Փակել՝ մոնիտորը փոխելու համար"
+
+#: src/frontend/keysclicks-window.c:141
+msgid ""
+"The overlay moves to the new monitor the next time you open the app. Your "
+"settings are already saved — closing now is safe."
+msgstr ""
+"Ծածկույթը կտեղափոխվի նոր մոնիտոր հաջորդ անգամ, երբ բացեք հավելվածը։ Ձեր "
+"կարգավորումներն արդեն պահված են — հիմա փակելն ապահով է։"
+
+#: src/frontend/keysclicks-window.c:151
+msgid "Close"
+msgstr "Փակել"
+
+#. Language --------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+msgid "Language"
+msgstr "Լեզու"
+
+#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+msgid "System (default)"
+msgstr "Համակարգային (կանխադրված)"
+
+#: src/frontend/keysclicks-window.c:512
+msgid "Keyboard layout"
+msgstr "Ստեղնաշարի դասավորություն"
+
+#: src/frontend/keysclicks-window.c:547
+msgid "Automatic"
+msgstr "Ավտոմատ"
+
+#: src/frontend/keysclicks-window.c:553
+#, c-format
+msgid "Monitor %u"
+msgstr "Մոնիտոր %u"
+
+#: src/frontend/keysclicks-window.c:572
+msgid "Overlay monitor"
+msgstr "Ծածկույթի մոնիտոր"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Pin to dock"
+msgstr "Ամրացնել դոկին"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Unpin from dock"
+msgstr "Հանել դոկից"
+
+#: src/frontend/keysclicks-window.c:605
+msgid "Remove this app from the COSMIC dock"
+msgstr "Հեռացնել այս հավելվածը COSMIC դոկից"
+
+#: src/frontend/keysclicks-window.c:606
+msgid "Pin this app to the COSMIC dock"
+msgstr "Ամրացնել այս հավելվածը COSMIC դոկին"
+
+#: src/frontend/keysclicks-window.c:644
+msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
+msgstr "Չկա — սեղմեք «Սահմանել», ապա պահեք դյուրանցումը (օրինակ՝ Ctrl+Shift+H)"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+msgid "Press keys…"
+msgstr "Սեղմեք ստեղները…"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+msgid "Set"
+msgstr "Սահմանել"
+
+#: src/frontend/keysclicks-window.c:702
+msgid "Hold the shortcut…  "
+msgstr "Պահեք դյուրանցումը…  "
+
+#: src/frontend/keysclicks-window.c:750
+msgid "Hold the shortcut, then release to save. Esc cancels."
+msgstr ""
+"Պահեք դյուրանցումը, ապա բաց թողեք՝ պահպանելու համար։ Esc-ը չեղարկում է։"
+
+#: src/frontend/keysclicks-window.c:780
+msgid "On-Screen Keys & Clicks Visualizer — Settings"
+msgstr "Ստեղների և սեղմումների էկրանային ցուցադրիչ — Կարգավորումներ"
+
+#. Privacy master toggle, prominent on the left of the header.
+#: src/frontend/keysclicks-window.c:798
+msgid "Hide keys"
+msgstr "Թաքցնել ստեղները"
+
+#: src/frontend/keysclicks-window.c:801
+msgid "Hide keystrokes (privacy): show • instead of keys"
+msgstr "Թաքցնել ստեղնահարվածները (գաղտնիություն). ստեղների փոխարեն ցույց տալ •"
+
+#. overlay display layout, right below
+#. Privacy ---------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:833
+msgid "Privacy"
+msgstr "Գաղտնիություն"
+
+#: src/frontend/keysclicks-window.c:835
+msgid "Hide keystrokes (privacy)"
+msgstr "Թաքցնել ստեղնահարվածները (գաղտնիություն)"
+
+#: src/frontend/keysclicks-window.c:844
+msgid "Automatic password hiding"
+msgstr "Գաղտնաբառերի ինքնաշխատ թաքցում"
+
+#: src/frontend/keysclicks-window.c:852
+msgid ""
+"On (PRO) — passwords are hidden automatically in password fields. This "
+"module is still in development."
+msgstr ""
+"Միացված է (PRO) — գաղտնաբառերն ինքնաշխատ թաքցվում են գաղտնաբառի դաշտերում։ "
+"Այս մոդուլը դեռ մշակման փուլում է։"
+
+#: src/frontend/keysclicks-window.c:854
+msgid ""
+"PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
+"\"Hide keys\" toggle/shortcut works now."
+msgstr ""
+"PRO — մշակման փուլում։ Ինքնաշխատ թաքցումը գալիս է PRO հավելումի հետ. ձեռքով "
+"\"Hide keys\" փոխարկիչը/դյուրանցումն արդեն աշխատում է։"
+
+#: src/frontend/keysclicks-window.c:863
+msgid "Hide-keys shortcut"
+msgstr "Ստեղները թաքցնելու դյուրանցում"
+
+#: src/frontend/keysclicks-window.c:868
+msgid "Click, then hold a key combination to assign it"
+msgstr "Սեղմեք, ապա պահեք ստեղների համակցությունը՝ այն նշանակելու համար"
+
+#: src/frontend/keysclicks-window.c:877
+msgid "System keyboard shortcuts"
+msgstr "Համակարգի ստեղնաշարի դյուրանցումներ"
+
+#: src/frontend/keysclicks-window.c:880
+msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
+msgstr ""
+"Գլոբալ դյուրանցումները սահմանվում են OS-ում — բացեք COSMIC → Ստեղնաշար → "
+"Դյուրանցումներ"
+
+#: src/frontend/keysclicks-window.c:882
+msgid "Open settings"
+msgstr "Բացել կարգավորումները"
+
+#. Keys & clicks display -------------------------------------------------
+#: src/frontend/keysclicks-window.c:889
+msgid "Keys and clicks display"
+msgstr "Ստեղների և սեղմումների ցուցադրում"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Compact"
+msgstr "Կոմպակտ"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Composed"
+msgstr "Բաղադրյալ"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Raw"
+msgstr "Չմշակված"
+
+#: src/frontend/keysclicks-window.c:891
+msgid "Label style"
+msgstr "Պիտակի ոճ"
+
+#: src/frontend/keysclicks-window.c:892
+msgid "Font size"
+msgstr "Տառաչափ"
+
+#: src/frontend/keysclicks-window.c:893
+msgid "Show keyboard"
+msgstr "Ցուցադրել ստեղնաշարը"
+
+#: src/frontend/keysclicks-window.c:895
+msgid "Show mouse"
+msgstr "Ցուցադրել մկնիկը"
+
+#: src/frontend/keysclicks-window.c:896
+msgid "Show Shift separately"
+msgstr "Shift-ը ցուցադրել առանձին"
+
+#: src/frontend/keysclicks-window.c:898
+msgid "Draw border"
+msgstr "Գծել եզրագիծ"
+
+#. Position & behaviour --------------------------------------------------
+#: src/frontend/keysclicks-window.c:901
+msgid "Position and behaviour"
+msgstr "Դիրք և վարքագիծ"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Bottom"
+msgstr "Ներքև"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Top"
+msgstr "Վերև"
+
+#: src/frontend/keysclicks-window.c:903
+msgid "Screen edge"
+msgstr "Էկրանի եզր"
+
+#. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
+#: src/frontend/keysclicks-window.c:905
+msgid "Horizontal margin (%)"
+msgstr "Հորիզոնական լուսանցք (%)"
+
+#: src/frontend/keysclicks-window.c:907
+msgid "Vertical margin (%)"
+msgstr "Ուղղահայաց լուսանցք (%)"
+
+#: src/frontend/keysclicks-window.c:910
+msgid "Keep visible (no timeout)"
+msgstr "Պահել տեսանելի (առանց ժամանակի սպառման)"
+
+#: src/frontend/keysclicks-window.c:913
+msgid "Timeout (ms)"
+msgstr "Սպառման ժամանակ (ms)"
+
+#: src/frontend/keysclicks-window.c:916
+msgid "Bar opacity (%)"
+msgstr "Գոտու անթափանցելիություն (%)"
+
+#: src/frontend/main.c:106
+msgid "Left Click"
+msgstr "Ձախ սեղմում"
+
+#: src/frontend/main.c:108
+msgid "Right Click"
+msgstr "Աջ սեղմում"
+
+#: src/frontend/main.c:110
+msgid "Middle Click"
+msgstr "Միջին սեղմում"
+
+#: src/frontend/main.c:122
+#, c-format
+msgid "Mouse(%u)"
+msgstr "Մկնիկ(%u)"
+
+#: src/frontend/main.c:407
+msgid "Start without opening the settings window"
+msgstr "Սկսել առանց կարգավորումների պատուհանը բացելու"
+
+#, c-format
+#~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"
+#~ msgstr ""
+#~ "Չափորոշում. սեղմեք նշիչը  (%u / %u)   —   չեղարկելու համար սեղմեք աջ "
+#~ "կոճակը"
+
+#~ msgid "Monitor"
+#~ msgstr "Մոնիտոր"
+
+#~ msgid "Show overlay"
+#~ msgstr "Ցուցադրել վերադրվածքը"
+
+#~ msgid "Privacy provider"
+#~ msgstr "Գաղտնիության մատակարար"
+
+#, c-format
+#~ msgid "Loaded: %s"
+#~ msgstr "Բեռնված է: %s"
+
+#~ msgid "(unnamed)"
+#~ msgstr "(անանուն)"
+
+#~ msgid "Not loaded — manual toggle only (optional add-on module)"
+#~ msgstr "Բեռնված չէ — միայն ձեռքով փոխարկում (ընտրովի հավելյալ մոդուլ)"
+
+#~ msgid "Panic chord"
+#~ msgstr "Խուճապի ակորդ"
+
+#~ msgid ""
+#~ "Optional global chord to toggle hiding (disabled by default). Set "
+#~ "\"panic_chord\" in settings.ini to '+'-joined evdev keycodes, e.g. "
+#~ "29+56+63. Detected read-only from input; never injected."
+#~ msgstr ""
+#~ "Ընտրովի գլոբալ ակորդ՝ թաքցնումը փոխարկելու համար (կանխադրված՝ անջատված)։ "
+#~ "settings.ini-ում «panic_chord»-ը սահմանեք '+'-ով միացված evdev "
+#~ "ստեղնակոդերով, օր.՝ 29+56+63։ Հայտնաբերվում է մուտքից միայն կարդալու "
+#~ "ռեժիմով. երբեք չի ներարկվում։"
+
+#~ msgid "Center"
+#~ msgstr "Կենտրոն"
+
+#~ msgid "Left"
+#~ msgstr "Ձախ"
+
+#~ msgid "Right"
+#~ msgstr "Աջ"
+
+#~ msgid "Alignment"
+#~ msgstr "Հավասարեցում"
+
+#~ msgid "Click flash"
+#~ msgstr "Սեղմման փայլատակում"
+
+#~ msgid "Enable click flash"
+#~ msgstr "Միացնել սեղմման փայլատակումը"
+
+#~ msgid "Left-click colour"
+#~ msgstr "Ձախ սեղմման գույն"
+
+#~ msgid "Right-click colour"
+#~ msgstr "Աջ սեղմման գույն"
+
+#~ msgid "Flash radius"
+#~ msgstr "Փայլատակման շառավիղ"
+
+#~ msgid "Flash duration (ms)"
+#~ msgstr "Փայլատակման տևողություն (ms)"
+
+#~ msgid "Flash opacity (%)"
+#~ msgstr "Փայլատակման անթափանցելիություն (%)"
+
+#~ msgid "Cursor calibration"
+#~ msgstr "Կուրսորի չափորոշում"
+
+#~ msgid "Calibrate click position"
+#~ msgstr "Չափորոշել սեղմման դիրքը"
+
+#~ msgid ""
+#~ "The flash is positioned from relative motion and can drift. Click the on-"
+#~ "screen markers (centre + four corners) on each monitor to correct it."
+#~ msgstr ""
+#~ "Փայլատակումը դիրքավորվում է հարաբերական շարժման հիման վրա և կարող է "
+#~ "շեղվել։ Այն ուղղելու համար յուրաքանչյուր մոնիտորի վրա սեղմեք էկրանի "
+#~ "նշիչները (կենտրոն + չորս անկյուն)։"
+
+#~ msgid "Calibrate"
+#~ msgstr "Չափորոշել"
+
+#~ msgid "Reset calibration"
+#~ msgstr "Զրոյացնել չափորոշումը"
+
+#~ msgid "Reset"
+#~ msgstr "Զրոյացնել"
+
+#~ msgid "Global hotkey"
+#~ msgstr "Գլոբալ թեժ ստեղն"
+
+#~ msgid "Toggle overlay"
+#~ msgstr "Փոխարկել վերադրվածքը"
+
+#~ msgid ""
+#~ "Wayland has no client-side global hotkeys. Use the \"Show overlay\" "
+#~ "switch above, or bind a compositor shortcut. On COSMIC: Settings → "
+#~ "Keyboard → Custom shortcuts."
+#~ msgstr ""
+#~ "Wayland-ը չունի հաճախորդի կողմի գլոբալ թեժ ստեղներ։ Օգտագործեք վերևի "
+#~ "«Ցուցադրել վերադրվածքը» անջատիչը, կամ կապեք կոմպոզիտորի դյուրանցում։ "
+#~ "COSMIC-ում՝ Կարգավորումներ → Ստեղնաշար → Հատուկ դյուրանցումներ։"

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=On-Screen Keys & Clicks Visualizer
+GenericName=On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)
+Comment=On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)
+Exec=keysclicks
+Icon=io.github.vibecodeblogger.KeysAndClicksVisualizer
+Terminal=false
+Categories=Utility;AudioVideo;
+Keywords=screencast;keystroke;keys;clicks;overlay;keyboard;mouse;screenkey;keycastr;wayland;
+# Matches the GTK application id / Wayland app_id so the compositor (COSMIC,
+# GNOME, KDE, ...) associates the window with this launcher for the dock/taskbar
+# icon and lets it be pinned.
+StartupWMClass=io.github.vibecodeblogger.KeysAndClicksVisualizer

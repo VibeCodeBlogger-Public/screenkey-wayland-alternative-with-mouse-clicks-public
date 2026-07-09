@@ -1,0 +1,456 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR VibeCodeBlogger
+# This file is distributed under the same license as the keysclicks package.
+# FIRST AUTHOR <keysclicks>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keysclicks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: keysclicks\n"
+"Language-Team: keysclicks\n"
+"Language: fil\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/frontend/keysclicks-feedback.c:303
+msgid "Screenshot attached."
+msgstr "Naka-attach ang screenshot."
+
+#: src/frontend/keysclicks-feedback.c:307
+msgid "Screenshot unavailable — your description still helps."
+msgstr ""
+"Hindi available ang screenshot — malaki pa ring tulong ang paglalarawan mo."
+
+#: src/frontend/keysclicks-feedback.c:414
+#, c-format
+msgid "Report #%s sent — thank you!"
+msgstr "Naipadala ang Report #%s — salamat!"
+
+#: src/frontend/keysclicks-feedback.c:416
+msgid "Report sent — thank you!"
+msgstr "Naipadala ang report — salamat!"
+
+#: src/frontend/keysclicks-feedback.c:424
+msgid "Could not send your report."
+msgstr "Hindi maipadala ang iyong report."
+
+#: src/frontend/keysclicks-feedback.c:428
+msgid "Network error — please try again."
+msgstr "May error sa network — pakisubukang muli."
+
+#: src/frontend/keysclicks-feedback.c:451
+msgid "Capturing screenshot…"
+msgstr "Kinukuha ang screenshot…"
+
+#: src/frontend/keysclicks-feedback.c:502
+msgid "Sending…"
+msgstr "Ipinapadala…"
+
+#: src/frontend/keysclicks-feedback.c:541
+#: src/frontend/keysclicks-feedback.c:557
+msgid "Report a bug or idea"
+msgstr "Mag-ulat ng bug o ideya"
+
+#: src/frontend/keysclicks-feedback.c:565
+msgid "🐞 Bug"
+msgstr "🐞 Bug"
+
+#: src/frontend/keysclicks-feedback.c:566
+msgid "💡 Idea"
+msgstr "💡 Ideya"
+
+#: src/frontend/keysclicks-feedback.c:574
+msgid "What happened? (optional)"
+msgstr "Ano ang nangyari? (opsyonal)"
+
+#: src/frontend/keysclicks-feedback.c:593
+msgid "Attach screenshot of my screen"
+msgstr "I-attach ang screenshot ng aking screen"
+
+#: src/frontend/keysclicks-feedback.c:598
+msgid "A screenshot may show sensitive on-screen content. Off by default."
+msgstr ""
+"Maaaring magpakita ang screenshot ng sensitibong nilalaman sa screen. Naka-"
+"off bilang default."
+
+#: src/frontend/keysclicks-feedback.c:612
+msgid "Attach diagnostics (build, OS, monitors)"
+msgstr "I-attach ang diagnostics (build, OS, mga monitor)"
+
+#: src/frontend/keysclicks-feedback.c:626
+msgid "Cancel"
+msgstr "Kanselahin"
+
+#: src/frontend/keysclicks-feedback.c:628
+msgid "Send"
+msgstr "Ipadala"
+
+#: src/frontend/keysclicks-feedback.c:651
+msgid "Report a bug"
+msgstr "Mag-ulat ng bug"
+
+#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+msgid "On-Screen Keys & Clicks Visualizer"
+msgstr "Visualizer ng Mga Key at Click sa Screen"
+
+#: src/frontend/keysclicks-window.c:140
+msgid "Close to switch monitor"
+msgstr "Isara para lumipat ng monitor"
+
+#: src/frontend/keysclicks-window.c:141
+msgid ""
+"The overlay moves to the new monitor the next time you open the app. Your "
+"settings are already saved — closing now is safe."
+msgstr ""
+"Lilipat ang overlay sa bagong monitor sa susunod na pagbukas mo ng app. Naka-"
+"save na ang iyong mga setting — ligtas nang isara ngayon."
+
+#: src/frontend/keysclicks-window.c:151
+msgid "Close"
+msgstr "Isara"
+
+#. Language --------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+msgid "Language"
+msgstr "Wika"
+
+#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+msgid "System (default)"
+msgstr "Sistema (default)"
+
+#: src/frontend/keysclicks-window.c:512
+msgid "Keyboard layout"
+msgstr "Layout ng keyboard"
+
+#: src/frontend/keysclicks-window.c:547
+msgid "Automatic"
+msgstr "Awtomatiko"
+
+#: src/frontend/keysclicks-window.c:553
+#, c-format
+msgid "Monitor %u"
+msgstr "Monitor %u"
+
+#: src/frontend/keysclicks-window.c:572
+msgid "Overlay monitor"
+msgstr "Monitor ng overlay"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Pin to dock"
+msgstr "I-pin sa dock"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Unpin from dock"
+msgstr "I-unpin mula sa dock"
+
+#: src/frontend/keysclicks-window.c:605
+msgid "Remove this app from the COSMIC dock"
+msgstr "Alisin ang app na ito sa COSMIC dock"
+
+#: src/frontend/keysclicks-window.c:606
+msgid "Pin this app to the COSMIC dock"
+msgstr "I-pin ang app na ito sa COSMIC dock"
+
+#: src/frontend/keysclicks-window.c:644
+msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
+msgstr ""
+"Wala — i-click ang Itakda, pagkatapos ay pindutin nang matagal ang isang "
+"shortcut (hal. Ctrl+Shift+H)"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+msgid "Press keys…"
+msgstr "Pindutin ang mga key…"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+msgid "Set"
+msgstr "Itakda"
+
+#: src/frontend/keysclicks-window.c:702
+msgid "Hold the shortcut…  "
+msgstr "Pindutin nang matagal ang shortcut…  "
+
+#: src/frontend/keysclicks-window.c:750
+msgid "Hold the shortcut, then release to save. Esc cancels."
+msgstr ""
+"Pindutin nang matagal ang shortcut, pagkatapos ay bitawan para i-save. "
+"Kakanselahin ito ng Esc."
+
+#: src/frontend/keysclicks-window.c:780
+msgid "On-Screen Keys & Clicks Visualizer — Settings"
+msgstr "Visualizer ng Mga Key at Click sa Screen — Mga Setting"
+
+#. Privacy master toggle, prominent on the left of the header.
+#: src/frontend/keysclicks-window.c:798
+msgid "Hide keys"
+msgstr "Itago ang mga key"
+
+#: src/frontend/keysclicks-window.c:801
+msgid "Hide keystrokes (privacy): show • instead of keys"
+msgstr "Itago ang mga keystroke (privacy): magpakita ng • sa halip na mga key"
+
+#. overlay display layout, right below
+#. Privacy ---------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:833
+msgid "Privacy"
+msgstr "Privacy"
+
+#: src/frontend/keysclicks-window.c:835
+msgid "Hide keystrokes (privacy)"
+msgstr "Itago ang mga keystroke (privacy)"
+
+#: src/frontend/keysclicks-window.c:844
+msgid "Automatic password hiding"
+msgstr "Awtomatikong pagtatago ng password"
+
+#: src/frontend/keysclicks-window.c:852
+msgid ""
+"On (PRO) — passwords are hidden automatically in password fields. This "
+"module is still in development."
+msgstr ""
+"Naka-on (PRO) — awtomatikong itinatago ang mga password sa mga field ng "
+"password. Nasa development pa ang module na ito."
+
+#: src/frontend/keysclicks-window.c:854
+msgid ""
+"PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
+"\"Hide keys\" toggle/shortcut works now."
+msgstr ""
+"PRO — nasa development. Kasama ang awtomatikong pagtatago sa PRO add-on; "
+"gumagana na ngayon ang manual na toggle/shortcut na \"Hide keys\"."
+
+#: src/frontend/keysclicks-window.c:863
+msgid "Hide-keys shortcut"
+msgstr "Shortcut para itago ang mga key"
+
+#: src/frontend/keysclicks-window.c:868
+msgid "Click, then hold a key combination to assign it"
+msgstr ""
+"I-click, pagkatapos ay pindutin nang matagal ang key combination para "
+"italaga ito"
+
+#: src/frontend/keysclicks-window.c:877
+msgid "System keyboard shortcuts"
+msgstr "Mga keyboard shortcut ng system"
+
+#: src/frontend/keysclicks-window.c:880
+msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
+msgstr ""
+"Ang mga global shortcut ay itinatakda sa OS — buksan ang COSMIC → Keyboard → "
+"Shortcuts"
+
+#: src/frontend/keysclicks-window.c:882
+msgid "Open settings"
+msgstr "Buksan ang mga setting"
+
+#. Keys & clicks display -------------------------------------------------
+#: src/frontend/keysclicks-window.c:889
+msgid "Keys and clicks display"
+msgstr "Display ng mga key at click"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Compact"
+msgstr "Compact"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Composed"
+msgstr "Composed"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Raw"
+msgstr "Raw"
+
+#: src/frontend/keysclicks-window.c:891
+msgid "Label style"
+msgstr "Istilo ng label"
+
+#: src/frontend/keysclicks-window.c:892
+msgid "Font size"
+msgstr "Laki ng font"
+
+#: src/frontend/keysclicks-window.c:893
+msgid "Show keyboard"
+msgstr "Ipakita ang keyboard"
+
+#: src/frontend/keysclicks-window.c:895
+msgid "Show mouse"
+msgstr "Ipakita ang mouse"
+
+#: src/frontend/keysclicks-window.c:896
+msgid "Show Shift separately"
+msgstr "Ipakita ang Shift nang hiwalay"
+
+#: src/frontend/keysclicks-window.c:898
+msgid "Draw border"
+msgstr "Gumuhit ng border"
+
+#. Position & behaviour --------------------------------------------------
+#: src/frontend/keysclicks-window.c:901
+msgid "Position and behaviour"
+msgstr "Posisyon at gawi"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Bottom"
+msgstr "Ibaba"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Top"
+msgstr "Itaas"
+
+#: src/frontend/keysclicks-window.c:903
+msgid "Screen edge"
+msgstr "Gilid ng screen"
+
+#. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
+#: src/frontend/keysclicks-window.c:905
+msgid "Horizontal margin (%)"
+msgstr "Horizontal na margin (%)"
+
+#: src/frontend/keysclicks-window.c:907
+msgid "Vertical margin (%)"
+msgstr "Vertical na margin (%)"
+
+#: src/frontend/keysclicks-window.c:910
+msgid "Keep visible (no timeout)"
+msgstr "Panatilihing nakikita (walang timeout)"
+
+#: src/frontend/keysclicks-window.c:913
+msgid "Timeout (ms)"
+msgstr "Timeout (ms)"
+
+#: src/frontend/keysclicks-window.c:916
+msgid "Bar opacity (%)"
+msgstr "Opacity ng bar (%)"
+
+#: src/frontend/main.c:106
+msgid "Left Click"
+msgstr "Kaliwang Click"
+
+#: src/frontend/main.c:108
+msgid "Right Click"
+msgstr "Kanang Click"
+
+#: src/frontend/main.c:110
+msgid "Middle Click"
+msgstr "Gitnang Click"
+
+#: src/frontend/main.c:122
+#, c-format
+msgid "Mouse(%u)"
+msgstr "Mouse(%u)"
+
+#: src/frontend/main.c:407
+msgid "Start without opening the settings window"
+msgstr "Magsimula nang hindi binubuksan ang settings window"
+
+#, c-format
+#~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"
+#~ msgstr ""
+#~ "Kalibrasyon: i-click ang marker  (%u / %u)   —   i-right-click para "
+#~ "kanselahin"
+
+#~ msgid "Monitor"
+#~ msgstr "Monitor"
+
+#~ msgid "Show overlay"
+#~ msgstr "Ipakita ang overlay"
+
+#~ msgid "Privacy provider"
+#~ msgstr "Provider ng privacy"
+
+#, c-format
+#~ msgid "Loaded: %s"
+#~ msgstr "Na-load: %s"
+
+#~ msgid "(unnamed)"
+#~ msgstr "(walang pangalan)"
+
+#~ msgid "Not loaded — manual toggle only (optional add-on module)"
+#~ msgstr "Hindi na-load — manual na toggle lang (opsyonal na add-on module)"
+
+#~ msgid "Panic chord"
+#~ msgstr "Panic chord"
+
+#~ msgid ""
+#~ "Optional global chord to toggle hiding (disabled by default). Set "
+#~ "\"panic_chord\" in settings.ini to '+'-joined evdev keycodes, e.g. "
+#~ "29+56+63. Detected read-only from input; never injected."
+#~ msgstr ""
+#~ "Opsyonal na global chord para i-toggle ang pagtatago (naka-disable bilang "
+#~ "default). Itakda ang \"panic_chord\" sa settings.ini sa mga evdev keycode "
+#~ "na pinagdugtong ng '+', hal. 29+56+63. Na-detect nang read-only mula sa "
+#~ "input; hindi kailanman ini-inject."
+
+#~ msgid "Center"
+#~ msgstr "Gitna"
+
+#~ msgid "Left"
+#~ msgstr "Kaliwa"
+
+#~ msgid "Right"
+#~ msgstr "Kanan"
+
+#~ msgid "Alignment"
+#~ msgstr "Pagkakahanay"
+
+#~ msgid "Click flash"
+#~ msgstr "Click flash"
+
+#~ msgid "Enable click flash"
+#~ msgstr "I-enable ang click flash"
+
+#~ msgid "Left-click colour"
+#~ msgstr "Kulay ng left-click"
+
+#~ msgid "Right-click colour"
+#~ msgstr "Kulay ng right-click"
+
+#~ msgid "Flash radius"
+#~ msgstr "Radius ng flash"
+
+#~ msgid "Flash duration (ms)"
+#~ msgstr "Tagal ng flash (ms)"
+
+#~ msgid "Flash opacity (%)"
+#~ msgstr "Opacity ng flash (%)"
+
+#~ msgid "Cursor calibration"
+#~ msgstr "Kalibrasyon ng cursor"
+
+#~ msgid "Calibrate click position"
+#~ msgstr "I-calibrate ang posisyon ng click"
+
+#~ msgid ""
+#~ "The flash is positioned from relative motion and can drift. Click the on-"
+#~ "screen markers (centre + four corners) on each monitor to correct it."
+#~ msgstr ""
+#~ "Ang flash ay ipinoposisyon mula sa relatibong galaw at maaaring mag-"
+#~ "drift. I-click ang mga marker sa screen (gitna + apat na sulok) sa bawat "
+#~ "monitor para itama ito."
+
+#~ msgid "Calibrate"
+#~ msgstr "I-calibrate"
+
+#~ msgid "Reset calibration"
+#~ msgstr "I-reset ang kalibrasyon"
+
+#~ msgid "Reset"
+#~ msgstr "I-reset"
+
+#~ msgid "Global hotkey"
+#~ msgstr "Global hotkey"
+
+#~ msgid "Toggle overlay"
+#~ msgstr "I-toggle ang overlay"
+
+#~ msgid ""
+#~ "Wayland has no client-side global hotkeys. Use the \"Show overlay\" "
+#~ "switch above, or bind a compositor shortcut. On COSMIC: Settings → "
+#~ "Keyboard → Custom shortcuts."
+#~ msgstr ""
+#~ "Walang client-side na global hotkey ang Wayland. Gamitin ang \"Show "
+#~ "overlay\" na switch sa itaas, o mag-bind ng compositor shortcut. Sa "
+#~ "COSMIC: Mga Setting → Keyboard → Custom shortcuts."

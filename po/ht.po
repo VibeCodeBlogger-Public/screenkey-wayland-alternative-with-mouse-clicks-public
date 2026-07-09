@@ -1,0 +1,446 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR VibeCodeBlogger
+# This file is distributed under the same license as the keysclicks package.
+# FIRST AUTHOR <keysclicks>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keysclicks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: keysclicks\n"
+"Language-Team: keysclicks\n"
+"Language: ht\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/frontend/keysclicks-feedback.c:303
+msgid "Screenshot attached."
+msgstr "Kapti ekran an tache."
+
+#: src/frontend/keysclicks-feedback.c:307
+msgid "Screenshot unavailable — your description still helps."
+msgstr "Kapti ekran pa disponib — deskripsyon ou an ede toujou."
+
+#: src/frontend/keysclicks-feedback.c:414
+#, c-format
+msgid "Report #%s sent — thank you!"
+msgstr "Rapò #%s voye — mèsi!"
+
+#: src/frontend/keysclicks-feedback.c:416
+msgid "Report sent — thank you!"
+msgstr "Rapò voye — mèsi!"
+
+#: src/frontend/keysclicks-feedback.c:424
+msgid "Could not send your report."
+msgstr "Pa t kapab voye rapò ou a."
+
+#: src/frontend/keysclicks-feedback.c:428
+msgid "Network error — please try again."
+msgstr "Erè rezo — tanpri eseye ankò."
+
+#: src/frontend/keysclicks-feedback.c:451
+msgid "Capturing screenshot…"
+msgstr "Ap pran kapti ekran…"
+
+#: src/frontend/keysclicks-feedback.c:502
+msgid "Sending…"
+msgstr "Ap voye…"
+
+#: src/frontend/keysclicks-feedback.c:541
+#: src/frontend/keysclicks-feedback.c:557
+msgid "Report a bug or idea"
+msgstr "Rapòte yon bug oswa yon lide"
+
+#: src/frontend/keysclicks-feedback.c:565
+msgid "🐞 Bug"
+msgstr "🐞 Bug"
+
+#: src/frontend/keysclicks-feedback.c:566
+msgid "💡 Idea"
+msgstr "💡 Lide"
+
+#: src/frontend/keysclicks-feedback.c:574
+msgid "What happened? (optional)"
+msgstr "Kisa ki te pase? (opsyonèl)"
+
+#: src/frontend/keysclicks-feedback.c:593
+msgid "Attach screenshot of my screen"
+msgstr "Tache yon kapti ekran nan ekran mwen an"
+
+#: src/frontend/keysclicks-feedback.c:598
+msgid "A screenshot may show sensitive on-screen content. Off by default."
+msgstr ""
+"Yon kapti ekran ka montre kontni sansib sou ekran an. Dezaktive pa defo."
+
+#: src/frontend/keysclicks-feedback.c:612
+msgid "Attach diagnostics (build, OS, monitors)"
+msgstr "Tache dyagnostik (build, OS, monitè)"
+
+#: src/frontend/keysclicks-feedback.c:626
+msgid "Cancel"
+msgstr "Anile"
+
+#: src/frontend/keysclicks-feedback.c:628
+msgid "Send"
+msgstr "Voye"
+
+#: src/frontend/keysclicks-feedback.c:651
+msgid "Report a bug"
+msgstr "Rapòte yon bug"
+
+#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+msgid "On-Screen Keys & Clicks Visualizer"
+msgstr "Vizyalizatè Touch ak Klik sou Ekran"
+
+#: src/frontend/keysclicks-window.c:140
+msgid "Close to switch monitor"
+msgstr "Fèmen pou chanje monitè"
+
+#: src/frontend/keysclicks-window.c:141
+msgid ""
+"The overlay moves to the new monitor the next time you open the app. Your "
+"settings are already saved — closing now is safe."
+msgstr ""
+"Kouch la ap deplase nan nouvo monitè a pwochèn fwa ou louvri app la. Paramèt "
+"ou yo deja anrejistre — li san danje pou fèmen kounye a."
+
+#: src/frontend/keysclicks-window.c:151
+msgid "Close"
+msgstr "Fèmen"
+
+#. Language --------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+msgid "Language"
+msgstr "Lang"
+
+#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+msgid "System (default)"
+msgstr "Sistèm (pa defo)"
+
+#: src/frontend/keysclicks-window.c:512
+msgid "Keyboard layout"
+msgstr "Layout klavye"
+
+#: src/frontend/keysclicks-window.c:547
+msgid "Automatic"
+msgstr "Otomatik"
+
+#: src/frontend/keysclicks-window.c:553
+#, c-format
+msgid "Monitor %u"
+msgstr "Monitè %u"
+
+#: src/frontend/keysclicks-window.c:572
+msgid "Overlay monitor"
+msgstr "Monitè kouch la"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Pin to dock"
+msgstr "Tache sou dock la"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Unpin from dock"
+msgstr "Detache soti nan dock la"
+
+#: src/frontend/keysclicks-window.c:605
+msgid "Remove this app from the COSMIC dock"
+msgstr "Retire aplikasyon sa a nan dock COSMIC la"
+
+#: src/frontend/keysclicks-window.c:606
+msgid "Pin this app to the COSMIC dock"
+msgstr "Tache aplikasyon sa a sou dock COSMIC la"
+
+#: src/frontend/keysclicks-window.c:644
+msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
+msgstr ""
+"Okenn — klike sou Defini, apre sa kenbe yon rakoursi (pa egzanp Ctrl+Shift+H)"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+msgid "Press keys…"
+msgstr "Peze touch yo…"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+msgid "Set"
+msgstr "Defini"
+
+#: src/frontend/keysclicks-window.c:702
+msgid "Hold the shortcut…  "
+msgstr "Kenbe rakoursi a…  "
+
+#: src/frontend/keysclicks-window.c:750
+msgid "Hold the shortcut, then release to save. Esc cancels."
+msgstr "Kenbe rakoursi a, apre sa lage l pou anrejistre. Esc anile."
+
+#: src/frontend/keysclicks-window.c:780
+msgid "On-Screen Keys & Clicks Visualizer — Settings"
+msgstr "Vizyalizatè Touch ak Klik sou Ekran — Paramèt"
+
+#. Privacy master toggle, prominent on the left of the header.
+#: src/frontend/keysclicks-window.c:798
+msgid "Hide keys"
+msgstr "Kache touch yo"
+
+#: src/frontend/keysclicks-window.c:801
+msgid "Hide keystrokes (privacy): show • instead of keys"
+msgstr "Kache frap touch yo (konfidansyalite): montre • olye touch yo"
+
+#. overlay display layout, right below
+#. Privacy ---------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:833
+msgid "Privacy"
+msgstr "Konfidansyalite"
+
+#: src/frontend/keysclicks-window.c:835
+msgid "Hide keystrokes (privacy)"
+msgstr "Kache frap touch yo (konfidansyalite)"
+
+#: src/frontend/keysclicks-window.c:844
+msgid "Automatic password hiding"
+msgstr "Kache modpas otomatikman"
+
+#: src/frontend/keysclicks-window.c:852
+msgid ""
+"On (PRO) — passwords are hidden automatically in password fields. This "
+"module is still in development."
+msgstr ""
+"Aktive (PRO) — modpas yo kache otomatikman nan chan modpas yo. Modil sa a "
+"toujou ap devlope."
+
+#: src/frontend/keysclicks-window.c:854
+msgid ""
+"PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
+"\"Hide keys\" toggle/shortcut works now."
+msgstr ""
+"PRO — ap devlope. Kachaj otomatik la vini ak add-on PRO a; toggle/rakoursi "
+"manyèl \"Hide keys\" la ap travay kounye a."
+
+#: src/frontend/keysclicks-window.c:863
+msgid "Hide-keys shortcut"
+msgstr "Rakoursi pou kache touch yo"
+
+#: src/frontend/keysclicks-window.c:868
+msgid "Click, then hold a key combination to assign it"
+msgstr "Klike, apre sa kenbe yon konbinezon touch pou asiyen l"
+
+#: src/frontend/keysclicks-window.c:877
+msgid "System keyboard shortcuts"
+msgstr "Rakoursi klavye sistèm nan"
+
+#: src/frontend/keysclicks-window.c:880
+msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
+msgstr ""
+"Rakoursi global yo defini nan OS la — louvri COSMIC → Keyboard → Shortcuts"
+
+#: src/frontend/keysclicks-window.c:882
+msgid "Open settings"
+msgstr "Louvri paramèt yo"
+
+#. Keys & clicks display -------------------------------------------------
+#: src/frontend/keysclicks-window.c:889
+msgid "Keys and clicks display"
+msgstr "Afichaj touch ak klik"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Compact"
+msgstr "Konpak"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Composed"
+msgstr "Konpoze"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Raw"
+msgstr "Brit"
+
+#: src/frontend/keysclicks-window.c:891
+msgid "Label style"
+msgstr "Estil etikèt"
+
+#: src/frontend/keysclicks-window.c:892
+msgid "Font size"
+msgstr "Gwosè font"
+
+#: src/frontend/keysclicks-window.c:893
+msgid "Show keyboard"
+msgstr "Montre klavye a"
+
+#: src/frontend/keysclicks-window.c:895
+msgid "Show mouse"
+msgstr "Montre souri a"
+
+#: src/frontend/keysclicks-window.c:896
+msgid "Show Shift separately"
+msgstr "Montre Shift apa"
+
+#: src/frontend/keysclicks-window.c:898
+msgid "Draw border"
+msgstr "Trase bòdi"
+
+#. Position & behaviour --------------------------------------------------
+#: src/frontend/keysclicks-window.c:901
+msgid "Position and behaviour"
+msgstr "Pozisyon ak konpòtman"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Bottom"
+msgstr "Anba"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Top"
+msgstr "Anwo"
+
+#: src/frontend/keysclicks-window.c:903
+msgid "Screen edge"
+msgstr "Bò ekran an"
+
+#. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
+#: src/frontend/keysclicks-window.c:905
+msgid "Horizontal margin (%)"
+msgstr "Maj orizontal (%)"
+
+#: src/frontend/keysclicks-window.c:907
+msgid "Vertical margin (%)"
+msgstr "Maj vètikal (%)"
+
+#: src/frontend/keysclicks-window.c:910
+msgid "Keep visible (no timeout)"
+msgstr "Kenbe vizib (san dele)"
+
+#: src/frontend/keysclicks-window.c:913
+msgid "Timeout (ms)"
+msgstr "Dele (ms)"
+
+#: src/frontend/keysclicks-window.c:916
+msgid "Bar opacity (%)"
+msgstr "Opasite ba a (%)"
+
+#: src/frontend/main.c:106
+msgid "Left Click"
+msgstr "Klik Gòch"
+
+#: src/frontend/main.c:108
+msgid "Right Click"
+msgstr "Klik Dwat"
+
+#: src/frontend/main.c:110
+msgid "Middle Click"
+msgstr "Klik Mitan"
+
+#: src/frontend/main.c:122
+#, c-format
+msgid "Mouse(%u)"
+msgstr "Souri(%u)"
+
+#: src/frontend/main.c:407
+msgid "Start without opening the settings window"
+msgstr "Kòmanse san ouvri fenèt paramèt yo"
+
+#, c-format
+#~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"
+#~ msgstr "Kalibrasyon: klike sou makè a  (%u / %u)   —   klike-dwat pou anile"
+
+#~ msgid "Monitor"
+#~ msgstr "Monitè"
+
+#~ msgid "Show overlay"
+#~ msgstr "Montre kouch anlè a"
+
+#~ msgid "Privacy provider"
+#~ msgstr "Founisè konfidansyalite"
+
+#, c-format
+#~ msgid "Loaded: %s"
+#~ msgstr "Chaje: %s"
+
+#~ msgid "(unnamed)"
+#~ msgstr "(san non)"
+
+#~ msgid "Not loaded — manual toggle only (optional add-on module)"
+#~ msgstr ""
+#~ "Pa chaje — sèlman aktive/dezaktive manyèl (modil adisyonèl opsyonèl)"
+
+#~ msgid "Panic chord"
+#~ msgstr "Konbinezon panik"
+
+#~ msgid ""
+#~ "Optional global chord to toggle hiding (disabled by default). Set "
+#~ "\"panic_chord\" in settings.ini to '+'-joined evdev keycodes, e.g. "
+#~ "29+56+63. Detected read-only from input; never injected."
+#~ msgstr ""
+#~ "Konbinezon global opsyonèl pou aktive/dezaktive kachaj la (dezaktive pa "
+#~ "defo). Mete \"panic_chord\" nan settings.ini ak kòd touch evdev ki lye ak "
+#~ "'+', pa egzanp 29+56+63. Detekte an lekti-sèlman soti nan antre a; pa "
+#~ "janm enjekte."
+
+#~ msgid "Center"
+#~ msgstr "Sant"
+
+#~ msgid "Left"
+#~ msgstr "Gòch"
+
+#~ msgid "Right"
+#~ msgstr "Dwat"
+
+#~ msgid "Alignment"
+#~ msgstr "Aliyman"
+
+#~ msgid "Click flash"
+#~ msgstr "Flash klik"
+
+#~ msgid "Enable click flash"
+#~ msgstr "Aktive flash klik"
+
+#~ msgid "Left-click colour"
+#~ msgstr "Koulè klik-gòch"
+
+#~ msgid "Right-click colour"
+#~ msgstr "Koulè klik-dwat"
+
+#~ msgid "Flash radius"
+#~ msgstr "Reyon flash la"
+
+#~ msgid "Flash duration (ms)"
+#~ msgstr "Dire flash (ms)"
+
+#~ msgid "Flash opacity (%)"
+#~ msgstr "Opasite flash (%)"
+
+#~ msgid "Cursor calibration"
+#~ msgstr "Kalibrasyon kisè"
+
+#~ msgid "Calibrate click position"
+#~ msgstr "Kalibre pozisyon klik la"
+
+#~ msgid ""
+#~ "The flash is positioned from relative motion and can drift. Click the on-"
+#~ "screen markers (centre + four corners) on each monitor to correct it."
+#~ msgstr ""
+#~ "Flash la pozisyone apati mouvman relatif epi li ka derape. Klike sou makè "
+#~ "yo sou ekran an (sant + kat kwen) sou chak monitè pou korije li."
+
+#~ msgid "Calibrate"
+#~ msgstr "Kalibre"
+
+#~ msgid "Reset calibration"
+#~ msgstr "Reyinisyalize kalibrasyon"
+
+#~ msgid "Reset"
+#~ msgstr "Reyinisyalize"
+
+#~ msgid "Global hotkey"
+#~ msgstr "Rakousi global"
+
+#~ msgid "Toggle overlay"
+#~ msgstr "Aktive/dezaktive kouch anlè a"
+
+#~ msgid ""
+#~ "Wayland has no client-side global hotkeys. Use the \"Show overlay\" "
+#~ "switch above, or bind a compositor shortcut. On COSMIC: Settings → "
+#~ "Keyboard → Custom shortcuts."
+#~ msgstr ""
+#~ "Wayland pa gen rakousi global bò kliyan. Sèvi ak switch \"Show overlay\" "
+#~ "anwo a, oswa mare yon rakousi konpozitè. Sou COSMIC: Paramèt → Klavye → "
+#~ "Rakousi pèsonalize."

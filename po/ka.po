@@ -1,0 +1,453 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR VibeCodeBlogger
+# This file is distributed under the same license as the keysclicks package.
+# FIRST AUTHOR <keysclicks>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keysclicks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: keysclicks\n"
+"Language-Team: keysclicks\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/frontend/keysclicks-feedback.c:303
+msgid "Screenshot attached."
+msgstr "ეკრანის სურათი მიმაგრებულია."
+
+#: src/frontend/keysclicks-feedback.c:307
+msgid "Screenshot unavailable — your description still helps."
+msgstr "ეკრანის სურათი მიუწვდომელია — თქვენი აღწერა მაინც დაგვეხმარება."
+
+#: src/frontend/keysclicks-feedback.c:414
+#, c-format
+msgid "Report #%s sent — thank you!"
+msgstr "მოხსენება #%s გაიგზავნა — გმადლობთ!"
+
+#: src/frontend/keysclicks-feedback.c:416
+msgid "Report sent — thank you!"
+msgstr "მოხსენება გაიგზავნა — გმადლობთ!"
+
+#: src/frontend/keysclicks-feedback.c:424
+msgid "Could not send your report."
+msgstr "თქვენი მოხსენების გაგზავნა ვერ მოხერხდა."
+
+#: src/frontend/keysclicks-feedback.c:428
+msgid "Network error — please try again."
+msgstr "ქსელის შეცდომა — გთხოვთ, სცადოთ ხელახლა."
+
+#: src/frontend/keysclicks-feedback.c:451
+msgid "Capturing screenshot…"
+msgstr "მიმდინარეობს ეკრანის სურათის გადაღება…"
+
+#: src/frontend/keysclicks-feedback.c:502
+msgid "Sending…"
+msgstr "იგზავნება…"
+
+#: src/frontend/keysclicks-feedback.c:541
+#: src/frontend/keysclicks-feedback.c:557
+msgid "Report a bug or idea"
+msgstr "შეცდომის ან იდეის მოხსენება"
+
+#: src/frontend/keysclicks-feedback.c:565
+msgid "🐞 Bug"
+msgstr "🐞 შეცდომა"
+
+#: src/frontend/keysclicks-feedback.c:566
+msgid "💡 Idea"
+msgstr "💡 იდეა"
+
+#: src/frontend/keysclicks-feedback.c:574
+msgid "What happened? (optional)"
+msgstr "რა მოხდა? (არასავალდებულო)"
+
+#: src/frontend/keysclicks-feedback.c:593
+msgid "Attach screenshot of my screen"
+msgstr "ჩემი ეკრანის სურათის მიმაგრება"
+
+#: src/frontend/keysclicks-feedback.c:598
+msgid "A screenshot may show sensitive on-screen content. Off by default."
+msgstr ""
+"ეკრანის სურათმა შეიძლება აჩვენოს ეკრანზე არსებული მგრძნობიარე შიგთავსი. "
+"ნაგულისხმევად გამორთულია."
+
+#: src/frontend/keysclicks-feedback.c:612
+msgid "Attach diagnostics (build, OS, monitors)"
+msgstr "დიაგნოსტიკის მიმაგრება (ბილდი, ოპერაციული სისტემა, მონიტორები)"
+
+#: src/frontend/keysclicks-feedback.c:626
+msgid "Cancel"
+msgstr "გაუქმება"
+
+#: src/frontend/keysclicks-feedback.c:628
+msgid "Send"
+msgstr "გაგზავნა"
+
+#: src/frontend/keysclicks-feedback.c:651
+msgid "Report a bug"
+msgstr "შეცდომის მოხსენება"
+
+#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+msgid "On-Screen Keys & Clicks Visualizer"
+msgstr "ეკრანზე კლავიშებისა და დაწკაპუნებების ვიზუალიზატორი"
+
+#: src/frontend/keysclicks-window.c:140
+msgid "Close to switch monitor"
+msgstr "მონიტორის შესაცვლელად დახურეთ"
+
+#: src/frontend/keysclicks-window.c:141
+msgid ""
+"The overlay moves to the new monitor the next time you open the app. Your "
+"settings are already saved — closing now is safe."
+msgstr ""
+"გადაფარვა ახალ მონიტორზე გადავა აპლიკაციის შემდეგი გახსნისას. თქვენი "
+"პარამეტრები უკვე შენახულია — ახლა დახურვა უსაფრთხოა."
+
+#: src/frontend/keysclicks-window.c:151
+msgid "Close"
+msgstr "დახურვა"
+
+#. Language --------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+msgid "Language"
+msgstr "ენა"
+
+#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+msgid "System (default)"
+msgstr "სისტემური (ნაგულისხმევი)"
+
+#: src/frontend/keysclicks-window.c:512
+msgid "Keyboard layout"
+msgstr "კლავიატურის განლაგება"
+
+#: src/frontend/keysclicks-window.c:547
+msgid "Automatic"
+msgstr "ავტომატური"
+
+#: src/frontend/keysclicks-window.c:553
+#, c-format
+msgid "Monitor %u"
+msgstr "მონიტორი %u"
+
+#: src/frontend/keysclicks-window.c:572
+msgid "Overlay monitor"
+msgstr "გადაფარვის მონიტორი"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Pin to dock"
+msgstr "დოკზე მიმაგრება"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Unpin from dock"
+msgstr "დოკიდან მოხსნა"
+
+#: src/frontend/keysclicks-window.c:605
+msgid "Remove this app from the COSMIC dock"
+msgstr "ამ აპლიკაციის მოხსნა COSMIC-ის დოკიდან"
+
+#: src/frontend/keysclicks-window.c:606
+msgid "Pin this app to the COSMIC dock"
+msgstr "ამ აპლიკაციის მიმაგრება COSMIC-ის დოკზე"
+
+#: src/frontend/keysclicks-window.c:644
+msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
+msgstr ""
+"არცერთი — დააჭირეთ „დაყენებას“, შემდეგ დააჭირეთ და გეჭიროთ მალსახმობი (მაგ. "
+"Ctrl+Shift+H)"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+msgid "Press keys…"
+msgstr "დააჭირეთ ღილაკებს…"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+msgid "Set"
+msgstr "დაყენება"
+
+#: src/frontend/keysclicks-window.c:702
+msgid "Hold the shortcut…  "
+msgstr "გეჭიროთ მალსახმობი…  "
+
+#: src/frontend/keysclicks-window.c:750
+msgid "Hold the shortcut, then release to save. Esc cancels."
+msgstr "გეჭიროთ მალსახმობი, შემდეგ გაუშვით შესანახად. Esc აუქმებს."
+
+#: src/frontend/keysclicks-window.c:780
+msgid "On-Screen Keys & Clicks Visualizer — Settings"
+msgstr "ეკრანზე კლავიშებისა და დაწკაპუნებების ვიზუალიზატორი — პარამეტრები"
+
+#. Privacy master toggle, prominent on the left of the header.
+#: src/frontend/keysclicks-window.c:798
+msgid "Hide keys"
+msgstr "კლავიშების დამალვა"
+
+#: src/frontend/keysclicks-window.c:801
+msgid "Hide keystrokes (privacy): show • instead of keys"
+msgstr "აკრეფის დამალვა (კონფიდენციალურობა): კლავიშების ნაცვლად აჩვენე •"
+
+#. overlay display layout, right below
+#. Privacy ---------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:833
+msgid "Privacy"
+msgstr "კონფიდენციალურობა"
+
+#: src/frontend/keysclicks-window.c:835
+msgid "Hide keystrokes (privacy)"
+msgstr "აკრეფის დამალვა (კონფიდენციალურობა)"
+
+#: src/frontend/keysclicks-window.c:844
+msgid "Automatic password hiding"
+msgstr "პაროლების ავტომატური დამალვა"
+
+#: src/frontend/keysclicks-window.c:852
+msgid ""
+"On (PRO) — passwords are hidden automatically in password fields. This "
+"module is still in development."
+msgstr ""
+"ჩართული (PRO) — პაროლები ავტომატურად იმალება პაროლის ველებში. ეს მოდული ჯერ "
+"კიდევ დამუშავების პროცესშია."
+
+#: src/frontend/keysclicks-window.c:854
+msgid ""
+"PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
+"\"Hide keys\" toggle/shortcut works now."
+msgstr ""
+"PRO — დამუშავების პროცესში. ავტომატური დამალვა მოჰყვება PRO დანამატს; ხელით "
+"მართვის გადამრთველი/მალსახმობი \"Hide keys\" უკვე მუშაობს."
+
+#: src/frontend/keysclicks-window.c:863
+msgid "Hide-keys shortcut"
+msgstr "ღილაკების დამალვის მალსახმობი"
+
+#: src/frontend/keysclicks-window.c:868
+msgid "Click, then hold a key combination to assign it"
+msgstr "დააწკაპუნეთ, შემდეგ გეჭიროთ ღილაკების კომბინაცია მის მისანიჭებლად"
+
+#: src/frontend/keysclicks-window.c:877
+msgid "System keyboard shortcuts"
+msgstr "სისტემის კლავიატურის მალსახმობები"
+
+#: src/frontend/keysclicks-window.c:880
+msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
+msgstr ""
+"გლობალური მალსახმობები ყენდება ოპერაციულ სისტემაში — გახსენით COSMIC → "
+"კლავიატურა → მალსახმობები"
+
+#: src/frontend/keysclicks-window.c:882
+msgid "Open settings"
+msgstr "პარამეტრების გახსნა"
+
+#. Keys & clicks display -------------------------------------------------
+#: src/frontend/keysclicks-window.c:889
+msgid "Keys and clicks display"
+msgstr "კლავიშებისა და დაწკაპუნებების ჩვენება"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Compact"
+msgstr "კომპაქტური"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Composed"
+msgstr "შედგენილი"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Raw"
+msgstr "ნედლი"
+
+#: src/frontend/keysclicks-window.c:891
+msgid "Label style"
+msgstr "ეტიკეტის სტილი"
+
+#: src/frontend/keysclicks-window.c:892
+msgid "Font size"
+msgstr "შრიფტის ზომა"
+
+#: src/frontend/keysclicks-window.c:893
+msgid "Show keyboard"
+msgstr "კლავიატურის ჩვენება"
+
+#: src/frontend/keysclicks-window.c:895
+msgid "Show mouse"
+msgstr "მაუსის ჩვენება"
+
+#: src/frontend/keysclicks-window.c:896
+msgid "Show Shift separately"
+msgstr "Shift-ის ცალკე ჩვენება"
+
+#: src/frontend/keysclicks-window.c:898
+msgid "Draw border"
+msgstr "ჩარჩოს დახატვა"
+
+#. Position & behaviour --------------------------------------------------
+#: src/frontend/keysclicks-window.c:901
+msgid "Position and behaviour"
+msgstr "პოზიცია და ქცევა"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Bottom"
+msgstr "ქვედა"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Top"
+msgstr "ზედა"
+
+#: src/frontend/keysclicks-window.c:903
+msgid "Screen edge"
+msgstr "ეკრანის კიდე"
+
+#. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
+#: src/frontend/keysclicks-window.c:905
+msgid "Horizontal margin (%)"
+msgstr "ჰორიზონტალური ზღვარი (%)"
+
+#: src/frontend/keysclicks-window.c:907
+msgid "Vertical margin (%)"
+msgstr "ვერტიკალური ზღვარი (%)"
+
+#: src/frontend/keysclicks-window.c:910
+msgid "Keep visible (no timeout)"
+msgstr "ხილული დარჩეს (დროის ლიმიტის გარეშე)"
+
+#: src/frontend/keysclicks-window.c:913
+msgid "Timeout (ms)"
+msgstr "დროის ლიმიტი (ms)"
+
+#: src/frontend/keysclicks-window.c:916
+msgid "Bar opacity (%)"
+msgstr "ზოლის გაუმჭვირვალობა (%)"
+
+#: src/frontend/main.c:106
+msgid "Left Click"
+msgstr "მარცხენა დაწკაპუნება"
+
+#: src/frontend/main.c:108
+msgid "Right Click"
+msgstr "მარჯვენა დაწკაპუნება"
+
+#: src/frontend/main.c:110
+msgid "Middle Click"
+msgstr "შუა დაწკაპუნება"
+
+#: src/frontend/main.c:122
+#, c-format
+msgid "Mouse(%u)"
+msgstr "მაუსი(%u)"
+
+#: src/frontend/main.c:407
+msgid "Start without opening the settings window"
+msgstr "დაწყება პარამეტრების ფანჯრის გახსნის გარეშე"
+
+#, c-format
+#~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"
+#~ msgstr ""
+#~ "კალიბრაცია: დააწკაპუნეთ მარკერზე  (%u / %u)   —   გასაუქმებლად "
+#~ "დააწკაპუნეთ მარჯვენა ღილაკით"
+
+#~ msgid "Monitor"
+#~ msgstr "მონიტორი"
+
+#~ msgid "Show overlay"
+#~ msgstr "გადაფარვის ჩვენება"
+
+#~ msgid "Privacy provider"
+#~ msgstr "კონფიდენციალურობის პროვაიდერი"
+
+#, c-format
+#~ msgid "Loaded: %s"
+#~ msgstr "ჩატვირთულია: %s"
+
+#~ msgid "(unnamed)"
+#~ msgstr "(უსახელო)"
+
+#~ msgid "Not loaded — manual toggle only (optional add-on module)"
+#~ msgstr ""
+#~ "არ არის ჩატვირთული — მხოლოდ ხელით გადართვა (არასავალდებულო დამატებითი "
+#~ "მოდული)"
+
+#~ msgid "Panic chord"
+#~ msgstr "პანიკის აკორდი"
+
+#~ msgid ""
+#~ "Optional global chord to toggle hiding (disabled by default). Set "
+#~ "\"panic_chord\" in settings.ini to '+'-joined evdev keycodes, e.g. "
+#~ "29+56+63. Detected read-only from input; never injected."
+#~ msgstr ""
+#~ "არასავალდებულო გლობალური აკორდი დამალვის გადასართავად (ნაგულისხმევად "
+#~ "გამორთულია). settings.ini-ში დააყენეთ „panic_chord” „+”-ით გაერთიანებულ "
+#~ "evdev კოდებზე, მაგ. 29+56+63. აღიქმება მხოლოდ წასაკითხად შეყვანიდან; "
+#~ "არასოდეს ხდება მისი ინექცია."
+
+#~ msgid "Center"
+#~ msgstr "ცენტრი"
+
+#~ msgid "Left"
+#~ msgstr "მარცხნივ"
+
+#~ msgid "Right"
+#~ msgstr "მარჯვნივ"
+
+#~ msgid "Alignment"
+#~ msgstr "სწორება"
+
+#~ msgid "Click flash"
+#~ msgstr "დაწკაპუნების ციმციმი"
+
+#~ msgid "Enable click flash"
+#~ msgstr "დაწკაპუნების ციმციმის ჩართვა"
+
+#~ msgid "Left-click colour"
+#~ msgstr "მარცხენა დაწკაპუნების ფერი"
+
+#~ msgid "Right-click colour"
+#~ msgstr "მარჯვენა დაწკაპუნების ფერი"
+
+#~ msgid "Flash radius"
+#~ msgstr "ციმციმის რადიუსი"
+
+#~ msgid "Flash duration (ms)"
+#~ msgstr "ციმციმის ხანგრძლივობა (ms)"
+
+#~ msgid "Flash opacity (%)"
+#~ msgstr "ციმციმის გაუმჭვირვალობა (%)"
+
+#~ msgid "Cursor calibration"
+#~ msgstr "კურსორის კალიბრაცია"
+
+#~ msgid "Calibrate click position"
+#~ msgstr "დაწკაპუნების პოზიციის კალიბრაცია"
+
+#~ msgid ""
+#~ "The flash is positioned from relative motion and can drift. Click the on-"
+#~ "screen markers (centre + four corners) on each monitor to correct it."
+#~ msgstr ""
+#~ "ციმციმი განთავსებულია ფარდობითი მოძრაობის მიხედვით და შესაძლოა "
+#~ "გადაიხაროს. გამოსასწორებლად თითოეულ მონიტორზე დააწკაპუნეთ ეკრანის "
+#~ "მარკერებზე (ცენტრი + ოთხი კუთხე)."
+
+#~ msgid "Calibrate"
+#~ msgstr "კალიბრაცია"
+
+#~ msgid "Reset calibration"
+#~ msgstr "კალიბრაციის გადაყენება"
+
+#~ msgid "Reset"
+#~ msgstr "გადაყენება"
+
+#~ msgid "Global hotkey"
+#~ msgstr "გლობალური მალსახმობი"
+
+#~ msgid "Toggle overlay"
+#~ msgstr "გადაფარვის გადართვა"
+
+#~ msgid ""
+#~ "Wayland has no client-side global hotkeys. Use the \"Show overlay\" "
+#~ "switch above, or bind a compositor shortcut. On COSMIC: Settings → "
+#~ "Keyboard → Custom shortcuts."
+#~ msgstr ""
+#~ "Wayland-ს არ აქვს კლიენტის მხარის გლობალური მალსახმობები. გამოიყენეთ "
+#~ "ზემოთ მოცემული გადამრთველი „გადაფარვის ჩვენება”, ან მიაბით კომპოზიტორის "
+#~ "მალსახმობი. COSMIC-ზე: პარამეტრები → კლავიატურა → მორგებული მალსახმობები."

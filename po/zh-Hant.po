@@ -1,0 +1,437 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR VibeCodeBlogger
+# This file is distributed under the same license as the keysclicks package.
+# FIRST AUTHOR <keysclicks>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keysclicks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: keysclicks\n"
+"Language-Team: keysclicks\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/frontend/keysclicks-feedback.c:303
+msgid "Screenshot attached."
+msgstr "已附上截圖。"
+
+#: src/frontend/keysclicks-feedback.c:307
+msgid "Screenshot unavailable — your description still helps."
+msgstr "無法取得截圖 — 您的描述仍有幫助。"
+
+#: src/frontend/keysclicks-feedback.c:414
+#, c-format
+msgid "Report #%s sent — thank you!"
+msgstr "報告 #%s 已送出 — 謝謝！"
+
+#: src/frontend/keysclicks-feedback.c:416
+msgid "Report sent — thank you!"
+msgstr "報告已送出 — 謝謝！"
+
+#: src/frontend/keysclicks-feedback.c:424
+msgid "Could not send your report."
+msgstr "無法送出您的報告。"
+
+#: src/frontend/keysclicks-feedback.c:428
+msgid "Network error — please try again."
+msgstr "網路錯誤 — 請重試。"
+
+#: src/frontend/keysclicks-feedback.c:451
+msgid "Capturing screenshot…"
+msgstr "正在截圖…"
+
+#: src/frontend/keysclicks-feedback.c:502
+msgid "Sending…"
+msgstr "正在傳送…"
+
+#: src/frontend/keysclicks-feedback.c:541
+#: src/frontend/keysclicks-feedback.c:557
+msgid "Report a bug or idea"
+msgstr "回報問題或建議"
+
+#: src/frontend/keysclicks-feedback.c:565
+msgid "🐞 Bug"
+msgstr "🐞 問題"
+
+#: src/frontend/keysclicks-feedback.c:566
+msgid "💡 Idea"
+msgstr "💡 建議"
+
+#: src/frontend/keysclicks-feedback.c:574
+msgid "What happened? (optional)"
+msgstr "發生了什麼事？（選填）"
+
+#: src/frontend/keysclicks-feedback.c:593
+msgid "Attach screenshot of my screen"
+msgstr "附上我的螢幕截圖"
+
+#: src/frontend/keysclicks-feedback.c:598
+msgid "A screenshot may show sensitive on-screen content. Off by default."
+msgstr "截圖可能會顯示螢幕上的敏感內容。預設為關閉。"
+
+#: src/frontend/keysclicks-feedback.c:612
+msgid "Attach diagnostics (build, OS, monitors)"
+msgstr "附上診斷資訊（版本、系統、螢幕）"
+
+#: src/frontend/keysclicks-feedback.c:626
+msgid "Cancel"
+msgstr "取消"
+
+#: src/frontend/keysclicks-feedback.c:628
+msgid "Send"
+msgstr "傳送"
+
+#: src/frontend/keysclicks-feedback.c:651
+msgid "Report a bug"
+msgstr "回報問題"
+
+#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+msgid "On-Screen Keys & Clicks Visualizer"
+msgstr "螢幕按鍵與點擊視覺化工具"
+
+#: src/frontend/keysclicks-window.c:140
+msgid "Close to switch monitor"
+msgstr "關閉以切換螢幕"
+
+#: src/frontend/keysclicks-window.c:141
+msgid ""
+"The overlay moves to the new monitor the next time you open the app. Your "
+"settings are already saved — closing now is safe."
+msgstr ""
+"下次開啟應用程式時，浮層會移動到新的螢幕。您的設定已儲存 — 現在關閉是安全的。"
+
+#: src/frontend/keysclicks-window.c:151
+msgid "Close"
+msgstr "關閉"
+
+#. Language --------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+msgid "Language"
+msgstr "語言"
+
+#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+msgid "System (default)"
+msgstr "系統（預設）"
+
+#: src/frontend/keysclicks-window.c:512
+msgid "Keyboard layout"
+msgstr "鍵盤配置"
+
+#: src/frontend/keysclicks-window.c:547
+msgid "Automatic"
+msgstr "自動"
+
+#: src/frontend/keysclicks-window.c:553
+#, c-format
+msgid "Monitor %u"
+msgstr "顯示器 %u"
+
+#: src/frontend/keysclicks-window.c:572
+msgid "Overlay monitor"
+msgstr "浮層螢幕"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Pin to dock"
+msgstr "釘選到 Dock"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Unpin from dock"
+msgstr "從 Dock 取消釘選"
+
+#: src/frontend/keysclicks-window.c:605
+msgid "Remove this app from the COSMIC dock"
+msgstr "從 COSMIC Dock 中移除此應用程式"
+
+#: src/frontend/keysclicks-window.c:606
+msgid "Pin this app to the COSMIC dock"
+msgstr "將此應用程式釘選到 COSMIC Dock"
+
+#: src/frontend/keysclicks-window.c:644
+msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
+msgstr "無 — 點擊「設定」，然後按住快捷鍵（例如 Ctrl+Shift+H）"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+msgid "Press keys…"
+msgstr "請按鍵…"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+msgid "Set"
+msgstr "設定"
+
+#: src/frontend/keysclicks-window.c:702
+msgid "Hold the shortcut…  "
+msgstr "按住快捷鍵…  "
+
+#: src/frontend/keysclicks-window.c:750
+msgid "Hold the shortcut, then release to save. Esc cancels."
+msgstr "按住快捷鍵，然後放開以儲存。按 Esc 取消。"
+
+#: src/frontend/keysclicks-window.c:780
+msgid "On-Screen Keys & Clicks Visualizer — Settings"
+msgstr "螢幕按鍵與點擊視覺化工具 — 設定"
+
+#. Privacy master toggle, prominent on the left of the header.
+#: src/frontend/keysclicks-window.c:798
+msgid "Hide keys"
+msgstr "隱藏按鍵"
+
+#: src/frontend/keysclicks-window.c:801
+msgid "Hide keystrokes (privacy): show • instead of keys"
+msgstr "隱藏按鍵輸入（隱私）：以 • 代替按鍵顯示"
+
+#. overlay display layout, right below
+#. Privacy ---------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:833
+msgid "Privacy"
+msgstr "隱私"
+
+#: src/frontend/keysclicks-window.c:835
+msgid "Hide keystrokes (privacy)"
+msgstr "隱藏按鍵輸入（隱私）"
+
+#: src/frontend/keysclicks-window.c:844
+msgid "Automatic password hiding"
+msgstr "自動隱藏密碼"
+
+#: src/frontend/keysclicks-window.c:852
+msgid ""
+"On (PRO) — passwords are hidden automatically in password fields. This "
+"module is still in development."
+msgstr "開啟（PRO）— 在密碼欄位中自動隱藏密碼。此模組仍在開發中。"
+
+#: src/frontend/keysclicks-window.c:854
+msgid ""
+"PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
+"\"Hide keys\" toggle/shortcut works now."
+msgstr ""
+"PRO — 開發中。自動隱藏功能將隨 PRO 附加元件提供；手動的「Hide keys」開關/快捷"
+"鍵現已可用。"
+
+#: src/frontend/keysclicks-window.c:863
+msgid "Hide-keys shortcut"
+msgstr "隱藏按鍵快捷鍵"
+
+#: src/frontend/keysclicks-window.c:868
+msgid "Click, then hold a key combination to assign it"
+msgstr "點擊，然後按住組合鍵以進行指派"
+
+#: src/frontend/keysclicks-window.c:877
+msgid "System keyboard shortcuts"
+msgstr "系統鍵盤快捷鍵"
+
+#: src/frontend/keysclicks-window.c:880
+msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
+msgstr "全域快捷鍵在作業系統中設定 — 開啟 COSMIC → 鍵盤 → 快捷鍵"
+
+#: src/frontend/keysclicks-window.c:882
+msgid "Open settings"
+msgstr "開啟設定"
+
+#. Keys & clicks display -------------------------------------------------
+#: src/frontend/keysclicks-window.c:889
+msgid "Keys and clicks display"
+msgstr "按鍵與點擊顯示"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Compact"
+msgstr "精簡"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Composed"
+msgstr "組合"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Raw"
+msgstr "原始"
+
+#: src/frontend/keysclicks-window.c:891
+msgid "Label style"
+msgstr "標籤樣式"
+
+#: src/frontend/keysclicks-window.c:892
+msgid "Font size"
+msgstr "字型大小"
+
+#: src/frontend/keysclicks-window.c:893
+msgid "Show keyboard"
+msgstr "顯示鍵盤"
+
+#: src/frontend/keysclicks-window.c:895
+msgid "Show mouse"
+msgstr "顯示滑鼠"
+
+#: src/frontend/keysclicks-window.c:896
+msgid "Show Shift separately"
+msgstr "單獨顯示 Shift"
+
+#: src/frontend/keysclicks-window.c:898
+msgid "Draw border"
+msgstr "繪製邊框"
+
+#. Position & behaviour --------------------------------------------------
+#: src/frontend/keysclicks-window.c:901
+msgid "Position and behaviour"
+msgstr "位置與行為"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Bottom"
+msgstr "底部"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Top"
+msgstr "頂部"
+
+#: src/frontend/keysclicks-window.c:903
+msgid "Screen edge"
+msgstr "螢幕邊緣"
+
+#. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
+#: src/frontend/keysclicks-window.c:905
+msgid "Horizontal margin (%)"
+msgstr "水平邊距 (%)"
+
+#: src/frontend/keysclicks-window.c:907
+msgid "Vertical margin (%)"
+msgstr "垂直邊距 (%)"
+
+#: src/frontend/keysclicks-window.c:910
+msgid "Keep visible (no timeout)"
+msgstr "保持顯示（無逾時）"
+
+#: src/frontend/keysclicks-window.c:913
+msgid "Timeout (ms)"
+msgstr "逾時 (ms)"
+
+#: src/frontend/keysclicks-window.c:916
+msgid "Bar opacity (%)"
+msgstr "長條不透明度 (%)"
+
+#: src/frontend/main.c:106
+msgid "Left Click"
+msgstr "左鍵點擊"
+
+#: src/frontend/main.c:108
+msgid "Right Click"
+msgstr "右鍵點擊"
+
+#: src/frontend/main.c:110
+msgid "Middle Click"
+msgstr "中鍵點擊"
+
+#: src/frontend/main.c:122
+#, c-format
+msgid "Mouse(%u)"
+msgstr "滑鼠(%u)"
+
+#: src/frontend/main.c:407
+msgid "Start without opening the settings window"
+msgstr "啟動時不開啟設定視窗"
+
+#, c-format
+#~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"
+#~ msgstr "校準：點擊標記  (%u / %u)   —   右鍵點擊取消"
+
+#~ msgid "Monitor"
+#~ msgstr "顯示器"
+
+#~ msgid "Show overlay"
+#~ msgstr "顯示覆蓋層"
+
+#~ msgid "Privacy provider"
+#~ msgstr "隱私提供者"
+
+#, c-format
+#~ msgid "Loaded: %s"
+#~ msgstr "已載入：%s"
+
+#~ msgid "(unnamed)"
+#~ msgstr "（未命名）"
+
+#~ msgid "Not loaded — manual toggle only (optional add-on module)"
+#~ msgstr "未載入 — 僅手動切換（選用附加模組）"
+
+#~ msgid "Panic chord"
+#~ msgstr "緊急組合鍵"
+
+#~ msgid ""
+#~ "Optional global chord to toggle hiding (disabled by default). Set "
+#~ "\"panic_chord\" in settings.ini to '+'-joined evdev keycodes, e.g. "
+#~ "29+56+63. Detected read-only from input; never injected."
+#~ msgstr ""
+#~ "用於切換隱藏的選用全域組合鍵（預設停用）。在 settings.ini 中將"
+#~ "「panic_chord」設定為以 '+' 連接的 evdev 鍵碼，例如 29+56+63。僅從輸入以唯"
+#~ "讀方式偵測，絕不注入。"
+
+#~ msgid "Center"
+#~ msgstr "置中"
+
+#~ msgid "Left"
+#~ msgstr "靠左"
+
+#~ msgid "Right"
+#~ msgstr "靠右"
+
+#~ msgid "Alignment"
+#~ msgstr "對齊方式"
+
+#~ msgid "Click flash"
+#~ msgstr "點擊閃光"
+
+#~ msgid "Enable click flash"
+#~ msgstr "啟用點擊閃光"
+
+#~ msgid "Left-click colour"
+#~ msgstr "左鍵顏色"
+
+#~ msgid "Right-click colour"
+#~ msgstr "右鍵顏色"
+
+#~ msgid "Flash radius"
+#~ msgstr "閃光半徑"
+
+#~ msgid "Flash duration (ms)"
+#~ msgstr "閃光持續時間 (ms)"
+
+#~ msgid "Flash opacity (%)"
+#~ msgstr "閃光不透明度 (%)"
+
+#~ msgid "Cursor calibration"
+#~ msgstr "游標校準"
+
+#~ msgid "Calibrate click position"
+#~ msgstr "校準點擊位置"
+
+#~ msgid ""
+#~ "The flash is positioned from relative motion and can drift. Click the on-"
+#~ "screen markers (centre + four corners) on each monitor to correct it."
+#~ msgstr ""
+#~ "閃光位置根據相對移動計算，可能會發生偏移。請在每個顯示器上點擊螢幕標記（中"
+#~ "心 + 四角）以進行校正。"
+
+#~ msgid "Calibrate"
+#~ msgstr "校準"
+
+#~ msgid "Reset calibration"
+#~ msgstr "重設校準"
+
+#~ msgid "Reset"
+#~ msgstr "重設"
+
+#~ msgid "Global hotkey"
+#~ msgstr "全域快速鍵"
+
+#~ msgid "Toggle overlay"
+#~ msgstr "切換覆蓋層"
+
+#~ msgid ""
+#~ "Wayland has no client-side global hotkeys. Use the \"Show overlay\" "
+#~ "switch above, or bind a compositor shortcut. On COSMIC: Settings → "
+#~ "Keyboard → Custom shortcuts."
+#~ msgstr ""
+#~ "Wayland 沒有用戶端全域快速鍵。請使用上方的「顯示覆蓋層」開關，或繫結合成器"
+#~ "快速鍵。在 COSMIC 上：設定 → 鍵盤 → 自訂快速鍵。"

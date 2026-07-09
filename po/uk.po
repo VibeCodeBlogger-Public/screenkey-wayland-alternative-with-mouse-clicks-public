@@ -1,0 +1,451 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR VibeCodeBlogger
+# This file is distributed under the same license as the keysclicks package.
+# FIRST AUTHOR <keysclicks>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keysclicks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: keysclicks\n"
+"Language-Team: keysclicks\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/frontend/keysclicks-feedback.c:303
+msgid "Screenshot attached."
+msgstr "Знімок екрана додано."
+
+#: src/frontend/keysclicks-feedback.c:307
+msgid "Screenshot unavailable — your description still helps."
+msgstr "Знімок екрана недоступний — ваш опис усе одно допоможе."
+
+#: src/frontend/keysclicks-feedback.c:414
+#, c-format
+msgid "Report #%s sent — thank you!"
+msgstr "Звіт #%s надіслано — дякуємо!"
+
+#: src/frontend/keysclicks-feedback.c:416
+msgid "Report sent — thank you!"
+msgstr "Звіт надіслано — дякуємо!"
+
+#: src/frontend/keysclicks-feedback.c:424
+msgid "Could not send your report."
+msgstr "Не вдалося надіслати звіт."
+
+#: src/frontend/keysclicks-feedback.c:428
+msgid "Network error — please try again."
+msgstr "Помилка мережі — спробуйте ще раз."
+
+#: src/frontend/keysclicks-feedback.c:451
+msgid "Capturing screenshot…"
+msgstr "Створення знімка екрана…"
+
+#: src/frontend/keysclicks-feedback.c:502
+msgid "Sending…"
+msgstr "Надсилання…"
+
+#: src/frontend/keysclicks-feedback.c:541
+#: src/frontend/keysclicks-feedback.c:557
+msgid "Report a bug or idea"
+msgstr "Повідомити про помилку чи ідею"
+
+#: src/frontend/keysclicks-feedback.c:565
+msgid "🐞 Bug"
+msgstr "🐞 Помилка"
+
+#: src/frontend/keysclicks-feedback.c:566
+msgid "💡 Idea"
+msgstr "💡 Ідея"
+
+#: src/frontend/keysclicks-feedback.c:574
+msgid "What happened? (optional)"
+msgstr "Що сталося? (необов’язково)"
+
+#: src/frontend/keysclicks-feedback.c:593
+msgid "Attach screenshot of my screen"
+msgstr "Додати знімок мого екрана"
+
+#: src/frontend/keysclicks-feedback.c:598
+msgid "A screenshot may show sensitive on-screen content. Off by default."
+msgstr ""
+"Знімок екрана може містити конфіденційний вміст з екрана. За замовчуванням "
+"вимкнено."
+
+#: src/frontend/keysclicks-feedback.c:612
+msgid "Attach diagnostics (build, OS, monitors)"
+msgstr "Додати діагностику (збірка, ОС, монітори)"
+
+#: src/frontend/keysclicks-feedback.c:626
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: src/frontend/keysclicks-feedback.c:628
+msgid "Send"
+msgstr "Надіслати"
+
+#: src/frontend/keysclicks-feedback.c:651
+msgid "Report a bug"
+msgstr "Повідомити про помилку"
+
+#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+msgid "On-Screen Keys & Clicks Visualizer"
+msgstr "Екранний візуалізатор клавіш і кліків"
+
+#: src/frontend/keysclicks-window.c:140
+msgid "Close to switch monitor"
+msgstr "Закрийте, щоб змінити монітор"
+
+#: src/frontend/keysclicks-window.c:141
+msgid ""
+"The overlay moves to the new monitor the next time you open the app. Your "
+"settings are already saved — closing now is safe."
+msgstr ""
+"Оверлей переміститься на новий монітор під час наступного відкриття "
+"застосунку. Ваші налаштування вже збережено — закривати зараз безпечно."
+
+#: src/frontend/keysclicks-window.c:151
+msgid "Close"
+msgstr "Закрити"
+
+#. Language --------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+msgid "Language"
+msgstr "Мова"
+
+#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+msgid "System (default)"
+msgstr "Системна (за замовчуванням)"
+
+#: src/frontend/keysclicks-window.c:512
+msgid "Keyboard layout"
+msgstr "Розкладка клавіатури"
+
+#: src/frontend/keysclicks-window.c:547
+msgid "Automatic"
+msgstr "Автоматично"
+
+#: src/frontend/keysclicks-window.c:553
+#, c-format
+msgid "Monitor %u"
+msgstr "Монітор %u"
+
+#: src/frontend/keysclicks-window.c:572
+msgid "Overlay monitor"
+msgstr "Монітор оверлея"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Pin to dock"
+msgstr "Закріпити в доку"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Unpin from dock"
+msgstr "Відкріпити з доку"
+
+#: src/frontend/keysclicks-window.c:605
+msgid "Remove this app from the COSMIC dock"
+msgstr "Видалити цей застосунок з доку COSMIC"
+
+#: src/frontend/keysclicks-window.c:606
+msgid "Pin this app to the COSMIC dock"
+msgstr "Закріпити цей застосунок у доку COSMIC"
+
+#: src/frontend/keysclicks-window.c:644
+msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
+msgstr ""
+"Не задано — натисніть «Задати», потім утримуйте сполучення (напр. "
+"Ctrl+Shift+H)"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+msgid "Press keys…"
+msgstr "Натисніть клавіші…"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+msgid "Set"
+msgstr "Задати"
+
+#: src/frontend/keysclicks-window.c:702
+msgid "Hold the shortcut…  "
+msgstr "Утримуйте сполучення…  "
+
+#: src/frontend/keysclicks-window.c:750
+msgid "Hold the shortcut, then release to save. Esc cancels."
+msgstr "Утримуйте сполучення, потім відпустіть, щоб зберегти. Esc — скасувати."
+
+#: src/frontend/keysclicks-window.c:780
+msgid "On-Screen Keys & Clicks Visualizer — Settings"
+msgstr "Екранний візуалізатор клавіш і кліків — Налаштування"
+
+#. Privacy master toggle, prominent on the left of the header.
+#: src/frontend/keysclicks-window.c:798
+msgid "Hide keys"
+msgstr "Приховати клавіші"
+
+#: src/frontend/keysclicks-window.c:801
+msgid "Hide keystrokes (privacy): show • instead of keys"
+msgstr "Приховати натискання (приватність): показувати • замість клавіш"
+
+#. overlay display layout, right below
+#. Privacy ---------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:833
+msgid "Privacy"
+msgstr "Приватність"
+
+#: src/frontend/keysclicks-window.c:835
+msgid "Hide keystrokes (privacy)"
+msgstr "Приховати натискання (приватність)"
+
+#: src/frontend/keysclicks-window.c:844
+msgid "Automatic password hiding"
+msgstr "Автоматичне приховування паролів"
+
+#: src/frontend/keysclicks-window.c:852
+msgid ""
+"On (PRO) — passwords are hidden automatically in password fields. This "
+"module is still in development."
+msgstr ""
+"Увімк (PRO) — паролі автоматично приховуються в полях пароля. Цей модуль ще "
+"в розробці."
+
+#: src/frontend/keysclicks-window.c:854
+msgid ""
+"PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
+"\"Hide keys\" toggle/shortcut works now."
+msgstr ""
+"PRO — у розробці. Автоматичне приховування входить у доповнення PRO; ручний "
+"перемикач/сполучення \"Hide keys\" працює вже зараз."
+
+#: src/frontend/keysclicks-window.c:863
+msgid "Hide-keys shortcut"
+msgstr "Сполучення для приховування клавіш"
+
+#: src/frontend/keysclicks-window.c:868
+msgid "Click, then hold a key combination to assign it"
+msgstr "Натисніть, потім утримуйте сполучення клавіш, щоб призначити його"
+
+#: src/frontend/keysclicks-window.c:877
+msgid "System keyboard shortcuts"
+msgstr "Системні комбінації клавіш"
+
+#: src/frontend/keysclicks-window.c:880
+msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
+msgstr ""
+"Глобальні сполучення задаються в ОС — відкрийте COSMIC → Клавіатура → "
+"Сполучення"
+
+#: src/frontend/keysclicks-window.c:882
+msgid "Open settings"
+msgstr "Відкрити налаштування"
+
+#. Keys & clicks display -------------------------------------------------
+#: src/frontend/keysclicks-window.c:889
+msgid "Keys and clicks display"
+msgstr "Відображення клавіш і кліків"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Compact"
+msgstr "Компактний"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Composed"
+msgstr "Складений"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Raw"
+msgstr "Вихідний"
+
+#: src/frontend/keysclicks-window.c:891
+msgid "Label style"
+msgstr "Стиль підписів"
+
+#: src/frontend/keysclicks-window.c:892
+msgid "Font size"
+msgstr "Розмір шрифту"
+
+#: src/frontend/keysclicks-window.c:893
+msgid "Show keyboard"
+msgstr "Показувати клавіатуру"
+
+#: src/frontend/keysclicks-window.c:895
+msgid "Show mouse"
+msgstr "Показувати мишу"
+
+#: src/frontend/keysclicks-window.c:896
+msgid "Show Shift separately"
+msgstr "Показувати Shift окремо"
+
+#: src/frontend/keysclicks-window.c:898
+msgid "Draw border"
+msgstr "Малювати рамку"
+
+#. Position & behaviour --------------------------------------------------
+#: src/frontend/keysclicks-window.c:901
+msgid "Position and behaviour"
+msgstr "Розташування та поведінка"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Bottom"
+msgstr "Знизу"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Top"
+msgstr "Зверху"
+
+#: src/frontend/keysclicks-window.c:903
+msgid "Screen edge"
+msgstr "Край екрана"
+
+#. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
+#: src/frontend/keysclicks-window.c:905
+msgid "Horizontal margin (%)"
+msgstr "Горизонтальний відступ (%)"
+
+#: src/frontend/keysclicks-window.c:907
+msgid "Vertical margin (%)"
+msgstr "Вертикальний відступ (%)"
+
+#: src/frontend/keysclicks-window.c:910
+msgid "Keep visible (no timeout)"
+msgstr "Завжди показувати (без тайм-ауту)"
+
+#: src/frontend/keysclicks-window.c:913
+msgid "Timeout (ms)"
+msgstr "Тайм-аут (ms)"
+
+#: src/frontend/keysclicks-window.c:916
+msgid "Bar opacity (%)"
+msgstr "Непрозорість панелі (%)"
+
+#: src/frontend/main.c:106
+msgid "Left Click"
+msgstr "Лівий клік"
+
+#: src/frontend/main.c:108
+msgid "Right Click"
+msgstr "Правий клік"
+
+#: src/frontend/main.c:110
+msgid "Middle Click"
+msgstr "Середній клік"
+
+#: src/frontend/main.c:122
+#, c-format
+msgid "Mouse(%u)"
+msgstr "Миша(%u)"
+
+#: src/frontend/main.c:407
+msgid "Start without opening the settings window"
+msgstr "Запуск без відкриття вікна налаштувань"
+
+#, c-format
+#~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"
+#~ msgstr ""
+#~ "Калібрування: натисніть на маркер  (%u / %u)   —   правий клік для "
+#~ "скасування"
+
+#~ msgid "Monitor"
+#~ msgstr "Монітор"
+
+#~ msgid "Show overlay"
+#~ msgstr "Показати оверлей"
+
+#~ msgid "Privacy provider"
+#~ msgstr "Провайдер приватності"
+
+#, c-format
+#~ msgid "Loaded: %s"
+#~ msgstr "Завантажено: %s"
+
+#~ msgid "(unnamed)"
+#~ msgstr "(без назви)"
+
+#~ msgid "Not loaded — manual toggle only (optional add-on module)"
+#~ msgstr "Не завантажено — лише ручне перемикання (додатковий модуль)"
+
+#~ msgid "Panic chord"
+#~ msgstr "Аварійна комбінація"
+
+#~ msgid ""
+#~ "Optional global chord to toggle hiding (disabled by default). Set "
+#~ "\"panic_chord\" in settings.ini to '+'-joined evdev keycodes, e.g. "
+#~ "29+56+63. Detected read-only from input; never injected."
+#~ msgstr ""
+#~ "Додаткова глобальна комбінація для перемикання приховування (типово "
+#~ "вимкнена). Задайте \"panic_chord\" у settings.ini як з'єднані через '+' "
+#~ "коди клавіш evdev, напр. 29+56+63. Зчитується з вводу лише для читання; "
+#~ "ніколи не інжектується."
+
+#~ msgid "Center"
+#~ msgstr "По центру"
+
+#~ msgid "Left"
+#~ msgstr "По лівому краю"
+
+#~ msgid "Right"
+#~ msgstr "По правому краю"
+
+#~ msgid "Alignment"
+#~ msgstr "Вирівнювання"
+
+#~ msgid "Click flash"
+#~ msgstr "Спалах кліку"
+
+#~ msgid "Enable click flash"
+#~ msgstr "Увімкнути спалах кліку"
+
+#~ msgid "Left-click colour"
+#~ msgstr "Колір лівого кліку"
+
+#~ msgid "Right-click colour"
+#~ msgstr "Колір правого кліку"
+
+#~ msgid "Flash radius"
+#~ msgstr "Радіус спалаху"
+
+#~ msgid "Flash duration (ms)"
+#~ msgstr "Тривалість спалаху (ms)"
+
+#~ msgid "Flash opacity (%)"
+#~ msgstr "Непрозорість спалаху (%)"
+
+#~ msgid "Cursor calibration"
+#~ msgstr "Калібрування курсора"
+
+#~ msgid "Calibrate click position"
+#~ msgstr "Калібрувати позицію кліку"
+
+#~ msgid ""
+#~ "The flash is positioned from relative motion and can drift. Click the on-"
+#~ "screen markers (centre + four corners) on each monitor to correct it."
+#~ msgstr ""
+#~ "Спалах позиціонується за відносним рухом і може зміщуватися. Натисніть на "
+#~ "екранні маркери (центр + чотири кути) на кожному моніторі, щоб це "
+#~ "виправити."
+
+#~ msgid "Calibrate"
+#~ msgstr "Калібрувати"
+
+#~ msgid "Reset calibration"
+#~ msgstr "Скинути калібрування"
+
+#~ msgid "Reset"
+#~ msgstr "Скинути"
+
+#~ msgid "Global hotkey"
+#~ msgstr "Глобальна гаряча клавіша"
+
+#~ msgid "Toggle overlay"
+#~ msgstr "Перемкнути оверлей"
+
+#~ msgid ""
+#~ "Wayland has no client-side global hotkeys. Use the \"Show overlay\" "
+#~ "switch above, or bind a compositor shortcut. On COSMIC: Settings → "
+#~ "Keyboard → Custom shortcuts."
+#~ msgstr ""
+#~ "У Wayland немає глобальних гарячих клавіш на боці клієнта. Використовуйте "
+#~ "перемикач \"Показати оверлей\" вище або призначте сполучення в "
+#~ "композиторі. У COSMIC: Налаштування → Клавіатура → Власні сполучення."

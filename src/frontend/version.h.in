@@ -1,0 +1,9 @@
+// SPDX-License-Identifier: Apache-2.0
+// Copyright 2026 VibeCodeBlogger
+//
+// Generated at BUILD time by meson's vcs_tag() — do not edit by hand.
+// KEYSCLICKS_BUILD is "<commit-count>.<short-hash>[+]" where the count auto-
+// increments with every commit (the "+" marks an uncommitted/dirty tree), so the
+// version shown in the settings header changes on every rollout.
+#pragma once
+#define KEYSCLICKS_BUILD "@VCS_TAG@"

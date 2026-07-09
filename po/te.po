@@ -1,0 +1,440 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR VibeCodeBlogger
+# This file is distributed under the same license as the keysclicks package.
+# FIRST AUTHOR <keysclicks>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keysclicks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: keysclicks\n"
+"Language-Team: keysclicks\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/frontend/keysclicks-feedback.c:303
+msgid "Screenshot attached."
+msgstr "స్క్రీన్‌షాట్ జతచేయబడింది."
+
+#: src/frontend/keysclicks-feedback.c:307
+msgid "Screenshot unavailable — your description still helps."
+msgstr "స్క్రీన్‌షాట్ అందుబాటులో లేదు — మీ వివరణ ఇప్పటికీ సహాయపడుతుంది."
+
+#: src/frontend/keysclicks-feedback.c:414
+#, c-format
+msgid "Report #%s sent — thank you!"
+msgstr "నివేదిక #%s పంపబడింది — ధన్యవాదాలు!"
+
+#: src/frontend/keysclicks-feedback.c:416
+msgid "Report sent — thank you!"
+msgstr "నివేదిక పంపబడింది — ధన్యవాదాలు!"
+
+#: src/frontend/keysclicks-feedback.c:424
+msgid "Could not send your report."
+msgstr "మీ నివేదికను పంపడం సాధ్యం కాలేదు."
+
+#: src/frontend/keysclicks-feedback.c:428
+msgid "Network error — please try again."
+msgstr "నెట్‌వర్క్ లోపం — దయచేసి మళ్లీ ప్రయత్నించండి."
+
+#: src/frontend/keysclicks-feedback.c:451
+msgid "Capturing screenshot…"
+msgstr "స్క్రీన్‌షాట్ తీస్తోంది…"
+
+#: src/frontend/keysclicks-feedback.c:502
+msgid "Sending…"
+msgstr "పంపుతోంది…"
+
+#: src/frontend/keysclicks-feedback.c:541
+#: src/frontend/keysclicks-feedback.c:557
+msgid "Report a bug or idea"
+msgstr "బగ్ లేదా ఆలోచనను నివేదించండి"
+
+#: src/frontend/keysclicks-feedback.c:565
+msgid "🐞 Bug"
+msgstr "🐞 బగ్"
+
+#: src/frontend/keysclicks-feedback.c:566
+msgid "💡 Idea"
+msgstr "💡 ఆలోచన"
+
+#: src/frontend/keysclicks-feedback.c:574
+msgid "What happened? (optional)"
+msgstr "ఏమి జరిగింది? (ఐచ్ఛికం)"
+
+#: src/frontend/keysclicks-feedback.c:593
+msgid "Attach screenshot of my screen"
+msgstr "నా స్క్రీన్ స్క్రీన్‌షాట్‌ను జతచేయండి"
+
+#: src/frontend/keysclicks-feedback.c:598
+msgid "A screenshot may show sensitive on-screen content. Off by default."
+msgstr "స్క్రీన్‌షాట్ స్క్రీన్‌పై ఉన్న సున్నితమైన కంటెంట్‌ను చూపించవచ్చు. అప్రమేయంగా ఆఫ్‌లో ఉంటుంది."
+
+#: src/frontend/keysclicks-feedback.c:612
+msgid "Attach diagnostics (build, OS, monitors)"
+msgstr "డయాగ్నస్టిక్స్‌ను జతచేయండి (బిల్డ్, OS, మానిటర్‌లు)"
+
+#: src/frontend/keysclicks-feedback.c:626
+msgid "Cancel"
+msgstr "రద్దు చేయి"
+
+#: src/frontend/keysclicks-feedback.c:628
+msgid "Send"
+msgstr "పంపు"
+
+#: src/frontend/keysclicks-feedback.c:651
+msgid "Report a bug"
+msgstr "బగ్‌ను నివేదించండి"
+
+#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+msgid "On-Screen Keys & Clicks Visualizer"
+msgstr "ఆన్-స్క్రీన్ కీలు & క్లిక్‌ల విజువలైజర్"
+
+#: src/frontend/keysclicks-window.c:140
+msgid "Close to switch monitor"
+msgstr "మానిటర్‌ను మార్చడానికి మూసివేయండి"
+
+#: src/frontend/keysclicks-window.c:141
+msgid ""
+"The overlay moves to the new monitor the next time you open the app. Your "
+"settings are already saved — closing now is safe."
+msgstr ""
+"మీరు యాప్‌ను తదుపరిసారి తెరిచినప్పుడు ఓవర్‌లే కొత్త మానిటర్‌కు తరలుతుంది. మీ సెట్టింగ్‌లు ఇప్పటికే సేవ్ "
+"చేయబడ్డాయి — ఇప్పుడు మూసివేయడం సురక్షితం."
+
+#: src/frontend/keysclicks-window.c:151
+msgid "Close"
+msgstr "మూసివేయి"
+
+#. Language --------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+msgid "Language"
+msgstr "భాష"
+
+#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+msgid "System (default)"
+msgstr "సిస్టమ్ (డిఫాల్ట్)"
+
+#: src/frontend/keysclicks-window.c:512
+msgid "Keyboard layout"
+msgstr "కీబోర్డ్ లేఅవుట్"
+
+#: src/frontend/keysclicks-window.c:547
+msgid "Automatic"
+msgstr "స్వయంచాలకం"
+
+#: src/frontend/keysclicks-window.c:553
+#, c-format
+msgid "Monitor %u"
+msgstr "మానిటర్ %u"
+
+#: src/frontend/keysclicks-window.c:572
+msgid "Overlay monitor"
+msgstr "ఓవర్‌లే మానిటర్"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Pin to dock"
+msgstr "డాక్‌కు పిన్ చేయి"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Unpin from dock"
+msgstr "డాక్ నుండి అన్‌పిన్ చేయి"
+
+#: src/frontend/keysclicks-window.c:605
+msgid "Remove this app from the COSMIC dock"
+msgstr "ఈ యాప్‌ను COSMIC డాక్ నుండి తీసివేయి"
+
+#: src/frontend/keysclicks-window.c:606
+msgid "Pin this app to the COSMIC dock"
+msgstr "ఈ యాప్‌ను COSMIC డాక్‌కు పిన్ చేయి"
+
+#: src/frontend/keysclicks-window.c:644
+msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
+msgstr "ఏదీ లేదు — సెట్ చేయి పై క్లిక్ చేసి, ఆపై షార్ట్‌కట్‌ను నొక్కి పట్టుకోండి (ఉదా. Ctrl+Shift+H)"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+msgid "Press keys…"
+msgstr "కీలను నొక్కండి…"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+msgid "Set"
+msgstr "సెట్ చేయి"
+
+#: src/frontend/keysclicks-window.c:702
+msgid "Hold the shortcut…  "
+msgstr "షార్ట్‌కట్‌ను నొక్కి పట్టుకోండి…  "
+
+#: src/frontend/keysclicks-window.c:750
+msgid "Hold the shortcut, then release to save. Esc cancels."
+msgstr "షార్ట్‌కట్‌ను నొక్కి పట్టుకుని, ఆపై సేవ్ చేయడానికి విడుదల చేయండి. Esc రద్దు చేస్తుంది."
+
+#: src/frontend/keysclicks-window.c:780
+msgid "On-Screen Keys & Clicks Visualizer — Settings"
+msgstr "ఆన్-స్క్రీన్ కీలు & క్లిక్‌ల విజువలైజర్ — సెట్టింగ్‌లు"
+
+#. Privacy master toggle, prominent on the left of the header.
+#: src/frontend/keysclicks-window.c:798
+msgid "Hide keys"
+msgstr "కీలను దాచు"
+
+#: src/frontend/keysclicks-window.c:801
+msgid "Hide keystrokes (privacy): show • instead of keys"
+msgstr "కీస్ట్రోక్‌లను దాచు (గోప్యత): కీలకు బదులుగా • చూపు"
+
+#. overlay display layout, right below
+#. Privacy ---------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:833
+msgid "Privacy"
+msgstr "గోప్యత"
+
+#: src/frontend/keysclicks-window.c:835
+msgid "Hide keystrokes (privacy)"
+msgstr "కీస్ట్రోక్‌లను దాచు (గోప్యత)"
+
+#: src/frontend/keysclicks-window.c:844
+msgid "Automatic password hiding"
+msgstr "స్వయంచాలక పాస్‌వర్డ్ దాచడం"
+
+#: src/frontend/keysclicks-window.c:852
+msgid ""
+"On (PRO) — passwords are hidden automatically in password fields. This "
+"module is still in development."
+msgstr ""
+"ఆన్ (PRO) — పాస్‌వర్డ్ ఫీల్డ్‌లలో పాస్‌వర్డ్‌లు స్వయంచాలకంగా దాచబడతాయి. ఈ మాడ్యూల్ ఇంకా అభివృద్ధిలో ఉంది."
+
+#: src/frontend/keysclicks-window.c:854
+msgid ""
+"PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
+"\"Hide keys\" toggle/shortcut works now."
+msgstr ""
+"PRO — అభివృద్ధిలో ఉంది. స్వయంచాలక దాచడం PRO యాడ్-ఆన్‌తో వస్తుంది; మాన్యువల్ \"Hide keys\" టోగుల్/"
+"షార్ట్‌కట్ ఇప్పుడు పని చేస్తుంది."
+
+#: src/frontend/keysclicks-window.c:863
+msgid "Hide-keys shortcut"
+msgstr "కీలను దాచు షార్ట్‌కట్"
+
+#: src/frontend/keysclicks-window.c:868
+msgid "Click, then hold a key combination to assign it"
+msgstr "క్లిక్ చేసి, ఆపై దాన్ని కేటాయించడానికి కీ కలయికను నొక్కి పట్టుకోండి"
+
+#: src/frontend/keysclicks-window.c:877
+msgid "System keyboard shortcuts"
+msgstr "సిస్టమ్ కీబోర్డ్ షార్ట్‌కట్‌లు"
+
+#: src/frontend/keysclicks-window.c:880
+msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
+msgstr "గ్లోబల్ షార్ట్‌కట్‌లు OSలో సెట్ చేయబడతాయి — COSMIC → కీబోర్డ్ → షార్ట్‌కట్‌లు తెరవండి"
+
+#: src/frontend/keysclicks-window.c:882
+msgid "Open settings"
+msgstr "సెట్టింగ్‌లను తెరవండి"
+
+#. Keys & clicks display -------------------------------------------------
+#: src/frontend/keysclicks-window.c:889
+msgid "Keys and clicks display"
+msgstr "కీలు మరియు క్లిక్‌ల ప్రదర్శన"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Compact"
+msgstr "కాంపాక్ట్"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Composed"
+msgstr "కంపోజ్డ్"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Raw"
+msgstr "రా"
+
+#: src/frontend/keysclicks-window.c:891
+msgid "Label style"
+msgstr "లేబుల్ శైలి"
+
+#: src/frontend/keysclicks-window.c:892
+msgid "Font size"
+msgstr "ఫాంట్ పరిమాణం"
+
+#: src/frontend/keysclicks-window.c:893
+msgid "Show keyboard"
+msgstr "కీబోర్డ్ చూపు"
+
+#: src/frontend/keysclicks-window.c:895
+msgid "Show mouse"
+msgstr "మౌస్ చూపు"
+
+#: src/frontend/keysclicks-window.c:896
+msgid "Show Shift separately"
+msgstr "Shift ను విడిగా చూపు"
+
+#: src/frontend/keysclicks-window.c:898
+msgid "Draw border"
+msgstr "అంచు గీయి"
+
+#. Position & behaviour --------------------------------------------------
+#: src/frontend/keysclicks-window.c:901
+msgid "Position and behaviour"
+msgstr "స్థానం మరియు ప్రవర్తన"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Bottom"
+msgstr "కింద"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Top"
+msgstr "పైన"
+
+#: src/frontend/keysclicks-window.c:903
+msgid "Screen edge"
+msgstr "స్క్రీన్ అంచు"
+
+#. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
+#: src/frontend/keysclicks-window.c:905
+msgid "Horizontal margin (%)"
+msgstr "క్షితిజ సమాంతర మార్జిన్ (%)"
+
+#: src/frontend/keysclicks-window.c:907
+msgid "Vertical margin (%)"
+msgstr "నిలువు మార్జిన్ (%)"
+
+#: src/frontend/keysclicks-window.c:910
+msgid "Keep visible (no timeout)"
+msgstr "కనిపించేలా ఉంచు (టైమ్‌అవుట్ లేదు)"
+
+#: src/frontend/keysclicks-window.c:913
+msgid "Timeout (ms)"
+msgstr "టైమ్‌అవుట్ (ms)"
+
+#: src/frontend/keysclicks-window.c:916
+msgid "Bar opacity (%)"
+msgstr "బార్ అపారదర్శకత (%)"
+
+#: src/frontend/main.c:106
+msgid "Left Click"
+msgstr "ఎడమ క్లిక్"
+
+#: src/frontend/main.c:108
+msgid "Right Click"
+msgstr "కుడి క్లిక్"
+
+#: src/frontend/main.c:110
+msgid "Middle Click"
+msgstr "మధ్య క్లిక్"
+
+#: src/frontend/main.c:122
+#, c-format
+msgid "Mouse(%u)"
+msgstr "మౌస్(%u)"
+
+#: src/frontend/main.c:407
+msgid "Start without opening the settings window"
+msgstr "సెట్టింగ్‌ల విండోను తెరవకుండా ప్రారంభించు"
+
+#, c-format
+#~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"
+#~ msgstr "క్రమాంకనం: గుర్తును క్లిక్ చేయండి (%u / %u) — రద్దు చేయడానికి కుడి-క్లిక్ చేయండి"
+
+#~ msgid "Monitor"
+#~ msgstr "మానిటర్"
+
+#~ msgid "Show overlay"
+#~ msgstr "ఓవర్‌లేను చూపు"
+
+#~ msgid "Privacy provider"
+#~ msgstr "గోప్యతా ప్రొవైడర్"
+
+#, c-format
+#~ msgid "Loaded: %s"
+#~ msgstr "లోడ్ చేయబడింది: %s"
+
+#~ msgid "(unnamed)"
+#~ msgstr "(పేరు లేనిది)"
+
+#~ msgid "Not loaded — manual toggle only (optional add-on module)"
+#~ msgstr "లోడ్ కాలేదు — మాన్యువల్ టోగుల్ మాత్రమే (ఐచ్ఛిక యాడ్-ఆన్ మాడ్యూల్)"
+
+#~ msgid "Panic chord"
+#~ msgstr "ప్యానిక్ కీ కలయిక"
+
+#~ msgid ""
+#~ "Optional global chord to toggle hiding (disabled by default). Set "
+#~ "\"panic_chord\" in settings.ini to '+'-joined evdev keycodes, e.g. "
+#~ "29+56+63. Detected read-only from input; never injected."
+#~ msgstr ""
+#~ "దాచడాన్ని టోగుల్ చేయడానికి ఐచ్ఛిక గ్లోబల్ కీ కలయిక (డిఫాల్ట్‌గా నిలిపివేయబడింది). settings.ini లో "
+#~ "\"panic_chord\" ను '+'-తో కలిపిన evdev కీకోడ్‌లకు సెట్ చేయండి, ఉదా. 29+56+63. ఇన్‌పుట్ "
+#~ "నుండి చదవడానికి-మాత్రమే గుర్తించబడుతుంది; ఎప్పుడూ ఇంజెక్ట్ చేయబడదు."
+
+#~ msgid "Center"
+#~ msgstr "మధ్య"
+
+#~ msgid "Left"
+#~ msgstr "ఎడమ"
+
+#~ msgid "Right"
+#~ msgstr "కుడి"
+
+#~ msgid "Alignment"
+#~ msgstr "సమలేఖనం"
+
+#~ msgid "Click flash"
+#~ msgstr "క్లిక్ ఫ్లాష్"
+
+#~ msgid "Enable click flash"
+#~ msgstr "క్లిక్ ఫ్లాష్‌ను ప్రారంభించు"
+
+#~ msgid "Left-click colour"
+#~ msgstr "ఎడమ-క్లిక్ రంగు"
+
+#~ msgid "Right-click colour"
+#~ msgstr "కుడి-క్లిక్ రంగు"
+
+#~ msgid "Flash radius"
+#~ msgstr "ఫ్లాష్ వ్యాసార్థం"
+
+#~ msgid "Flash duration (ms)"
+#~ msgstr "ఫ్లాష్ వ్యవధి (ms)"
+
+#~ msgid "Flash opacity (%)"
+#~ msgstr "ఫ్లాష్ అపారదర్శకత (%)"
+
+#~ msgid "Cursor calibration"
+#~ msgstr "కర్సర్ క్రమాంకనం"
+
+#~ msgid "Calibrate click position"
+#~ msgstr "క్లిక్ స్థానాన్ని క్రమాంకనం చేయి"
+
+#~ msgid ""
+#~ "The flash is positioned from relative motion and can drift. Click the on-"
+#~ "screen markers (centre + four corners) on each monitor to correct it."
+#~ msgstr ""
+#~ "ఫ్లాష్ సాపేక్ష చలనం ఆధారంగా ఉంచబడుతుంది కాబట్టి ఇది తప్పుకోవచ్చు. దాన్ని సరిచేయడానికి ప్రతి మానిటర్‌పై "
+#~ "ఉన్న ఆన్-స్క్రీన్ గుర్తులను (మధ్య + నాలుగు మూలలు) క్లిక్ చేయండి."
+
+#~ msgid "Calibrate"
+#~ msgstr "క్రమాంకనం చేయి"
+
+#~ msgid "Reset calibration"
+#~ msgstr "క్రమాంకనాన్ని రీసెట్ చేయి"
+
+#~ msgid "Reset"
+#~ msgstr "రీసెట్"
+
+#~ msgid "Global hotkey"
+#~ msgstr "గ్లోబల్ హాట్‌కీ"
+
+#~ msgid "Toggle overlay"
+#~ msgstr "ఓవర్‌లేను టోగుల్ చేయి"
+
+#~ msgid ""
+#~ "Wayland has no client-side global hotkeys. Use the \"Show overlay\" "
+#~ "switch above, or bind a compositor shortcut. On COSMIC: Settings → "
+#~ "Keyboard → Custom shortcuts."
+#~ msgstr ""
+#~ "Wayland కు క్లయింట్-వైపు గ్లోబల్ హాట్‌కీలు లేవు. పైన ఉన్న \"ఓవర్‌లేను చూపు\" స్విచ్‌ను "
+#~ "ఉపయోగించండి, లేదా కంపోజిటర్ షార్ట్‌కట్‌ను బంధించండి. COSMIC లో: సెట్టింగ్‌లు → కీబోర్డ్ → అనుకూల "
+#~ "షార్ట్‌కట్‌లు."

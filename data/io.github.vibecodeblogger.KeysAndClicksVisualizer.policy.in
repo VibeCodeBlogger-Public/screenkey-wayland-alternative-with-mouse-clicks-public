@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>On-Screen Keys &amp; Clicks Visualizer</vendor>
+  <vendor_url>https://github.com/vibecodeblogger/screenkey-wayland-alternative-with-mouse-clicks</vendor_url>
+
+  <action id="io.github.vibecodeblogger.KeysAndClicksVisualizer">
+    <description>Capture keyboard and mouse input for the on-screen overlay</description>
+    <message>Authentication is required to read keyboard and mouse events for the on-screen overlay</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">@BACKEND_PATH@</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action>
+</policyconfig>

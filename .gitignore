@@ -1,0 +1,17 @@
+# Build directories
+/build/
+/builddir/
+build*/
+
+# Compiled objects / binaries
+*.o
+*.a
+*.so
+*.so.*
+
+# Editor / tooling
+*.swp
+*~
+.cache/
+compile_commands.json
+.vscode/

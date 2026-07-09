@@ -1,0 +1,440 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR VibeCodeBlogger
+# This file is distributed under the same license as the keysclicks package.
+# FIRST AUTHOR <keysclicks>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keysclicks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: keysclicks\n"
+"Language-Team: keysclicks\n"
+"Language: am\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/frontend/keysclicks-feedback.c:303
+msgid "Screenshot attached."
+msgstr "ቅጽበታዊ ገጽ እይታ ተያይዟል።"
+
+#: src/frontend/keysclicks-feedback.c:307
+msgid "Screenshot unavailable — your description still helps."
+msgstr "ቅጽበታዊ ገጽ እይታ አይገኝም — መግለጫዎ አሁንም ይረዳል።"
+
+#: src/frontend/keysclicks-feedback.c:414
+#, c-format
+msgid "Report #%s sent — thank you!"
+msgstr "ሪፖርት #%s ተልኳል — እናመሰግናለን!"
+
+#: src/frontend/keysclicks-feedback.c:416
+msgid "Report sent — thank you!"
+msgstr "ሪፖርት ተልኳል — እናመሰግናለን!"
+
+#: src/frontend/keysclicks-feedback.c:424
+msgid "Could not send your report."
+msgstr "ሪፖርትዎን መላክ አልተቻለም።"
+
+#: src/frontend/keysclicks-feedback.c:428
+msgid "Network error — please try again."
+msgstr "የአውታረ መረብ ስህተት — እባክዎ እንደገና ይሞክሩ።"
+
+#: src/frontend/keysclicks-feedback.c:451
+msgid "Capturing screenshot…"
+msgstr "ቅጽበታዊ ገጽ እይታ በመቅረጽ ላይ…"
+
+#: src/frontend/keysclicks-feedback.c:502
+msgid "Sending…"
+msgstr "በመላክ ላይ…"
+
+#: src/frontend/keysclicks-feedback.c:541
+#: src/frontend/keysclicks-feedback.c:557
+msgid "Report a bug or idea"
+msgstr "ሳንካ ወይም ሀሳብ ሪፖርት ያድርጉ"
+
+#: src/frontend/keysclicks-feedback.c:565
+msgid "🐞 Bug"
+msgstr "🐞 ሳንካ"
+
+#: src/frontend/keysclicks-feedback.c:566
+msgid "💡 Idea"
+msgstr "💡 ሀሳብ"
+
+#: src/frontend/keysclicks-feedback.c:574
+msgid "What happened? (optional)"
+msgstr "ምን ተከሰተ? (አማራጭ)"
+
+#: src/frontend/keysclicks-feedback.c:593
+msgid "Attach screenshot of my screen"
+msgstr "የማያ ገጼን ቅጽበታዊ እይታ አያይዝ"
+
+#: src/frontend/keysclicks-feedback.c:598
+msgid "A screenshot may show sensitive on-screen content. Off by default."
+msgstr "ቅጽበታዊ ገጽ እይታ በማያ ገጹ ላይ ያለ ሚስጥራዊ ይዘት ሊያሳይ ይችላል። በነባሪ ጠፍቷል።"
+
+#: src/frontend/keysclicks-feedback.c:612
+msgid "Attach diagnostics (build, OS, monitors)"
+msgstr "ምርመራዎችን አያይዝ (ግንባታ፣ ስርዓተ ክወና፣ ማሳያዎች)"
+
+#: src/frontend/keysclicks-feedback.c:626
+msgid "Cancel"
+msgstr "ሰርዝ"
+
+#: src/frontend/keysclicks-feedback.c:628
+msgid "Send"
+msgstr "ላክ"
+
+#: src/frontend/keysclicks-feedback.c:651
+msgid "Report a bug"
+msgstr "ሳንካ ሪፖርት ያድርጉ"
+
+#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+msgid "On-Screen Keys & Clicks Visualizer"
+msgstr "የስክሪን ላይ ቁልፎችና ጠቅታዎች አሳያ"
+
+#: src/frontend/keysclicks-window.c:140
+msgid "Close to switch monitor"
+msgstr "ማሳያ ለመቀየር ዝጋ"
+
+#: src/frontend/keysclicks-window.c:141
+msgid ""
+"The overlay moves to the new monitor the next time you open the app. Your "
+"settings are already saved — closing now is safe."
+msgstr ""
+"መደራረቢያው በሚቀጥለው ጊዜ መተግበሪያውን ሲከፍቱ ወደ አዲሱ ማሳያ ይንቀሳቀሳል። ቅንብሮችዎ ቀድሞውኑ ተቀምጠዋል — "
+"አሁን መዝጋት ደህንነቱ የተጠበቀ ነው።"
+
+#: src/frontend/keysclicks-window.c:151
+msgid "Close"
+msgstr "ዝጋ"
+
+#. Language --------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+msgid "Language"
+msgstr "ቋንቋ"
+
+#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+msgid "System (default)"
+msgstr "ሲስተም (ነባሪ)"
+
+#: src/frontend/keysclicks-window.c:512
+msgid "Keyboard layout"
+msgstr "የቁልፍ ሰሌዳ አቀማመጥ"
+
+#: src/frontend/keysclicks-window.c:547
+msgid "Automatic"
+msgstr "ራስ-ሰር"
+
+#: src/frontend/keysclicks-window.c:553
+#, c-format
+msgid "Monitor %u"
+msgstr "ማሳያ %u"
+
+#: src/frontend/keysclicks-window.c:572
+msgid "Overlay monitor"
+msgstr "የመደራረቢያ ማሳያ"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Pin to dock"
+msgstr "ወደ ዶክ ሰካ"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Unpin from dock"
+msgstr "ከዶክ አውጣ"
+
+#: src/frontend/keysclicks-window.c:605
+msgid "Remove this app from the COSMIC dock"
+msgstr "ይህን መተግበሪያ ከCOSMIC ዶክ አስወግድ"
+
+#: src/frontend/keysclicks-window.c:606
+msgid "Pin this app to the COSMIC dock"
+msgstr "ይህን መተግበሪያ ወደ COSMIC ዶክ ሰካ"
+
+#: src/frontend/keysclicks-window.c:644
+msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
+msgstr "የለም — አዘጋጅ ን ጠቅ ያድርጉ፣ ከዚያ አቋራጭ ይያዙ (ለምሳሌ Ctrl+Shift+H)"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+msgid "Press keys…"
+msgstr "ቁልፎችን ይጫኑ…"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+msgid "Set"
+msgstr "አዘጋጅ"
+
+#: src/frontend/keysclicks-window.c:702
+msgid "Hold the shortcut…  "
+msgstr "አቋራጩን ይያዙ…  "
+
+#: src/frontend/keysclicks-window.c:750
+msgid "Hold the shortcut, then release to save. Esc cancels."
+msgstr "አቋራጩን ይያዙ፣ ከዚያ ለማስቀመጥ ይልቀቁ። Esc ይሰርዛል።"
+
+#: src/frontend/keysclicks-window.c:780
+msgid "On-Screen Keys & Clicks Visualizer — Settings"
+msgstr "የስክሪን ላይ ቁልፎችና ጠቅታዎች አሳያ — ቅንብሮች"
+
+#. Privacy master toggle, prominent on the left of the header.
+#: src/frontend/keysclicks-window.c:798
+msgid "Hide keys"
+msgstr "ቁልፎችን ደብቅ"
+
+#: src/frontend/keysclicks-window.c:801
+msgid "Hide keystrokes (privacy): show • instead of keys"
+msgstr "የቁልፍ ጭነቶችን ደብቅ (ግላዊነት): በቁልፎች ፈንታ • አሳይ"
+
+#. overlay display layout, right below
+#. Privacy ---------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:833
+msgid "Privacy"
+msgstr "ግላዊነት"
+
+#: src/frontend/keysclicks-window.c:835
+msgid "Hide keystrokes (privacy)"
+msgstr "የቁልፍ ጭነቶችን ደብቅ (ግላዊነት)"
+
+#: src/frontend/keysclicks-window.c:844
+msgid "Automatic password hiding"
+msgstr "ራስ-ሰር የይለፍ ቃል መደበቅ"
+
+#: src/frontend/keysclicks-window.c:852
+msgid ""
+"On (PRO) — passwords are hidden automatically in password fields. This "
+"module is still in development."
+msgstr ""
+"በርቷል (PRO) — በይለፍ ቃል መስኮች ውስጥ የይለፍ ቃላት በራስ-ሰር ይደበቃሉ። ይህ ሞጁል አሁንም በማደግ ላይ ነው።"
+
+#: src/frontend/keysclicks-window.c:854
+msgid ""
+"PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
+"\"Hide keys\" toggle/shortcut works now."
+msgstr ""
+"PRO — በማደግ ላይ። ራስ-ሰር መደበቅ ከ PRO ተጨማሪ ጋር ይመጣል፤ በእጅ የሚሰራው \"Hide keys\" መቀያየሪያ/"
+"አቋራጭ አሁን ይሰራል።"
+
+#: src/frontend/keysclicks-window.c:863
+msgid "Hide-keys shortcut"
+msgstr "ቁልፎችን የመደበቅ አቋራጭ"
+
+#: src/frontend/keysclicks-window.c:868
+msgid "Click, then hold a key combination to assign it"
+msgstr "ጠቅ ያድርጉ፣ ከዚያ ለመመደብ የቁልፍ ጥምረት ይያዙ"
+
+#: src/frontend/keysclicks-window.c:877
+msgid "System keyboard shortcuts"
+msgstr "የስርዓት የቁልፍ ሰሌዳ አቋራጮች"
+
+#: src/frontend/keysclicks-window.c:880
+msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
+msgstr ""
+"ዓለም አቀፍ አቋራጮች በስርዓተ ክወናው ውስጥ ተዘጋጅተዋል — COSMIC → የቁልፍ ሰሌዳ → አቋራጮች ን ይክፈቱ"
+
+#: src/frontend/keysclicks-window.c:882
+msgid "Open settings"
+msgstr "ቅንብሮችን ክፈት"
+
+#. Keys & clicks display -------------------------------------------------
+#: src/frontend/keysclicks-window.c:889
+msgid "Keys and clicks display"
+msgstr "የቁልፎችና ጠቅታዎች ማሳያ"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Compact"
+msgstr "የተጨመቀ"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Composed"
+msgstr "የተዋቀረ"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Raw"
+msgstr "ጥሬ"
+
+#: src/frontend/keysclicks-window.c:891
+msgid "Label style"
+msgstr "የመለያ ስልት"
+
+#: src/frontend/keysclicks-window.c:892
+msgid "Font size"
+msgstr "የፊደል መጠን"
+
+#: src/frontend/keysclicks-window.c:893
+msgid "Show keyboard"
+msgstr "ኪቦርድ አሳይ"
+
+#: src/frontend/keysclicks-window.c:895
+msgid "Show mouse"
+msgstr "መዳፊት አሳይ"
+
+#: src/frontend/keysclicks-window.c:896
+msgid "Show Shift separately"
+msgstr "Shift ለብቻው አሳይ"
+
+#: src/frontend/keysclicks-window.c:898
+msgid "Draw border"
+msgstr "ድንበር ሳል"
+
+#. Position & behaviour --------------------------------------------------
+#: src/frontend/keysclicks-window.c:901
+msgid "Position and behaviour"
+msgstr "አቀማመጥና ባህሪ"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Bottom"
+msgstr "ታች"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Top"
+msgstr "ላይ"
+
+#: src/frontend/keysclicks-window.c:903
+msgid "Screen edge"
+msgstr "የስክሪን ጠርዝ"
+
+#. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
+#: src/frontend/keysclicks-window.c:905
+msgid "Horizontal margin (%)"
+msgstr "አግድም ኅዳግ (%)"
+
+#: src/frontend/keysclicks-window.c:907
+msgid "Vertical margin (%)"
+msgstr "ቁም ኅዳግ (%)"
+
+#: src/frontend/keysclicks-window.c:910
+msgid "Keep visible (no timeout)"
+msgstr "የሚታይ አድርግ (ጊዜ ማብቂያ የለም)"
+
+#: src/frontend/keysclicks-window.c:913
+msgid "Timeout (ms)"
+msgstr "የጊዜ ማብቂያ (ms)"
+
+#: src/frontend/keysclicks-window.c:916
+msgid "Bar opacity (%)"
+msgstr "የአሞሌ ግልጽነት (%)"
+
+#: src/frontend/main.c:106
+msgid "Left Click"
+msgstr "የግራ ጠቅታ"
+
+#: src/frontend/main.c:108
+msgid "Right Click"
+msgstr "የቀኝ ጠቅታ"
+
+#: src/frontend/main.c:110
+msgid "Middle Click"
+msgstr "የመሃል ጠቅታ"
+
+#: src/frontend/main.c:122
+#, c-format
+msgid "Mouse(%u)"
+msgstr "መዳፊት(%u)"
+
+#: src/frontend/main.c:407
+msgid "Start without opening the settings window"
+msgstr "የቅንብሮች መስኮትን ሳይከፍት ጀምር"
+
+#, c-format
+#~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"
+#~ msgstr "ማስተካከያ: ምልክቱን ጠቅ ያድርጉ (%u / %u) — ለመሰረዝ በቀኝ ጠቅ ያድርጉ"
+
+#~ msgid "Monitor"
+#~ msgstr "ማሳያ"
+
+#~ msgid "Show overlay"
+#~ msgstr "ተደራቢን አሳይ"
+
+#~ msgid "Privacy provider"
+#~ msgstr "የግላዊነት አቅራቢ"
+
+#, c-format
+#~ msgid "Loaded: %s"
+#~ msgstr "ተጭኗል: %s"
+
+#~ msgid "(unnamed)"
+#~ msgstr "(ስም የለሽ)"
+
+#~ msgid "Not loaded — manual toggle only (optional add-on module)"
+#~ msgstr "አልተጫነም — በእጅ መቀያየር ብቻ (አማራጭ ተጨማሪ ሞዱል)"
+
+#~ msgid "Panic chord"
+#~ msgstr "የፓኒክ ጥምረት"
+
+#~ msgid ""
+#~ "Optional global chord to toggle hiding (disabled by default). Set "
+#~ "\"panic_chord\" in settings.ini to '+'-joined evdev keycodes, e.g. "
+#~ "29+56+63. Detected read-only from input; never injected."
+#~ msgstr ""
+#~ "መደበቅን ለመቀያየር አማራጭ ዓለም አቀፍ ጥምረት (በነባሪ ተሰናክሏል)። በsettings.ini ውስጥ "
+#~ "\"panic_chord\"ን በ'+' የተያያዙ evdev የቁልፍ ኮዶች ያዘጋጁ፣ ለምሳሌ 29+56+63። ከግቤት በንባብ-"
+#~ "ብቻ ተለይቶ ይታወቃል፤ በጭራሽ አይገባም።"
+
+#~ msgid "Center"
+#~ msgstr "መሃል"
+
+#~ msgid "Left"
+#~ msgstr "ግራ"
+
+#~ msgid "Right"
+#~ msgstr "ቀኝ"
+
+#~ msgid "Alignment"
+#~ msgstr "አሰላለፍ"
+
+#~ msgid "Click flash"
+#~ msgstr "የጠቅታ ብልጭታ"
+
+#~ msgid "Enable click flash"
+#~ msgstr "የጠቅታ ብልጭታን አንቃ"
+
+#~ msgid "Left-click colour"
+#~ msgstr "የግራ ጠቅታ ቀለም"
+
+#~ msgid "Right-click colour"
+#~ msgstr "የቀኝ ጠቅታ ቀለም"
+
+#~ msgid "Flash radius"
+#~ msgstr "የብልጭታ ራዲየስ"
+
+#~ msgid "Flash duration (ms)"
+#~ msgstr "የብልጭታ ቆይታ (ms)"
+
+#~ msgid "Flash opacity (%)"
+#~ msgstr "የብልጭታ ግልጽነት (%)"
+
+#~ msgid "Cursor calibration"
+#~ msgstr "የጠቋሚ ማስተካከያ"
+
+#~ msgid "Calibrate click position"
+#~ msgstr "የጠቅታ አቀማመጥ አስተካክል"
+
+#~ msgid ""
+#~ "The flash is positioned from relative motion and can drift. Click the on-"
+#~ "screen markers (centre + four corners) on each monitor to correct it."
+#~ msgstr ""
+#~ "ብልጭታው ከአንጻራዊ እንቅስቃሴ ተነስቶ ስለሚቀመጥ ሊንሸራተት ይችላል። ለማስተካከል በእያንዳንዱ ማሳያ ላይ ያሉትን "
+#~ "የስክሪን ላይ ምልክቶች (መሃል + አራት ማዕዘኖች) ጠቅ ያድርጉ።"
+
+#~ msgid "Calibrate"
+#~ msgstr "አስተካክል"
+
+#~ msgid "Reset calibration"
+#~ msgstr "ማስተካከያን ዳግም አስጀምር"
+
+#~ msgid "Reset"
+#~ msgstr "ዳግም አስጀምር"
+
+#~ msgid "Global hotkey"
+#~ msgstr "ዓለም አቀፍ አቋራጭ"
+
+#~ msgid "Toggle overlay"
+#~ msgstr "ተደራቢን ቀያይር"
+
+#~ msgid ""
+#~ "Wayland has no client-side global hotkeys. Use the \"Show overlay\" "
+#~ "switch above, or bind a compositor shortcut. On COSMIC: Settings → "
+#~ "Keyboard → Custom shortcuts."
+#~ msgstr ""
+#~ "Wayland ከደንበኛ-ጎን ዓለም አቀፍ አቋራጮች የሉትም። ከላይ ያለውን \"ተደራቢን አሳይ\" መቀየሪያ ይጠቀሙ፣ "
+#~ "ወይም የኮምፖዚተር አቋራጭ ያስሩ። በCOSMIC: ቅንብሮች → ኪቦርድ → ብጁ አቋራጮች።"

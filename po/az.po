@@ -1,0 +1,451 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR VibeCodeBlogger
+# This file is distributed under the same license as the keysclicks package.
+# FIRST AUTHOR <keysclicks>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keysclicks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: keysclicks\n"
+"Language-Team: keysclicks\n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/frontend/keysclicks-feedback.c:303
+msgid "Screenshot attached."
+msgstr "Ekran görüntüsü əlavə edildi."
+
+#: src/frontend/keysclicks-feedback.c:307
+msgid "Screenshot unavailable — your description still helps."
+msgstr "Ekran görüntüsü əlçatan deyil — təsviriniz yenə də kömək edir."
+
+#: src/frontend/keysclicks-feedback.c:414
+#, c-format
+msgid "Report #%s sent — thank you!"
+msgstr "Hesabat #%s göndərildi — təşəkkür edirik!"
+
+#: src/frontend/keysclicks-feedback.c:416
+msgid "Report sent — thank you!"
+msgstr "Hesabat göndərildi — təşəkkür edirik!"
+
+#: src/frontend/keysclicks-feedback.c:424
+msgid "Could not send your report."
+msgstr "Hesabatınız göndərilə bilmədi."
+
+#: src/frontend/keysclicks-feedback.c:428
+msgid "Network error — please try again."
+msgstr "Şəbəkə xətası — zəhmət olmasa yenidən cəhd edin."
+
+#: src/frontend/keysclicks-feedback.c:451
+msgid "Capturing screenshot…"
+msgstr "Ekran görüntüsü çəkilir…"
+
+#: src/frontend/keysclicks-feedback.c:502
+msgid "Sending…"
+msgstr "Göndərilir…"
+
+#: src/frontend/keysclicks-feedback.c:541
+#: src/frontend/keysclicks-feedback.c:557
+msgid "Report a bug or idea"
+msgstr "Xəta və ya ideya bildirin"
+
+#: src/frontend/keysclicks-feedback.c:565
+msgid "🐞 Bug"
+msgstr "🐞 Xəta"
+
+#: src/frontend/keysclicks-feedback.c:566
+msgid "💡 Idea"
+msgstr "💡 İdeya"
+
+#: src/frontend/keysclicks-feedback.c:574
+msgid "What happened? (optional)"
+msgstr "Nə baş verdi? (istəyə bağlı)"
+
+#: src/frontend/keysclicks-feedback.c:593
+msgid "Attach screenshot of my screen"
+msgstr "Ekranımın görüntüsünü əlavə et"
+
+#: src/frontend/keysclicks-feedback.c:598
+msgid "A screenshot may show sensitive on-screen content. Off by default."
+msgstr ""
+"Ekran görüntüsü ekrandakı həssas məzmunu göstərə bilər. Standart olaraq "
+"söndürülüb."
+
+#: src/frontend/keysclicks-feedback.c:612
+msgid "Attach diagnostics (build, OS, monitors)"
+msgstr "Diaqnostikanı əlavə et (build, OS, monitorlar)"
+
+#: src/frontend/keysclicks-feedback.c:626
+msgid "Cancel"
+msgstr "Ləğv et"
+
+#: src/frontend/keysclicks-feedback.c:628
+msgid "Send"
+msgstr "Göndər"
+
+#: src/frontend/keysclicks-feedback.c:651
+msgid "Report a bug"
+msgstr "Xəta bildirin"
+
+#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+msgid "On-Screen Keys & Clicks Visualizer"
+msgstr "Ekranda Düymələr və Kliklər Vizuallaşdırıcısı"
+
+#: src/frontend/keysclicks-window.c:140
+msgid "Close to switch monitor"
+msgstr "Monitoru dəyişmək üçün bağlayın"
+
+#: src/frontend/keysclicks-window.c:141
+msgid ""
+"The overlay moves to the new monitor the next time you open the app. Your "
+"settings are already saved — closing now is safe."
+msgstr ""
+"Tətbiqi növbəti dəfə açdığınızda örtük yeni monitora keçir. Parametrləriniz "
+"artıq yadda saxlanılıb — indi bağlamaq təhlükəsizdir."
+
+#: src/frontend/keysclicks-window.c:151
+msgid "Close"
+msgstr "Bağla"
+
+#. Language --------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+msgid "Language"
+msgstr "Dil"
+
+#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+msgid "System (default)"
+msgstr "Sistem (defolt)"
+
+#: src/frontend/keysclicks-window.c:512
+msgid "Keyboard layout"
+msgstr "Klaviatura düzümü"
+
+#: src/frontend/keysclicks-window.c:547
+msgid "Automatic"
+msgstr "Avtomatik"
+
+#: src/frontend/keysclicks-window.c:553
+#, c-format
+msgid "Monitor %u"
+msgstr "Monitor %u"
+
+#: src/frontend/keysclicks-window.c:572
+msgid "Overlay monitor"
+msgstr "Örtük monitoru"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Pin to dock"
+msgstr "Doka bərkit"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Unpin from dock"
+msgstr "Dokdan çıxart"
+
+#: src/frontend/keysclicks-window.c:605
+msgid "Remove this app from the COSMIC dock"
+msgstr "Bu tətbiqi COSMIC dokundan çıxart"
+
+#: src/frontend/keysclicks-window.c:606
+msgid "Pin this app to the COSMIC dock"
+msgstr "Bu tətbiqi COSMIC dokuna bərkit"
+
+#: src/frontend/keysclicks-window.c:644
+msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
+msgstr ""
+"Yoxdur — Təyin et düyməsini basın, sonra qısayolu basılı saxlayın (məs. "
+"Ctrl+Shift+H)"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+msgid "Press keys…"
+msgstr "Düymələri basın…"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+msgid "Set"
+msgstr "Təyin et"
+
+#: src/frontend/keysclicks-window.c:702
+msgid "Hold the shortcut…  "
+msgstr "Qısayolu basılı saxlayın…  "
+
+#: src/frontend/keysclicks-window.c:750
+msgid "Hold the shortcut, then release to save. Esc cancels."
+msgstr ""
+"Qısayolu basılı saxlayın, sonra yadda saxlamaq üçün buraxın. Esc ləğv edir."
+
+#: src/frontend/keysclicks-window.c:780
+msgid "On-Screen Keys & Clicks Visualizer — Settings"
+msgstr "Ekranda Düymələr və Kliklər Vizuallaşdırıcısı — Parametrlər"
+
+#. Privacy master toggle, prominent on the left of the header.
+#: src/frontend/keysclicks-window.c:798
+msgid "Hide keys"
+msgstr "Düymələri gizlət"
+
+#: src/frontend/keysclicks-window.c:801
+msgid "Hide keystrokes (privacy): show • instead of keys"
+msgstr "Düymə basışlarını gizlət (məxfilik): düymələr əvəzinə • göstər"
+
+#. overlay display layout, right below
+#. Privacy ---------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:833
+msgid "Privacy"
+msgstr "Məxfilik"
+
+#: src/frontend/keysclicks-window.c:835
+msgid "Hide keystrokes (privacy)"
+msgstr "Düymə basışlarını gizlət (məxfilik)"
+
+#: src/frontend/keysclicks-window.c:844
+msgid "Automatic password hiding"
+msgstr "Avtomatik parol gizlətmə"
+
+#: src/frontend/keysclicks-window.c:852
+msgid ""
+"On (PRO) — passwords are hidden automatically in password fields. This "
+"module is still in development."
+msgstr ""
+"Aktiv (PRO) — parollar parol sahələrində avtomatik gizlədilir. Bu modul hələ "
+"də hazırlanır."
+
+#: src/frontend/keysclicks-window.c:854
+msgid ""
+"PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
+"\"Hide keys\" toggle/shortcut works now."
+msgstr ""
+"PRO — hazırlanır. Avtomatik gizlətmə PRO əlavəsi ilə gəlir; əl ilə idarə "
+"olunan \"Hide keys\" keçidi/qısayolu indi işləyir."
+
+#: src/frontend/keysclicks-window.c:863
+msgid "Hide-keys shortcut"
+msgstr "Düymələri gizlətmə qısayolu"
+
+#: src/frontend/keysclicks-window.c:868
+msgid "Click, then hold a key combination to assign it"
+msgstr ""
+"Təyin etmək üçün klikləyin, sonra düymə kombinasiyasını basılı saxlayın"
+
+#: src/frontend/keysclicks-window.c:877
+msgid "System keyboard shortcuts"
+msgstr "Sistem klaviatura qısayolları"
+
+#: src/frontend/keysclicks-window.c:880
+msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
+msgstr ""
+"Qlobal qısayollar OS-də təyin edilir — COSMIC → Klaviatura → Qısayollar açın"
+
+#: src/frontend/keysclicks-window.c:882
+msgid "Open settings"
+msgstr "Parametrləri aç"
+
+#. Keys & clicks display -------------------------------------------------
+#: src/frontend/keysclicks-window.c:889
+msgid "Keys and clicks display"
+msgstr "Düymə və kliklərin göstərilməsi"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Compact"
+msgstr "Kompakt"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Composed"
+msgstr "Birləşdirilmiş"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Raw"
+msgstr "Xam"
+
+#: src/frontend/keysclicks-window.c:891
+msgid "Label style"
+msgstr "Etiket üslubu"
+
+#: src/frontend/keysclicks-window.c:892
+msgid "Font size"
+msgstr "Şrift ölçüsü"
+
+#: src/frontend/keysclicks-window.c:893
+msgid "Show keyboard"
+msgstr "Klaviaturanı göstər"
+
+#: src/frontend/keysclicks-window.c:895
+msgid "Show mouse"
+msgstr "Siçanı göstər"
+
+#: src/frontend/keysclicks-window.c:896
+msgid "Show Shift separately"
+msgstr "Shift-i ayrıca göstər"
+
+#: src/frontend/keysclicks-window.c:898
+msgid "Draw border"
+msgstr "Sərhəd çək"
+
+#. Position & behaviour --------------------------------------------------
+#: src/frontend/keysclicks-window.c:901
+msgid "Position and behaviour"
+msgstr "Mövqe və davranış"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Bottom"
+msgstr "Alt"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Top"
+msgstr "Üst"
+
+#: src/frontend/keysclicks-window.c:903
+msgid "Screen edge"
+msgstr "Ekran kənarı"
+
+#. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
+#: src/frontend/keysclicks-window.c:905
+msgid "Horizontal margin (%)"
+msgstr "Üfüqi kənar (%)"
+
+#: src/frontend/keysclicks-window.c:907
+msgid "Vertical margin (%)"
+msgstr "Şaquli kənar (%)"
+
+#: src/frontend/keysclicks-window.c:910
+msgid "Keep visible (no timeout)"
+msgstr "Görünən qalsın (vaxt aşımı yoxdur)"
+
+#: src/frontend/keysclicks-window.c:913
+msgid "Timeout (ms)"
+msgstr "Vaxt aşımı (ms)"
+
+#: src/frontend/keysclicks-window.c:916
+msgid "Bar opacity (%)"
+msgstr "Panel şəffaflığı (%)"
+
+#: src/frontend/main.c:106
+msgid "Left Click"
+msgstr "Sol klik"
+
+#: src/frontend/main.c:108
+msgid "Right Click"
+msgstr "Sağ klik"
+
+#: src/frontend/main.c:110
+msgid "Middle Click"
+msgstr "Orta klik"
+
+#: src/frontend/main.c:122
+#, c-format
+msgid "Mouse(%u)"
+msgstr "Siçan(%u)"
+
+#: src/frontend/main.c:407
+msgid "Start without opening the settings window"
+msgstr "Parametrlər pəncərəsini açmadan başlat"
+
+#, c-format
+#~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"
+#~ msgstr ""
+#~ "Kalibrləmə: nişanı klikləyin  (%u / %u)   —   ləğv etmək üçün sağ "
+#~ "klikləyin"
+
+#~ msgid "Monitor"
+#~ msgstr "Monitor"
+
+#~ msgid "Show overlay"
+#~ msgstr "Örtüyü göstər"
+
+#~ msgid "Privacy provider"
+#~ msgstr "Məxfilik provayderi"
+
+#, c-format
+#~ msgid "Loaded: %s"
+#~ msgstr "Yükləndi: %s"
+
+#~ msgid "(unnamed)"
+#~ msgstr "(adsız)"
+
+#~ msgid "Not loaded — manual toggle only (optional add-on module)"
+#~ msgstr "Yüklənməyib — yalnız əl ilə keçid (opsional əlavə modul)"
+
+#~ msgid "Panic chord"
+#~ msgstr "Panik kombinasiya"
+
+#~ msgid ""
+#~ "Optional global chord to toggle hiding (disabled by default). Set "
+#~ "\"panic_chord\" in settings.ini to '+'-joined evdev keycodes, e.g. "
+#~ "29+56+63. Detected read-only from input; never injected."
+#~ msgstr ""
+#~ "Gizlətməni keçirmək üçün opsional qlobal kombinasiya (defolt olaraq "
+#~ "deaktivdir). settings.ini faylında \"panic_chord\" dəyərini '+' ilə "
+#~ "birləşdirilmiş evdev kod nömrələrinə təyin edin, məsələn 29+56+63. "
+#~ "Girişdən yalnız oxumaq üçün aşkarlanır; heç vaxt yeridilmir."
+
+#~ msgid "Center"
+#~ msgstr "Mərkəz"
+
+#~ msgid "Left"
+#~ msgstr "Sol"
+
+#~ msgid "Right"
+#~ msgstr "Sağ"
+
+#~ msgid "Alignment"
+#~ msgstr "Düzləndirmə"
+
+#~ msgid "Click flash"
+#~ msgstr "Klik parıltısı"
+
+#~ msgid "Enable click flash"
+#~ msgstr "Klik parıltısını aktiv et"
+
+#~ msgid "Left-click colour"
+#~ msgstr "Sol klik rəngi"
+
+#~ msgid "Right-click colour"
+#~ msgstr "Sağ klik rəngi"
+
+#~ msgid "Flash radius"
+#~ msgstr "Parıltı radiusu"
+
+#~ msgid "Flash duration (ms)"
+#~ msgstr "Parıltı müddəti (ms)"
+
+#~ msgid "Flash opacity (%)"
+#~ msgstr "Parıltı şəffaflığı (%)"
+
+#~ msgid "Cursor calibration"
+#~ msgstr "Kursor kalibrasiyası"
+
+#~ msgid "Calibrate click position"
+#~ msgstr "Klik mövqeyini kalibrlə"
+
+#~ msgid ""
+#~ "The flash is positioned from relative motion and can drift. Click the on-"
+#~ "screen markers (centre + four corners) on each monitor to correct it."
+#~ msgstr ""
+#~ "Parıltı nisbi hərəkətə görə yerləşdirilir və sürüşə bilər. Onu düzəltmək "
+#~ "üçün hər monitorda ekran nişanlarını (mərkəz + dörd künc) klikləyin."
+
+#~ msgid "Calibrate"
+#~ msgstr "Kalibrlə"
+
+#~ msgid "Reset calibration"
+#~ msgstr "Kalibrasiyanı sıfırla"
+
+#~ msgid "Reset"
+#~ msgstr "Sıfırla"
+
+#~ msgid "Global hotkey"
+#~ msgstr "Qlobal qaynar düymə"
+
+#~ msgid "Toggle overlay"
+#~ msgstr "Örtüyü keçir"
+
+#~ msgid ""
+#~ "Wayland has no client-side global hotkeys. Use the \"Show overlay\" "
+#~ "switch above, or bind a compositor shortcut. On COSMIC: Settings → "
+#~ "Keyboard → Custom shortcuts."
+#~ msgstr ""
+#~ "Wayland-də müştəri tərəfli qlobal qaynar düymələr yoxdur. Yuxarıdakı "
+#~ "\"Örtüyü göstər\" açarından istifadə edin və ya kompozitor qısayolunu "
+#~ "təyin edin. COSMIC-də: Parametrlər → Klaviatura → Fərdi qısayollar."

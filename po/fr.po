@@ -1,0 +1,452 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR VibeCodeBlogger
+# This file is distributed under the same license as the keysclicks package.
+# FIRST AUTHOR <keysclicks>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keysclicks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: keysclicks\n"
+"Language-Team: keysclicks\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/frontend/keysclicks-feedback.c:303
+msgid "Screenshot attached."
+msgstr "Capture d'écran jointe."
+
+#: src/frontend/keysclicks-feedback.c:307
+msgid "Screenshot unavailable — your description still helps."
+msgstr "Capture d'écran indisponible — votre description reste utile."
+
+#: src/frontend/keysclicks-feedback.c:414
+#, c-format
+msgid "Report #%s sent — thank you!"
+msgstr "Rapport n° %s envoyé — merci !"
+
+#: src/frontend/keysclicks-feedback.c:416
+msgid "Report sent — thank you!"
+msgstr "Rapport envoyé — merci !"
+
+#: src/frontend/keysclicks-feedback.c:424
+msgid "Could not send your report."
+msgstr "Impossible d'envoyer votre rapport."
+
+#: src/frontend/keysclicks-feedback.c:428
+msgid "Network error — please try again."
+msgstr "Erreur réseau — veuillez réessayer."
+
+#: src/frontend/keysclicks-feedback.c:451
+msgid "Capturing screenshot…"
+msgstr "Capture d'écran en cours…"
+
+#: src/frontend/keysclicks-feedback.c:502
+msgid "Sending…"
+msgstr "Envoi…"
+
+#: src/frontend/keysclicks-feedback.c:541
+#: src/frontend/keysclicks-feedback.c:557
+msgid "Report a bug or idea"
+msgstr "Signaler un bug ou une idée"
+
+#: src/frontend/keysclicks-feedback.c:565
+msgid "🐞 Bug"
+msgstr "🐞 Bug"
+
+#: src/frontend/keysclicks-feedback.c:566
+msgid "💡 Idea"
+msgstr "💡 Idée"
+
+#: src/frontend/keysclicks-feedback.c:574
+msgid "What happened? (optional)"
+msgstr "Que s'est-il passé ? (facultatif)"
+
+#: src/frontend/keysclicks-feedback.c:593
+msgid "Attach screenshot of my screen"
+msgstr "Joindre une capture de mon écran"
+
+#: src/frontend/keysclicks-feedback.c:598
+msgid "A screenshot may show sensitive on-screen content. Off by default."
+msgstr ""
+"Une capture peut révéler du contenu sensible à l'écran. Désactivé par défaut."
+
+#: src/frontend/keysclicks-feedback.c:612
+msgid "Attach diagnostics (build, OS, monitors)"
+msgstr "Joindre les diagnostics (version, SE, moniteurs)"
+
+#: src/frontend/keysclicks-feedback.c:626
+msgid "Cancel"
+msgstr "Annuler"
+
+#: src/frontend/keysclicks-feedback.c:628
+msgid "Send"
+msgstr "Envoyer"
+
+#: src/frontend/keysclicks-feedback.c:651
+msgid "Report a bug"
+msgstr "Signaler un bug"
+
+#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+msgid "On-Screen Keys & Clicks Visualizer"
+msgstr "Visualiseur de touches et clics à l'écran"
+
+#: src/frontend/keysclicks-window.c:140
+msgid "Close to switch monitor"
+msgstr "Fermez pour changer de moniteur"
+
+#: src/frontend/keysclicks-window.c:141
+msgid ""
+"The overlay moves to the new monitor the next time you open the app. Your "
+"settings are already saved — closing now is safe."
+msgstr ""
+"La superposition passe sur le nouveau moniteur au prochain lancement de "
+"l'application. Vos paramètres sont déjà enregistrés — vous pouvez fermer "
+"maintenant sans risque."
+
+#: src/frontend/keysclicks-window.c:151
+msgid "Close"
+msgstr "Fermer"
+
+#. Language --------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+msgid "Language"
+msgstr "Langue"
+
+#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+msgid "System (default)"
+msgstr "Système (par défaut)"
+
+#: src/frontend/keysclicks-window.c:512
+msgid "Keyboard layout"
+msgstr "Disposition du clavier"
+
+#: src/frontend/keysclicks-window.c:547
+msgid "Automatic"
+msgstr "Automatique"
+
+#: src/frontend/keysclicks-window.c:553
+#, c-format
+msgid "Monitor %u"
+msgstr "Écran %u"
+
+#: src/frontend/keysclicks-window.c:572
+msgid "Overlay monitor"
+msgstr "Moniteur de la superposition"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Pin to dock"
+msgstr "Épingler au dock"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Unpin from dock"
+msgstr "Détacher du dock"
+
+#: src/frontend/keysclicks-window.c:605
+msgid "Remove this app from the COSMIC dock"
+msgstr "Retirer cette application du dock COSMIC"
+
+#: src/frontend/keysclicks-window.c:606
+msgid "Pin this app to the COSMIC dock"
+msgstr "Épingler cette application au dock COSMIC"
+
+#: src/frontend/keysclicks-window.c:644
+msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
+msgstr ""
+"Aucun — cliquez sur Définir, puis maintenez un raccourci (p. ex. "
+"Ctrl+Shift+H)"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+msgid "Press keys…"
+msgstr "Appuyez sur les touches…"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+msgid "Set"
+msgstr "Définir"
+
+#: src/frontend/keysclicks-window.c:702
+msgid "Hold the shortcut…  "
+msgstr "Maintenez le raccourci…  "
+
+#: src/frontend/keysclicks-window.c:750
+msgid "Hold the shortcut, then release to save. Esc cancels."
+msgstr "Maintenez le raccourci, puis relâchez pour enregistrer. Esc annule."
+
+#: src/frontend/keysclicks-window.c:780
+msgid "On-Screen Keys & Clicks Visualizer — Settings"
+msgstr "Visualiseur de touches et clics à l'écran — Paramètres"
+
+#. Privacy master toggle, prominent on the left of the header.
+#: src/frontend/keysclicks-window.c:798
+msgid "Hide keys"
+msgstr "Masquer les touches"
+
+#: src/frontend/keysclicks-window.c:801
+msgid "Hide keystrokes (privacy): show • instead of keys"
+msgstr "Masquer les frappes (confidentialité) : afficher • au lieu des touches"
+
+#. overlay display layout, right below
+#. Privacy ---------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:833
+msgid "Privacy"
+msgstr "Confidentialité"
+
+#: src/frontend/keysclicks-window.c:835
+msgid "Hide keystrokes (privacy)"
+msgstr "Masquer les frappes (confidentialité)"
+
+#: src/frontend/keysclicks-window.c:844
+msgid "Automatic password hiding"
+msgstr "Masquage automatique des mots de passe"
+
+#: src/frontend/keysclicks-window.c:852
+msgid ""
+"On (PRO) — passwords are hidden automatically in password fields. This "
+"module is still in development."
+msgstr ""
+"Activé (PRO) — les mots de passe sont masqués automatiquement dans les "
+"champs de mot de passe. Ce module est encore en développement."
+
+#: src/frontend/keysclicks-window.c:854
+msgid ""
+"PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
+"\"Hide keys\" toggle/shortcut works now."
+msgstr ""
+"PRO — en développement. Le masquage automatique est fourni avec le module "
+"PRO ; l'option/le raccourci manuel \"Hide keys\" fonctionne déjà."
+
+#: src/frontend/keysclicks-window.c:863
+msgid "Hide-keys shortcut"
+msgstr "Raccourci pour masquer les touches"
+
+#: src/frontend/keysclicks-window.c:868
+msgid "Click, then hold a key combination to assign it"
+msgstr "Cliquez, puis maintenez une combinaison de touches pour l'attribuer"
+
+#: src/frontend/keysclicks-window.c:877
+msgid "System keyboard shortcuts"
+msgstr "Raccourcis clavier du système"
+
+#: src/frontend/keysclicks-window.c:880
+msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
+msgstr ""
+"Les raccourcis globaux se règlent dans le SE — ouvrez COSMIC → Clavier → "
+"Raccourcis"
+
+#: src/frontend/keysclicks-window.c:882
+msgid "Open settings"
+msgstr "Ouvrir les paramètres"
+
+#. Keys & clicks display -------------------------------------------------
+#: src/frontend/keysclicks-window.c:889
+msgid "Keys and clicks display"
+msgstr "Affichage des touches et clics"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Compact"
+msgstr "Compact"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Composed"
+msgstr "Composé"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Raw"
+msgstr "Brut"
+
+#: src/frontend/keysclicks-window.c:891
+msgid "Label style"
+msgstr "Style d'étiquette"
+
+#: src/frontend/keysclicks-window.c:892
+msgid "Font size"
+msgstr "Taille de police"
+
+#: src/frontend/keysclicks-window.c:893
+msgid "Show keyboard"
+msgstr "Afficher le clavier"
+
+#: src/frontend/keysclicks-window.c:895
+msgid "Show mouse"
+msgstr "Afficher la souris"
+
+#: src/frontend/keysclicks-window.c:896
+msgid "Show Shift separately"
+msgstr "Afficher Shift séparément"
+
+#: src/frontend/keysclicks-window.c:898
+msgid "Draw border"
+msgstr "Dessiner la bordure"
+
+#. Position & behaviour --------------------------------------------------
+#: src/frontend/keysclicks-window.c:901
+msgid "Position and behaviour"
+msgstr "Position et comportement"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Bottom"
+msgstr "Bas"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Top"
+msgstr "Haut"
+
+#: src/frontend/keysclicks-window.c:903
+msgid "Screen edge"
+msgstr "Bord de l'écran"
+
+#. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
+#: src/frontend/keysclicks-window.c:905
+msgid "Horizontal margin (%)"
+msgstr "Marge horizontale (%)"
+
+#: src/frontend/keysclicks-window.c:907
+msgid "Vertical margin (%)"
+msgstr "Marge verticale (%)"
+
+#: src/frontend/keysclicks-window.c:910
+msgid "Keep visible (no timeout)"
+msgstr "Garder visible (sans délai)"
+
+#: src/frontend/keysclicks-window.c:913
+msgid "Timeout (ms)"
+msgstr "Délai (ms)"
+
+#: src/frontend/keysclicks-window.c:916
+msgid "Bar opacity (%)"
+msgstr "Opacité de la barre (%)"
+
+#: src/frontend/main.c:106
+msgid "Left Click"
+msgstr "Clic gauche"
+
+#: src/frontend/main.c:108
+msgid "Right Click"
+msgstr "Clic droit"
+
+#: src/frontend/main.c:110
+msgid "Middle Click"
+msgstr "Clic du milieu"
+
+#: src/frontend/main.c:122
+#, c-format
+msgid "Mouse(%u)"
+msgstr "Souris(%u)"
+
+#: src/frontend/main.c:407
+msgid "Start without opening the settings window"
+msgstr "Démarrer sans ouvrir la fenêtre des paramètres"
+
+#, c-format
+#~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"
+#~ msgstr ""
+#~ "Calibrage : cliquez sur le repère  (%u / %u)   —   clic droit pour annuler"
+
+#~ msgid "Monitor"
+#~ msgstr "Écran"
+
+#~ msgid "Show overlay"
+#~ msgstr "Afficher la superposition"
+
+#~ msgid "Privacy provider"
+#~ msgstr "Fournisseur de confidentialité"
+
+#, c-format
+#~ msgid "Loaded: %s"
+#~ msgstr "Chargé : %s"
+
+#~ msgid "(unnamed)"
+#~ msgstr "(sans nom)"
+
+#~ msgid "Not loaded — manual toggle only (optional add-on module)"
+#~ msgstr ""
+#~ "Non chargé — bascule manuelle uniquement (module complémentaire optionnel)"
+
+#~ msgid "Panic chord"
+#~ msgstr "Combinaison de panique"
+
+#~ msgid ""
+#~ "Optional global chord to toggle hiding (disabled by default). Set "
+#~ "\"panic_chord\" in settings.ini to '+'-joined evdev keycodes, e.g. "
+#~ "29+56+63. Detected read-only from input; never injected."
+#~ msgstr ""
+#~ "Combinaison globale optionnelle pour basculer le masquage (désactivée par "
+#~ "défaut). Définissez \"panic_chord\" dans settings.ini avec des codes de "
+#~ "touches evdev reliés par '+', par ex. 29+56+63. Détectée en lecture seule "
+#~ "depuis l'entrée ; jamais injectée."
+
+#~ msgid "Center"
+#~ msgstr "Centre"
+
+#~ msgid "Left"
+#~ msgstr "Gauche"
+
+#~ msgid "Right"
+#~ msgstr "Droite"
+
+#~ msgid "Alignment"
+#~ msgstr "Alignement"
+
+#~ msgid "Click flash"
+#~ msgstr "Flash de clic"
+
+#~ msgid "Enable click flash"
+#~ msgstr "Activer le flash de clic"
+
+#~ msgid "Left-click colour"
+#~ msgstr "Couleur du clic gauche"
+
+#~ msgid "Right-click colour"
+#~ msgstr "Couleur du clic droit"
+
+#~ msgid "Flash radius"
+#~ msgstr "Rayon du flash"
+
+#~ msgid "Flash duration (ms)"
+#~ msgstr "Durée du flash (ms)"
+
+#~ msgid "Flash opacity (%)"
+#~ msgstr "Opacité du flash (%)"
+
+#~ msgid "Cursor calibration"
+#~ msgstr "Calibrage du curseur"
+
+#~ msgid "Calibrate click position"
+#~ msgstr "Calibrer la position du clic"
+
+#~ msgid ""
+#~ "The flash is positioned from relative motion and can drift. Click the on-"
+#~ "screen markers (centre + four corners) on each monitor to correct it."
+#~ msgstr ""
+#~ "Le flash est positionné à partir du mouvement relatif et peut dériver. "
+#~ "Cliquez sur les repères à l'écran (centre + quatre coins) sur chaque "
+#~ "écran pour le corriger."
+
+#~ msgid "Calibrate"
+#~ msgstr "Calibrer"
+
+#~ msgid "Reset calibration"
+#~ msgstr "Réinitialiser le calibrage"
+
+#~ msgid "Reset"
+#~ msgstr "Réinitialiser"
+
+#~ msgid "Global hotkey"
+#~ msgstr "Raccourci global"
+
+#~ msgid "Toggle overlay"
+#~ msgstr "Basculer la superposition"
+
+#~ msgid ""
+#~ "Wayland has no client-side global hotkeys. Use the \"Show overlay\" "
+#~ "switch above, or bind a compositor shortcut. On COSMIC: Settings → "
+#~ "Keyboard → Custom shortcuts."
+#~ msgstr ""
+#~ "Wayland n'a pas de raccourcis globaux côté client. Utilisez le "
+#~ "commutateur \"Afficher la superposition\" ci-dessus, ou définissez un "
+#~ "raccourci du compositeur. Sur COSMIC : Paramètres → Clavier → Raccourcis "
+#~ "personnalisés."

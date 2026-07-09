@@ -1,0 +1,448 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR VibeCodeBlogger
+# This file is distributed under the same license as the keysclicks package.
+# FIRST AUTHOR <keysclicks>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keysclicks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: keysclicks\n"
+"Language-Team: keysclicks\n"
+"Language: ur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/frontend/keysclicks-feedback.c:303
+msgid "Screenshot attached."
+msgstr "اسکرین شاٹ منسلک ہے۔"
+
+#: src/frontend/keysclicks-feedback.c:307
+msgid "Screenshot unavailable — your description still helps."
+msgstr "اسکرین شاٹ دستیاب نہیں — آپ کی وضاحت پھر بھی مددگار ہے۔"
+
+#: src/frontend/keysclicks-feedback.c:414
+#, c-format
+msgid "Report #%s sent — thank you!"
+msgstr "رپورٹ نمبر %s بھیج دی گئی — شکریہ!"
+
+#: src/frontend/keysclicks-feedback.c:416
+msgid "Report sent — thank you!"
+msgstr "رپورٹ بھیج دی گئی — شکریہ!"
+
+#: src/frontend/keysclicks-feedback.c:424
+msgid "Could not send your report."
+msgstr "آپ کی رپورٹ نہیں بھیجی جا سکی۔"
+
+#: src/frontend/keysclicks-feedback.c:428
+msgid "Network error — please try again."
+msgstr "نیٹ ورک کی خرابی — براہ کرم دوبارہ کوشش کریں۔"
+
+#: src/frontend/keysclicks-feedback.c:451
+msgid "Capturing screenshot…"
+msgstr "اسکرین شاٹ لیا جا رہا ہے…"
+
+#: src/frontend/keysclicks-feedback.c:502
+msgid "Sending…"
+msgstr "بھیجا جا رہا ہے…"
+
+#: src/frontend/keysclicks-feedback.c:541
+#: src/frontend/keysclicks-feedback.c:557
+msgid "Report a bug or idea"
+msgstr "کسی خرابی یا تجویز کی اطلاع دیں"
+
+#: src/frontend/keysclicks-feedback.c:565
+msgid "🐞 Bug"
+msgstr "🐞 خرابی"
+
+#: src/frontend/keysclicks-feedback.c:566
+msgid "💡 Idea"
+msgstr "💡 تجویز"
+
+#: src/frontend/keysclicks-feedback.c:574
+msgid "What happened? (optional)"
+msgstr "کیا ہوا؟ (اختیاری)"
+
+#: src/frontend/keysclicks-feedback.c:593
+msgid "Attach screenshot of my screen"
+msgstr "میری اسکرین کا اسکرین شاٹ منسلک کریں"
+
+#: src/frontend/keysclicks-feedback.c:598
+msgid "A screenshot may show sensitive on-screen content. Off by default."
+msgstr "اسکرین شاٹ اسکرین پر موجود حساس مواد دکھا سکتا ہے۔ بطور طے شدہ بند ہے۔"
+
+#: src/frontend/keysclicks-feedback.c:612
+msgid "Attach diagnostics (build, OS, monitors)"
+msgstr "تشخیصی معلومات منسلک کریں (بلڈ، آپریٹنگ سسٹم، مانیٹرز)"
+
+#: src/frontend/keysclicks-feedback.c:626
+msgid "Cancel"
+msgstr "منسوخ کریں"
+
+#: src/frontend/keysclicks-feedback.c:628
+msgid "Send"
+msgstr "بھیجیں"
+
+#: src/frontend/keysclicks-feedback.c:651
+msgid "Report a bug"
+msgstr "کسی خرابی کی اطلاع دیں"
+
+#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+msgid "On-Screen Keys & Clicks Visualizer"
+msgstr "اسکرین پر کیز اور کلکس ویژولائزر"
+
+#: src/frontend/keysclicks-window.c:140
+msgid "Close to switch monitor"
+msgstr "مانیٹر تبدیل کرنے کے لیے بند کریں"
+
+#: src/frontend/keysclicks-window.c:141
+msgid ""
+"The overlay moves to the new monitor the next time you open the app. Your "
+"settings are already saved — closing now is safe."
+msgstr ""
+"اگلی بار جب آپ ایپ کھولیں گے تو اوورلے نئے مانیٹر پر منتقل ہو جائے گا۔ آپ کی "
+"ترتیبات پہلے ہی محفوظ ہیں — اب بند کرنا محفوظ ہے۔"
+
+#: src/frontend/keysclicks-window.c:151
+msgid "Close"
+msgstr "بند کریں"
+
+#. Language --------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+msgid "Language"
+msgstr "زبان"
+
+#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+msgid "System (default)"
+msgstr "سسٹم (ڈیفالٹ)"
+
+#: src/frontend/keysclicks-window.c:512
+msgid "Keyboard layout"
+msgstr "کی بورڈ لے آؤٹ"
+
+#: src/frontend/keysclicks-window.c:547
+msgid "Automatic"
+msgstr "خودکار"
+
+#: src/frontend/keysclicks-window.c:553
+#, c-format
+msgid "Monitor %u"
+msgstr "مانیٹر %u"
+
+#: src/frontend/keysclicks-window.c:572
+msgid "Overlay monitor"
+msgstr "اوورلے مانیٹر"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Pin to dock"
+msgstr "ڈاک میں پن کریں"
+
+#: src/frontend/keysclicks-window.c:603
+msgid "Unpin from dock"
+msgstr "ڈاک سے پن ہٹائیں"
+
+#: src/frontend/keysclicks-window.c:605
+msgid "Remove this app from the COSMIC dock"
+msgstr "اس ایپ کو COSMIC ڈاک سے ہٹائیں"
+
+#: src/frontend/keysclicks-window.c:606
+msgid "Pin this app to the COSMIC dock"
+msgstr "اس ایپ کو COSMIC ڈاک میں پن کریں"
+
+#: src/frontend/keysclicks-window.c:644
+msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
+msgstr ""
+"کوئی نہیں — سیٹ کریں پر کلک کریں، پھر کوئی شارٹ کٹ دبائے رکھیں (مثلاً "
+"Ctrl+Shift+H)"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+msgid "Press keys…"
+msgstr "کلیدیں دبائیں…"
+
+#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+msgid "Set"
+msgstr "سیٹ کریں"
+
+#: src/frontend/keysclicks-window.c:702
+msgid "Hold the shortcut…  "
+msgstr "شارٹ کٹ دبائے رکھیں…  "
+
+#: src/frontend/keysclicks-window.c:750
+msgid "Hold the shortcut, then release to save. Esc cancels."
+msgstr ""
+"شارٹ کٹ دبائے رکھیں، پھر محفوظ کرنے کے لیے چھوڑ دیں۔ Esc منسوخ کرتا ہے۔"
+
+#: src/frontend/keysclicks-window.c:780
+msgid "On-Screen Keys & Clicks Visualizer — Settings"
+msgstr "اسکرین پر کیز اور کلکس ویژولائزر — ترتیبات"
+
+#. Privacy master toggle, prominent on the left of the header.
+#: src/frontend/keysclicks-window.c:798
+msgid "Hide keys"
+msgstr "کیز چھپائیں"
+
+#: src/frontend/keysclicks-window.c:801
+msgid "Hide keystrokes (privacy): show • instead of keys"
+msgstr "کی اسٹروکس چھپائیں (رازداری): کیز کے بجائے • دکھائیں"
+
+#. overlay display layout, right below
+#. Privacy ---------------------------------------------------------------
+#: src/frontend/keysclicks-window.c:833
+msgid "Privacy"
+msgstr "رازداری"
+
+#: src/frontend/keysclicks-window.c:835
+msgid "Hide keystrokes (privacy)"
+msgstr "کی اسٹروکس چھپائیں (رازداری)"
+
+#: src/frontend/keysclicks-window.c:844
+msgid "Automatic password hiding"
+msgstr "خودکار پاس ورڈ چھپانا"
+
+#: src/frontend/keysclicks-window.c:852
+msgid ""
+"On (PRO) — passwords are hidden automatically in password fields. This "
+"module is still in development."
+msgstr ""
+"آن (PRO) — پاس ورڈ فیلڈز میں پاس ورڈ خودکار طور پر چھپا دیے جاتے ہیں۔ یہ "
+"ماڈیول ابھی زیرِ تکمیل ہے۔"
+
+#: src/frontend/keysclicks-window.c:854
+msgid ""
+"PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
+"\"Hide keys\" toggle/shortcut works now."
+msgstr ""
+"PRO — زیرِ تکمیل۔ خودکار چھپانا PRO ایڈ آن کے ساتھ آتا ہے؛ دستی \"Hide keys\" "
+"ٹوگل/شارٹ کٹ اب کام کرتا ہے۔"
+
+#: src/frontend/keysclicks-window.c:863
+msgid "Hide-keys shortcut"
+msgstr "کلیدیں چھپانے کا شارٹ کٹ"
+
+#: src/frontend/keysclicks-window.c:868
+msgid "Click, then hold a key combination to assign it"
+msgstr "کلک کریں، پھر اسے تفویض کرنے کے لیے کلیدوں کا مجموعہ دبائے رکھیں"
+
+#: src/frontend/keysclicks-window.c:877
+msgid "System keyboard shortcuts"
+msgstr "سسٹم کے کی بورڈ شارٹ کٹس"
+
+#: src/frontend/keysclicks-window.c:880
+msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
+msgstr ""
+"عالمی شارٹ کٹس آپریٹنگ سسٹم میں مقرر کیے جاتے ہیں — COSMIC → کی بورڈ → شارٹ "
+"کٹس کھولیں"
+
+#: src/frontend/keysclicks-window.c:882
+msgid "Open settings"
+msgstr "ترتیبات کھولیں"
+
+#. Keys & clicks display -------------------------------------------------
+#: src/frontend/keysclicks-window.c:889
+msgid "Keys and clicks display"
+msgstr "کیز اور کلکس کی نمائش"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Compact"
+msgstr "مختصر"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Composed"
+msgstr "مرکب"
+
+#: src/frontend/keysclicks-window.c:890
+msgid "Raw"
+msgstr "خام"
+
+#: src/frontend/keysclicks-window.c:891
+msgid "Label style"
+msgstr "لیبل انداز"
+
+#: src/frontend/keysclicks-window.c:892
+msgid "Font size"
+msgstr "فونٹ سائز"
+
+#: src/frontend/keysclicks-window.c:893
+msgid "Show keyboard"
+msgstr "کی بورڈ دکھائیں"
+
+#: src/frontend/keysclicks-window.c:895
+msgid "Show mouse"
+msgstr "ماؤس دکھائیں"
+
+#: src/frontend/keysclicks-window.c:896
+msgid "Show Shift separately"
+msgstr "Shift کو الگ دکھائیں"
+
+#: src/frontend/keysclicks-window.c:898
+msgid "Draw border"
+msgstr "بارڈر بنائیں"
+
+#. Position & behaviour --------------------------------------------------
+#: src/frontend/keysclicks-window.c:901
+msgid "Position and behaviour"
+msgstr "مقام اور رویہ"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Bottom"
+msgstr "نیچے"
+
+#: src/frontend/keysclicks-window.c:902
+msgid "Top"
+msgstr "اوپر"
+
+#: src/frontend/keysclicks-window.c:903
+msgid "Screen edge"
+msgstr "اسکرین کنارہ"
+
+#. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
+#: src/frontend/keysclicks-window.c:905
+msgid "Horizontal margin (%)"
+msgstr "افقی حاشیہ (%)"
+
+#: src/frontend/keysclicks-window.c:907
+msgid "Vertical margin (%)"
+msgstr "عمودی حاشیہ (%)"
+
+#: src/frontend/keysclicks-window.c:910
+msgid "Keep visible (no timeout)"
+msgstr "دکھتا رکھیں (کوئی ٹائم آؤٹ نہیں)"
+
+#: src/frontend/keysclicks-window.c:913
+msgid "Timeout (ms)"
+msgstr "ٹائم آؤٹ (ms)"
+
+#: src/frontend/keysclicks-window.c:916
+msgid "Bar opacity (%)"
+msgstr "بار کی شفافیت (%)"
+
+#: src/frontend/main.c:106
+msgid "Left Click"
+msgstr "بائیں کلک"
+
+#: src/frontend/main.c:108
+msgid "Right Click"
+msgstr "دائیں کلک"
+
+#: src/frontend/main.c:110
+msgid "Middle Click"
+msgstr "درمیانی کلک"
+
+#: src/frontend/main.c:122
+#, c-format
+msgid "Mouse(%u)"
+msgstr "ماؤس(%u)"
+
+#: src/frontend/main.c:407
+msgid "Start without opening the settings window"
+msgstr "ترتیبات کی ونڈو کھولے بغیر شروع کریں"
+
+#, c-format
+#~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"
+#~ msgstr ""
+#~ "کیلبریشن: مارکر پر کلک کریں (%u / %u) — منسوخ کرنے کے لیے دائیں کلک کریں"
+
+#~ msgid "Monitor"
+#~ msgstr "مانیٹر"
+
+#~ msgid "Show overlay"
+#~ msgstr "اوورلے دکھائیں"
+
+#~ msgid "Privacy provider"
+#~ msgstr "رازداری فراہم کنندہ"
+
+#, c-format
+#~ msgid "Loaded: %s"
+#~ msgstr "لوڈ شدہ: %s"
+
+#~ msgid "(unnamed)"
+#~ msgstr "(بے نام)"
+
+#~ msgid "Not loaded — manual toggle only (optional add-on module)"
+#~ msgstr "لوڈ نہیں ہوا — صرف دستی ٹوگل (اختیاری ایڈ آن ماڈیول)"
+
+#~ msgid "Panic chord"
+#~ msgstr "ہنگامی کورڈ"
+
+#~ msgid ""
+#~ "Optional global chord to toggle hiding (disabled by default). Set "
+#~ "\"panic_chord\" in settings.ini to '+'-joined evdev keycodes, e.g. "
+#~ "29+56+63. Detected read-only from input; never injected."
+#~ msgstr ""
+#~ "چھپانے کو ٹوگل کرنے کے لیے اختیاری عالمی کورڈ (بطورِ طے شدہ غیر فعال)۔ "
+#~ "settings.ini میں \"panic_chord\" کو '+' سے جُڑے evdev کی کوڈز پر سیٹ کریں، "
+#~ "مثلاً 29+56+63۔ اِن پٹ سے صرف پڑھنے کے لیے پہچانا جاتا ہے؛ کبھی انجیکٹ نہیں "
+#~ "کیا جاتا۔"
+
+#~ msgid "Center"
+#~ msgstr "درمیان"
+
+#~ msgid "Left"
+#~ msgstr "بائیں"
+
+#~ msgid "Right"
+#~ msgstr "دائیں"
+
+#~ msgid "Alignment"
+#~ msgstr "سیدھ"
+
+#~ msgid "Click flash"
+#~ msgstr "کلک فلیش"
+
+#~ msgid "Enable click flash"
+#~ msgstr "کلک فلیش فعال کریں"
+
+#~ msgid "Left-click colour"
+#~ msgstr "بائیں کلک کا رنگ"
+
+#~ msgid "Right-click colour"
+#~ msgstr "دائیں کلک کا رنگ"
+
+#~ msgid "Flash radius"
+#~ msgstr "فلیش کا نصف قطر"
+
+#~ msgid "Flash duration (ms)"
+#~ msgstr "فلیش کا دورانیہ (ms)"
+
+#~ msgid "Flash opacity (%)"
+#~ msgstr "فلیش کی شفافیت (%)"
+
+#~ msgid "Cursor calibration"
+#~ msgstr "کرسر کیلبریشن"
+
+#~ msgid "Calibrate click position"
+#~ msgstr "کلک پوزیشن کیلبریٹ کریں"
+
+#~ msgid ""
+#~ "The flash is positioned from relative motion and can drift. Click the on-"
+#~ "screen markers (centre + four corners) on each monitor to correct it."
+#~ msgstr ""
+#~ "فلیش نسبتی حرکت سے رکھی جاتی ہے اور کھسک سکتی ہے۔ اسے درست کرنے کے لیے ہر "
+#~ "مانیٹر پر اسکرین کے مارکرز (درمیان + چار کونے) پر کلک کریں۔"
+
+#~ msgid "Calibrate"
+#~ msgstr "کیلبریٹ کریں"
+
+#~ msgid "Reset calibration"
+#~ msgstr "کیلبریشن ری سیٹ کریں"
+
+#~ msgid "Reset"
+#~ msgstr "ری سیٹ"
+
+#~ msgid "Global hotkey"
+#~ msgstr "عالمی ہاٹ کی"
+
+#~ msgid "Toggle overlay"
+#~ msgstr "اوورلے ٹوگل کریں"
+
+#~ msgid ""
+#~ "Wayland has no client-side global hotkeys. Use the \"Show overlay\" "
+#~ "switch above, or bind a compositor shortcut. On COSMIC: Settings → "
+#~ "Keyboard → Custom shortcuts."
+#~ msgstr ""
+#~ "Wayland میں کلائنٹ سائیڈ عالمی ہاٹ کیز نہیں ہیں۔ اوپر دیے گئے \"اوورلے "
+#~ "دکھائیں\" سوئچ کا استعمال کریں، یا کمپوزیٹر شارٹ کٹ بائنڈ کریں۔ COSMIC "
+#~ "پر: ترتیبات → کی بورڈ → کسٹم شارٹ کٹس۔"

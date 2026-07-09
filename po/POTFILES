@@ -1,0 +1,4 @@
+src/frontend/main.c
+src/frontend/keysclicks-window.c
+src/frontend/keysclicks-overlay.c
+src/frontend/keysclicks-feedback.c
