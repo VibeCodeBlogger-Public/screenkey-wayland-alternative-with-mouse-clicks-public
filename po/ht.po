@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keysclicks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-09 18:45-0600\n"
+"POT-Creation-Date: 2026-07-09 19:17-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: keysclicks\n"
 "Language-Team: keysclicks\n"
@@ -107,74 +107,84 @@ msgstr ""
 "Kouch la ap deplase nan nouvo monitè a pwochèn fwa ou louvri app la. Paramèt "
 "ou yo deja anrejistre — li san danje pou fèmen kounye a."
 
-#: src/frontend/keysclicks-window.c:152
+#: src/frontend/keysclicks-window.c:152 src/frontend/keysclicks-window.c:180
 msgid "Close"
 msgstr "Fèmen"
 
+#: src/frontend/keysclicks-window.c:169
+msgid "Close to switch language"
+msgstr "Fèmen pou chanje lang"
+
+#: src/frontend/keysclicks-window.c:170
+msgid ""
+"The overlay switches to the new language the next time you open the app. "
+"Your settings are already saved — closing now is safe."
+msgstr "Kouch la ap chanje pou nouvo lang lan pwochèn fwa ou louvri app la. Paramèt ou yo deja anrejistre — li san danje pou fèmen kounye a."
+
 #. Language --------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:521 src/frontend/keysclicks-window.c:932
+#: src/frontend/keysclicks-window.c:555 src/frontend/keysclicks-window.c:966
 msgid "Language"
 msgstr "Lang"
 
-#: src/frontend/keysclicks-window.c:532 src/frontend/keysclicks-window.c:580
+#: src/frontend/keysclicks-window.c:566 src/frontend/keysclicks-window.c:614
 msgid "System (default)"
 msgstr "Sistèm (pa defo)"
 
-#: src/frontend/keysclicks-window.c:562
+#: src/frontend/keysclicks-window.c:596
 msgid "Keyboard layout"
 msgstr "Layout klavye"
 
-#: src/frontend/keysclicks-window.c:630
+#: src/frontend/keysclicks-window.c:664
 msgid "Automatic"
 msgstr "Otomatik"
 
-#: src/frontend/keysclicks-window.c:636
+#: src/frontend/keysclicks-window.c:670
 #, c-format
 msgid "Monitor %u"
 msgstr "Monitè %u"
 
-#: src/frontend/keysclicks-window.c:655
+#: src/frontend/keysclicks-window.c:689
 msgid "Overlay monitor"
 msgstr "Monitè kouch la"
 
-#: src/frontend/keysclicks-window.c:686
+#: src/frontend/keysclicks-window.c:720
 msgid "Pin to dock"
 msgstr "Tache sou dock la"
 
-#: src/frontend/keysclicks-window.c:686
+#: src/frontend/keysclicks-window.c:720
 msgid "Unpin from dock"
 msgstr "Detache soti nan dock la"
 
-#: src/frontend/keysclicks-window.c:688
+#: src/frontend/keysclicks-window.c:722
 msgid "Remove this app from the COSMIC dock"
 msgstr "Retire aplikasyon sa a nan dock COSMIC la"
 
-#: src/frontend/keysclicks-window.c:689
+#: src/frontend/keysclicks-window.c:723
 msgid "Pin this app to the COSMIC dock"
 msgstr "Tache aplikasyon sa a sou dock COSMIC la"
 
-#: src/frontend/keysclicks-window.c:727
+#: src/frontend/keysclicks-window.c:761
 msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
 msgstr ""
 "Okenn — klike sou Defini, apre sa kenbe yon rakoursi (pa egzanp Ctrl+Shift+H)"
 
-#: src/frontend/keysclicks-window.c:755 src/frontend/keysclicks-window.c:834
+#: src/frontend/keysclicks-window.c:789 src/frontend/keysclicks-window.c:868
 msgid "Press keys…"
 msgstr "Peze touch yo…"
 
-#: src/frontend/keysclicks-window.c:755 src/frontend/keysclicks-window.c:969
+#: src/frontend/keysclicks-window.c:789 src/frontend/keysclicks-window.c:1003
 msgid "Set"
 msgstr "Defini"
 
-#: src/frontend/keysclicks-window.c:785
+#: src/frontend/keysclicks-window.c:819
 msgid "Hold the shortcut…  "
 msgstr "Kenbe rakoursi a…  "
 
-#: src/frontend/keysclicks-window.c:833
+#: src/frontend/keysclicks-window.c:867
 msgid "Hold the shortcut, then release to save. Esc cancels."
 msgstr "Kenbe rakoursi a, apre sa lage l pou anrejistre. Esc anile."
 
-#: src/frontend/keysclicks-window.c:877 src/frontend/keysclicks-window.c:890
+#: src/frontend/keysclicks-window.c:911 src/frontend/keysclicks-window.c:924
 msgid ""
 "On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for "
 "Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
@@ -183,29 +193,29 @@ msgstr ""
 "Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
 
 #. Privacy master toggle, prominent on the left of the header.
-#: src/frontend/keysclicks-window.c:895
+#: src/frontend/keysclicks-window.c:929
 msgid "Hide keys"
 msgstr "Kache touch yo"
 
-#: src/frontend/keysclicks-window.c:898
+#: src/frontend/keysclicks-window.c:932
 msgid "Hide keystrokes (privacy): show • instead of keys"
 msgstr "Kache frap touch yo (konfidansyalite): montre • olye touch yo"
 
 #. overlay display layout, right below
 #. Privacy ---------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:937
+#: src/frontend/keysclicks-window.c:971
 msgid "Privacy"
 msgstr "Konfidansyalite"
 
-#: src/frontend/keysclicks-window.c:939
+#: src/frontend/keysclicks-window.c:973
 msgid "Hide keystrokes (privacy)"
 msgstr "Kache frap touch yo (konfidansyalite)"
 
-#: src/frontend/keysclicks-window.c:948
+#: src/frontend/keysclicks-window.c:982
 msgid "Automatic password hiding"
 msgstr "Kache modpas otomatikman"
 
-#: src/frontend/keysclicks-window.c:956
+#: src/frontend/keysclicks-window.c:990
 msgid ""
 "On (PRO) — passwords are hidden automatically in password fields. This "
 "module is still in development."
@@ -213,7 +223,7 @@ msgstr ""
 "Aktive (PRO) — modpas yo kache otomatikman nan chan modpas yo. Modil sa a "
 "toujou ap devlope."
 
-#: src/frontend/keysclicks-window.c:958
+#: src/frontend/keysclicks-window.c:992
 msgid ""
 "PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
 "\"Hide keys\" toggle/shortcut works now."
@@ -221,103 +231,103 @@ msgstr ""
 "PRO — ap devlope. Kachaj otomatik la vini ak add-on PRO a; toggle/rakoursi "
 "manyèl \"Hide keys\" la ap travay kounye a."
 
-#: src/frontend/keysclicks-window.c:967
+#: src/frontend/keysclicks-window.c:1001
 msgid "Hide-keys shortcut"
 msgstr "Rakoursi pou kache touch yo"
 
-#: src/frontend/keysclicks-window.c:972
+#: src/frontend/keysclicks-window.c:1006
 msgid "Click, then hold a key combination to assign it"
 msgstr "Klike, apre sa kenbe yon konbinezon touch pou asiyen l"
 
-#: src/frontend/keysclicks-window.c:981
+#: src/frontend/keysclicks-window.c:1015
 msgid "System keyboard shortcuts"
 msgstr "Rakoursi klavye sistèm nan"
 
-#: src/frontend/keysclicks-window.c:984
+#: src/frontend/keysclicks-window.c:1018
 msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
 msgstr ""
 "Rakoursi global yo defini nan OS la — louvri COSMIC → Keyboard → Shortcuts"
 
-#: src/frontend/keysclicks-window.c:986
+#: src/frontend/keysclicks-window.c:1020
 msgid "Open settings"
 msgstr "Louvri paramèt yo"
 
 #. Keys & clicks display -------------------------------------------------
-#: src/frontend/keysclicks-window.c:993
+#: src/frontend/keysclicks-window.c:1027
 msgid "Keys and clicks display"
 msgstr "Afichaj touch ak klik"
 
-#: src/frontend/keysclicks-window.c:994
+#: src/frontend/keysclicks-window.c:1028
 msgid "Compact"
 msgstr "Konpak"
 
-#: src/frontend/keysclicks-window.c:994
+#: src/frontend/keysclicks-window.c:1028
 msgid "Composed"
 msgstr "Konpoze"
 
-#: src/frontend/keysclicks-window.c:994
+#: src/frontend/keysclicks-window.c:1028
 msgid "Raw"
 msgstr "Brit"
 
-#: src/frontend/keysclicks-window.c:995
+#: src/frontend/keysclicks-window.c:1029
 msgid "Label style"
 msgstr "Estil etikèt"
 
-#: src/frontend/keysclicks-window.c:996
+#: src/frontend/keysclicks-window.c:1030
 msgid "Font size"
 msgstr "Gwosè font"
 
-#: src/frontend/keysclicks-window.c:997
+#: src/frontend/keysclicks-window.c:1031
 msgid "Show keyboard"
 msgstr "Montre klavye a"
 
-#: src/frontend/keysclicks-window.c:999
+#: src/frontend/keysclicks-window.c:1033
 msgid "Show mouse"
 msgstr "Montre souri a"
 
-#: src/frontend/keysclicks-window.c:1000
+#: src/frontend/keysclicks-window.c:1034
 msgid "Show Shift separately"
 msgstr "Montre Shift apa"
 
-#: src/frontend/keysclicks-window.c:1002
+#: src/frontend/keysclicks-window.c:1036
 msgid "Draw border"
 msgstr "Trase bòdi"
 
 #. Position & behaviour --------------------------------------------------
-#: src/frontend/keysclicks-window.c:1005
+#: src/frontend/keysclicks-window.c:1039
 msgid "Position and behaviour"
 msgstr "Pozisyon ak konpòtman"
 
-#: src/frontend/keysclicks-window.c:1006
+#: src/frontend/keysclicks-window.c:1040
 msgid "Bottom"
 msgstr "Anba"
 
-#: src/frontend/keysclicks-window.c:1006
+#: src/frontend/keysclicks-window.c:1040
 msgid "Top"
 msgstr "Anwo"
 
-#: src/frontend/keysclicks-window.c:1007
+#: src/frontend/keysclicks-window.c:1041
 msgid "Screen edge"
 msgstr "Bò ekran an"
 
 #. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
-#: src/frontend/keysclicks-window.c:1009
+#: src/frontend/keysclicks-window.c:1043
 msgid "Horizontal margin (%)"
 msgstr "Maj orizontal (%)"
 
-#: src/frontend/keysclicks-window.c:1011
+#: src/frontend/keysclicks-window.c:1045
 msgid "Vertical margin (%)"
 msgstr "Maj vètikal (%)"
 
-#: src/frontend/keysclicks-window.c:1014
+#: src/frontend/keysclicks-window.c:1048
 msgid "Keep visible (no timeout)"
 msgstr "Kenbe vizib (san dele)"
 
-#: src/frontend/keysclicks-window.c:1017
+#: src/frontend/keysclicks-window.c:1051
 msgid "Timeout (ms)"
 msgstr "Dele (ms)"
 
-#: src/frontend/keysclicks-window.c:1020
+#: src/frontend/keysclicks-window.c:1054
 msgid "Bar opacity (%)"
 msgstr "Opasite ba a (%)"
 

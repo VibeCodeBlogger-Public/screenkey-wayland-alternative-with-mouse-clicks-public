@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keysclicks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-09 18:45-0600\n"
+"POT-Creation-Date: 2026-07-09 19:17-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: keysclicks\n"
 "Language-Team: keysclicks\n"
@@ -107,73 +107,83 @@ msgstr ""
 "Nakładka przeniesie się na nowy monitor przy następnym otwarciu aplikacji. "
 "Twoje ustawienia są już zapisane — zamknięcie teraz jest bezpieczne."
 
-#: src/frontend/keysclicks-window.c:152
+#: src/frontend/keysclicks-window.c:152 src/frontend/keysclicks-window.c:180
 msgid "Close"
 msgstr "Zamknij"
 
+#: src/frontend/keysclicks-window.c:169
+msgid "Close to switch language"
+msgstr "Zamknij, aby zmienić język"
+
+#: src/frontend/keysclicks-window.c:170
+msgid ""
+"The overlay switches to the new language the next time you open the app. "
+"Your settings are already saved — closing now is safe."
+msgstr "Nakładka przełączy się na nowy język przy następnym otwarciu aplikacji. Twoje ustawienia są już zapisane — zamknięcie teraz jest bezpieczne."
+
 #. Language --------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:521 src/frontend/keysclicks-window.c:932
+#: src/frontend/keysclicks-window.c:555 src/frontend/keysclicks-window.c:966
 msgid "Language"
 msgstr "Język"
 
-#: src/frontend/keysclicks-window.c:532 src/frontend/keysclicks-window.c:580
+#: src/frontend/keysclicks-window.c:566 src/frontend/keysclicks-window.c:614
 msgid "System (default)"
 msgstr "Systemowy (domyślny)"
 
-#: src/frontend/keysclicks-window.c:562
+#: src/frontend/keysclicks-window.c:596
 msgid "Keyboard layout"
 msgstr "Układ klawiatury"
 
-#: src/frontend/keysclicks-window.c:630
+#: src/frontend/keysclicks-window.c:664
 msgid "Automatic"
 msgstr "Automatyczny"
 
-#: src/frontend/keysclicks-window.c:636
+#: src/frontend/keysclicks-window.c:670
 #, c-format
 msgid "Monitor %u"
 msgstr "Monitor %u"
 
-#: src/frontend/keysclicks-window.c:655
+#: src/frontend/keysclicks-window.c:689
 msgid "Overlay monitor"
 msgstr "Monitor nakładki"
 
-#: src/frontend/keysclicks-window.c:686
+#: src/frontend/keysclicks-window.c:720
 msgid "Pin to dock"
 msgstr "Przypnij do doku"
 
-#: src/frontend/keysclicks-window.c:686
+#: src/frontend/keysclicks-window.c:720
 msgid "Unpin from dock"
 msgstr "Odepnij od doku"
 
-#: src/frontend/keysclicks-window.c:688
+#: src/frontend/keysclicks-window.c:722
 msgid "Remove this app from the COSMIC dock"
 msgstr "Usuń tę aplikację z doku COSMIC"
 
-#: src/frontend/keysclicks-window.c:689
+#: src/frontend/keysclicks-window.c:723
 msgid "Pin this app to the COSMIC dock"
 msgstr "Przypnij tę aplikację do doku COSMIC"
 
-#: src/frontend/keysclicks-window.c:727
+#: src/frontend/keysclicks-window.c:761
 msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
 msgstr "Brak — kliknij Ustaw, a następnie przytrzymaj skrót (np. Ctrl+Shift+H)"
 
-#: src/frontend/keysclicks-window.c:755 src/frontend/keysclicks-window.c:834
+#: src/frontend/keysclicks-window.c:789 src/frontend/keysclicks-window.c:868
 msgid "Press keys…"
 msgstr "Naciśnij klawisze…"
 
-#: src/frontend/keysclicks-window.c:755 src/frontend/keysclicks-window.c:969
+#: src/frontend/keysclicks-window.c:789 src/frontend/keysclicks-window.c:1003
 msgid "Set"
 msgstr "Ustaw"
 
-#: src/frontend/keysclicks-window.c:785
+#: src/frontend/keysclicks-window.c:819
 msgid "Hold the shortcut…  "
 msgstr "Przytrzymaj skrót…  "
 
-#: src/frontend/keysclicks-window.c:833
+#: src/frontend/keysclicks-window.c:867
 msgid "Hold the shortcut, then release to save. Esc cancels."
 msgstr "Przytrzymaj skrót, a następnie zwolnij, aby zapisać. Esc anuluje."
 
-#: src/frontend/keysclicks-window.c:877 src/frontend/keysclicks-window.c:890
+#: src/frontend/keysclicks-window.c:911 src/frontend/keysclicks-window.c:924
 msgid ""
 "On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for "
 "Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
@@ -182,29 +192,29 @@ msgstr ""
 "Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
 
 #. Privacy master toggle, prominent on the left of the header.
-#: src/frontend/keysclicks-window.c:895
+#: src/frontend/keysclicks-window.c:929
 msgid "Hide keys"
 msgstr "Ukryj klawisze"
 
-#: src/frontend/keysclicks-window.c:898
+#: src/frontend/keysclicks-window.c:932
 msgid "Hide keystrokes (privacy): show • instead of keys"
 msgstr "Ukryj naciśnięcia klawiszy (prywatność): pokazuj • zamiast klawiszy"
 
 #. overlay display layout, right below
 #. Privacy ---------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:937
+#: src/frontend/keysclicks-window.c:971
 msgid "Privacy"
 msgstr "Prywatność"
 
-#: src/frontend/keysclicks-window.c:939
+#: src/frontend/keysclicks-window.c:973
 msgid "Hide keystrokes (privacy)"
 msgstr "Ukryj naciśnięcia klawiszy (prywatność)"
 
-#: src/frontend/keysclicks-window.c:948
+#: src/frontend/keysclicks-window.c:982
 msgid "Automatic password hiding"
 msgstr "Automatyczne ukrywanie haseł"
 
-#: src/frontend/keysclicks-window.c:956
+#: src/frontend/keysclicks-window.c:990
 msgid ""
 "On (PRO) — passwords are hidden automatically in password fields. This "
 "module is still in development."
@@ -212,7 +222,7 @@ msgstr ""
 "Włączone (PRO) — hasła są automatycznie ukrywane w polach haseł. Ten moduł "
 "jest wciąż w fazie rozwoju."
 
-#: src/frontend/keysclicks-window.c:958
+#: src/frontend/keysclicks-window.c:992
 msgid ""
 "PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
 "\"Hide keys\" toggle/shortcut works now."
@@ -220,103 +230,103 @@ msgstr ""
 "PRO — w fazie rozwoju. Automatyczne ukrywanie jest dostępne z dodatkiem PRO; "
 "ręczny przełącznik/skrót \"Hide keys\" działa już teraz."
 
-#: src/frontend/keysclicks-window.c:967
+#: src/frontend/keysclicks-window.c:1001
 msgid "Hide-keys shortcut"
 msgstr "Skrót ukrywania klawiszy"
 
-#: src/frontend/keysclicks-window.c:972
+#: src/frontend/keysclicks-window.c:1006
 msgid "Click, then hold a key combination to assign it"
 msgstr "Kliknij, a następnie przytrzymaj kombinację klawiszy, aby ją przypisać"
 
-#: src/frontend/keysclicks-window.c:981
+#: src/frontend/keysclicks-window.c:1015
 msgid "System keyboard shortcuts"
 msgstr "Systemowe skróty klawiszowe"
 
-#: src/frontend/keysclicks-window.c:984
+#: src/frontend/keysclicks-window.c:1018
 msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
 msgstr ""
 "Skróty globalne ustawia się w systemie — otwórz COSMIC → Klawiatura → Skróty"
 
-#: src/frontend/keysclicks-window.c:986
+#: src/frontend/keysclicks-window.c:1020
 msgid "Open settings"
 msgstr "Otwórz ustawienia"
 
 #. Keys & clicks display -------------------------------------------------
-#: src/frontend/keysclicks-window.c:993
+#: src/frontend/keysclicks-window.c:1027
 msgid "Keys and clicks display"
 msgstr "Wyświetlanie klawiszy i kliknięć"
 
-#: src/frontend/keysclicks-window.c:994
+#: src/frontend/keysclicks-window.c:1028
 msgid "Compact"
 msgstr "Kompaktowy"
 
-#: src/frontend/keysclicks-window.c:994
+#: src/frontend/keysclicks-window.c:1028
 msgid "Composed"
 msgstr "Złożony"
 
-#: src/frontend/keysclicks-window.c:994
+#: src/frontend/keysclicks-window.c:1028
 msgid "Raw"
 msgstr "Surowy"
 
-#: src/frontend/keysclicks-window.c:995
+#: src/frontend/keysclicks-window.c:1029
 msgid "Label style"
 msgstr "Styl etykiety"
 
-#: src/frontend/keysclicks-window.c:996
+#: src/frontend/keysclicks-window.c:1030
 msgid "Font size"
 msgstr "Rozmiar czcionki"
 
-#: src/frontend/keysclicks-window.c:997
+#: src/frontend/keysclicks-window.c:1031
 msgid "Show keyboard"
 msgstr "Pokaż klawiaturę"
 
-#: src/frontend/keysclicks-window.c:999
+#: src/frontend/keysclicks-window.c:1033
 msgid "Show mouse"
 msgstr "Pokaż mysz"
 
-#: src/frontend/keysclicks-window.c:1000
+#: src/frontend/keysclicks-window.c:1034
 msgid "Show Shift separately"
 msgstr "Pokaż Shift osobno"
 
-#: src/frontend/keysclicks-window.c:1002
+#: src/frontend/keysclicks-window.c:1036
 msgid "Draw border"
 msgstr "Rysuj obramowanie"
 
 #. Position & behaviour --------------------------------------------------
-#: src/frontend/keysclicks-window.c:1005
+#: src/frontend/keysclicks-window.c:1039
 msgid "Position and behaviour"
 msgstr "Pozycja i zachowanie"
 
-#: src/frontend/keysclicks-window.c:1006
+#: src/frontend/keysclicks-window.c:1040
 msgid "Bottom"
 msgstr "Dół"
 
-#: src/frontend/keysclicks-window.c:1006
+#: src/frontend/keysclicks-window.c:1040
 msgid "Top"
 msgstr "Góra"
 
-#: src/frontend/keysclicks-window.c:1007
+#: src/frontend/keysclicks-window.c:1041
 msgid "Screen edge"
 msgstr "Krawędź ekranu"
 
 #. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
-#: src/frontend/keysclicks-window.c:1009
+#: src/frontend/keysclicks-window.c:1043
 msgid "Horizontal margin (%)"
 msgstr "Margines poziomy (%)"
 
-#: src/frontend/keysclicks-window.c:1011
+#: src/frontend/keysclicks-window.c:1045
 msgid "Vertical margin (%)"
 msgstr "Margines pionowy (%)"
 
-#: src/frontend/keysclicks-window.c:1014
+#: src/frontend/keysclicks-window.c:1048
 msgid "Keep visible (no timeout)"
 msgstr "Zawsze widoczny (bez limitu czasu)"
 
-#: src/frontend/keysclicks-window.c:1017
+#: src/frontend/keysclicks-window.c:1051
 msgid "Timeout (ms)"
 msgstr "Limit czasu (ms)"
 
-#: src/frontend/keysclicks-window.c:1020
+#: src/frontend/keysclicks-window.c:1054
 msgid "Bar opacity (%)"
 msgstr "Krycie paska (%)"
 

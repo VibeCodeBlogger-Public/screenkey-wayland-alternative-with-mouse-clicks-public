@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keysclicks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-09 18:45-0600\n"
+"POT-Creation-Date: 2026-07-09 19:17-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: keysclicks\n"
 "Language-Team: keysclicks\n"
@@ -109,77 +109,87 @@ msgstr ""
 "Lilipat ang overlay sa bagong monitor sa susunod na pagbukas mo ng app. Naka-"
 "save na ang iyong mga setting — ligtas nang isara ngayon."
 
-#: src/frontend/keysclicks-window.c:152
+#: src/frontend/keysclicks-window.c:152 src/frontend/keysclicks-window.c:180
 msgid "Close"
 msgstr "Isara"
 
+#: src/frontend/keysclicks-window.c:169
+msgid "Close to switch language"
+msgstr "Isara para lumipat ng wika"
+
+#: src/frontend/keysclicks-window.c:170
+msgid ""
+"The overlay switches to the new language the next time you open the app. "
+"Your settings are already saved — closing now is safe."
+msgstr "Lilipat ang overlay sa bagong wika sa susunod na pagbukas mo ng app. Naka-save na ang iyong mga setting — ligtas nang isara ngayon."
+
 #. Language --------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:521 src/frontend/keysclicks-window.c:932
+#: src/frontend/keysclicks-window.c:555 src/frontend/keysclicks-window.c:966
 msgid "Language"
 msgstr "Wika"
 
-#: src/frontend/keysclicks-window.c:532 src/frontend/keysclicks-window.c:580
+#: src/frontend/keysclicks-window.c:566 src/frontend/keysclicks-window.c:614
 msgid "System (default)"
 msgstr "Sistema (default)"
 
-#: src/frontend/keysclicks-window.c:562
+#: src/frontend/keysclicks-window.c:596
 msgid "Keyboard layout"
 msgstr "Layout ng keyboard"
 
-#: src/frontend/keysclicks-window.c:630
+#: src/frontend/keysclicks-window.c:664
 msgid "Automatic"
 msgstr "Awtomatiko"
 
-#: src/frontend/keysclicks-window.c:636
+#: src/frontend/keysclicks-window.c:670
 #, c-format
 msgid "Monitor %u"
 msgstr "Monitor %u"
 
-#: src/frontend/keysclicks-window.c:655
+#: src/frontend/keysclicks-window.c:689
 msgid "Overlay monitor"
 msgstr "Monitor ng overlay"
 
-#: src/frontend/keysclicks-window.c:686
+#: src/frontend/keysclicks-window.c:720
 msgid "Pin to dock"
 msgstr "I-pin sa dock"
 
-#: src/frontend/keysclicks-window.c:686
+#: src/frontend/keysclicks-window.c:720
 msgid "Unpin from dock"
 msgstr "I-unpin mula sa dock"
 
-#: src/frontend/keysclicks-window.c:688
+#: src/frontend/keysclicks-window.c:722
 msgid "Remove this app from the COSMIC dock"
 msgstr "Alisin ang app na ito sa COSMIC dock"
 
-#: src/frontend/keysclicks-window.c:689
+#: src/frontend/keysclicks-window.c:723
 msgid "Pin this app to the COSMIC dock"
 msgstr "I-pin ang app na ito sa COSMIC dock"
 
-#: src/frontend/keysclicks-window.c:727
+#: src/frontend/keysclicks-window.c:761
 msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
 msgstr ""
 "Wala — i-click ang Itakda, pagkatapos ay pindutin nang matagal ang isang "
 "shortcut (hal. Ctrl+Shift+H)"
 
-#: src/frontend/keysclicks-window.c:755 src/frontend/keysclicks-window.c:834
+#: src/frontend/keysclicks-window.c:789 src/frontend/keysclicks-window.c:868
 msgid "Press keys…"
 msgstr "Pindutin ang mga key…"
 
-#: src/frontend/keysclicks-window.c:755 src/frontend/keysclicks-window.c:969
+#: src/frontend/keysclicks-window.c:789 src/frontend/keysclicks-window.c:1003
 msgid "Set"
 msgstr "Itakda"
 
-#: src/frontend/keysclicks-window.c:785
+#: src/frontend/keysclicks-window.c:819
 msgid "Hold the shortcut…  "
 msgstr "Pindutin nang matagal ang shortcut…  "
 
-#: src/frontend/keysclicks-window.c:833
+#: src/frontend/keysclicks-window.c:867
 msgid "Hold the shortcut, then release to save. Esc cancels."
 msgstr ""
 "Pindutin nang matagal ang shortcut, pagkatapos ay bitawan para i-save. "
 "Kakanselahin ito ng Esc."
 
-#: src/frontend/keysclicks-window.c:877 src/frontend/keysclicks-window.c:890
+#: src/frontend/keysclicks-window.c:911 src/frontend/keysclicks-window.c:924
 msgid ""
 "On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for "
 "Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
@@ -188,29 +198,29 @@ msgstr ""
 "Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
 
 #. Privacy master toggle, prominent on the left of the header.
-#: src/frontend/keysclicks-window.c:895
+#: src/frontend/keysclicks-window.c:929
 msgid "Hide keys"
 msgstr "Itago ang mga key"
 
-#: src/frontend/keysclicks-window.c:898
+#: src/frontend/keysclicks-window.c:932
 msgid "Hide keystrokes (privacy): show • instead of keys"
 msgstr "Itago ang mga keystroke (privacy): magpakita ng • sa halip na mga key"
 
 #. overlay display layout, right below
 #. Privacy ---------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:937
+#: src/frontend/keysclicks-window.c:971
 msgid "Privacy"
 msgstr "Privacy"
 
-#: src/frontend/keysclicks-window.c:939
+#: src/frontend/keysclicks-window.c:973
 msgid "Hide keystrokes (privacy)"
 msgstr "Itago ang mga keystroke (privacy)"
 
-#: src/frontend/keysclicks-window.c:948
+#: src/frontend/keysclicks-window.c:982
 msgid "Automatic password hiding"
 msgstr "Awtomatikong pagtatago ng password"
 
-#: src/frontend/keysclicks-window.c:956
+#: src/frontend/keysclicks-window.c:990
 msgid ""
 "On (PRO) — passwords are hidden automatically in password fields. This "
 "module is still in development."
@@ -218,7 +228,7 @@ msgstr ""
 "Naka-on (PRO) — awtomatikong itinatago ang mga password sa mga field ng "
 "password. Nasa development pa ang module na ito."
 
-#: src/frontend/keysclicks-window.c:958
+#: src/frontend/keysclicks-window.c:992
 msgid ""
 "PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
 "\"Hide keys\" toggle/shortcut works now."
@@ -226,106 +236,106 @@ msgstr ""
 "PRO — nasa development. Kasama ang awtomatikong pagtatago sa PRO add-on; "
 "gumagana na ngayon ang manual na toggle/shortcut na \"Hide keys\"."
 
-#: src/frontend/keysclicks-window.c:967
+#: src/frontend/keysclicks-window.c:1001
 msgid "Hide-keys shortcut"
 msgstr "Shortcut para itago ang mga key"
 
-#: src/frontend/keysclicks-window.c:972
+#: src/frontend/keysclicks-window.c:1006
 msgid "Click, then hold a key combination to assign it"
 msgstr ""
 "I-click, pagkatapos ay pindutin nang matagal ang key combination para "
 "italaga ito"
 
-#: src/frontend/keysclicks-window.c:981
+#: src/frontend/keysclicks-window.c:1015
 msgid "System keyboard shortcuts"
 msgstr "Mga keyboard shortcut ng system"
 
-#: src/frontend/keysclicks-window.c:984
+#: src/frontend/keysclicks-window.c:1018
 msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
 msgstr ""
 "Ang mga global shortcut ay itinatakda sa OS — buksan ang COSMIC → Keyboard → "
 "Shortcuts"
 
-#: src/frontend/keysclicks-window.c:986
+#: src/frontend/keysclicks-window.c:1020
 msgid "Open settings"
 msgstr "Buksan ang mga setting"
 
 #. Keys & clicks display -------------------------------------------------
-#: src/frontend/keysclicks-window.c:993
+#: src/frontend/keysclicks-window.c:1027
 msgid "Keys and clicks display"
 msgstr "Display ng mga key at click"
 
-#: src/frontend/keysclicks-window.c:994
+#: src/frontend/keysclicks-window.c:1028
 msgid "Compact"
 msgstr "Compact"
 
-#: src/frontend/keysclicks-window.c:994
+#: src/frontend/keysclicks-window.c:1028
 msgid "Composed"
 msgstr "Composed"
 
-#: src/frontend/keysclicks-window.c:994
+#: src/frontend/keysclicks-window.c:1028
 msgid "Raw"
 msgstr "Raw"
 
-#: src/frontend/keysclicks-window.c:995
+#: src/frontend/keysclicks-window.c:1029
 msgid "Label style"
 msgstr "Istilo ng label"
 
-#: src/frontend/keysclicks-window.c:996
+#: src/frontend/keysclicks-window.c:1030
 msgid "Font size"
 msgstr "Laki ng font"
 
-#: src/frontend/keysclicks-window.c:997
+#: src/frontend/keysclicks-window.c:1031
 msgid "Show keyboard"
 msgstr "Ipakita ang keyboard"
 
-#: src/frontend/keysclicks-window.c:999
+#: src/frontend/keysclicks-window.c:1033
 msgid "Show mouse"
 msgstr "Ipakita ang mouse"
 
-#: src/frontend/keysclicks-window.c:1000
+#: src/frontend/keysclicks-window.c:1034
 msgid "Show Shift separately"
 msgstr "Ipakita ang Shift nang hiwalay"
 
-#: src/frontend/keysclicks-window.c:1002
+#: src/frontend/keysclicks-window.c:1036
 msgid "Draw border"
 msgstr "Gumuhit ng border"
 
 #. Position & behaviour --------------------------------------------------
-#: src/frontend/keysclicks-window.c:1005
+#: src/frontend/keysclicks-window.c:1039
 msgid "Position and behaviour"
 msgstr "Posisyon at gawi"
 
-#: src/frontend/keysclicks-window.c:1006
+#: src/frontend/keysclicks-window.c:1040
 msgid "Bottom"
 msgstr "Ibaba"
 
-#: src/frontend/keysclicks-window.c:1006
+#: src/frontend/keysclicks-window.c:1040
 msgid "Top"
 msgstr "Itaas"
 
-#: src/frontend/keysclicks-window.c:1007
+#: src/frontend/keysclicks-window.c:1041
 msgid "Screen edge"
 msgstr "Gilid ng screen"
 
 #. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
-#: src/frontend/keysclicks-window.c:1009
+#: src/frontend/keysclicks-window.c:1043
 msgid "Horizontal margin (%)"
 msgstr "Horizontal na margin (%)"
 
-#: src/frontend/keysclicks-window.c:1011
+#: src/frontend/keysclicks-window.c:1045
 msgid "Vertical margin (%)"
 msgstr "Vertical na margin (%)"
 
-#: src/frontend/keysclicks-window.c:1014
+#: src/frontend/keysclicks-window.c:1048
 msgid "Keep visible (no timeout)"
 msgstr "Panatilihing nakikita (walang timeout)"
 
-#: src/frontend/keysclicks-window.c:1017
+#: src/frontend/keysclicks-window.c:1051
 msgid "Timeout (ms)"
 msgstr "Timeout (ms)"
 
-#: src/frontend/keysclicks-window.c:1020
+#: src/frontend/keysclicks-window.c:1054
 msgid "Bar opacity (%)"
 msgstr "Opacity ng bar (%)"
 

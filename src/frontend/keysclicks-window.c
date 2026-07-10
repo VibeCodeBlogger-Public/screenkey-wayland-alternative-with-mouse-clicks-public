@@ -157,6 +157,34 @@ prompt_monitor_restart(GtkWidget *any_child)
 	gtk_window_present(GTK_WINDOW(dlg));
 }
 
+// Changing the language re-translates the settings window live, but the on-screen
+// overlay (a mapped layer-shell surface with its own translated labels and text
+// direction) only switches language on a fresh start — recreating that surface live
+// risks the same COSMIC layer-shell crash as a monitor switch. So prompt a clean
+// restart, exactly like the monitor flow (same dialog, check icon and Close-quits).
+static void
+prompt_language_restart(GtkWindow *parent)
+{
+	GtkWidget *dlg = adw_message_dialog_new(
+		parent, _("Close to switch language"),
+		_("The overlay switches to the new language the next time you open the app. "
+		  "Your settings are already saved — closing now is safe."));
+
+	GtkWidget *check = gtk_image_new_from_icon_name("object-select-symbolic");
+	gtk_image_set_pixel_size(GTK_IMAGE(check), 44);
+	gtk_widget_add_css_class(check, "success");
+	gtk_widget_set_margin_top(check, 6);
+	gtk_widget_set_margin_bottom(check, 2);
+	adw_message_dialog_set_extra_child(ADW_MESSAGE_DIALOG(dlg), check);
+
+	adw_message_dialog_add_response(ADW_MESSAGE_DIALOG(dlg), "ok", _("Close"));
+	adw_message_dialog_set_response_appearance(ADW_MESSAGE_DIALOG(dlg), "ok",
+						   ADW_RESPONSE_SUGGESTED);
+	adw_message_dialog_set_default_response(ADW_MESSAGE_DIALOG(dlg), "ok");
+	g_signal_connect(dlg, "response", G_CALLBACK(on_monitor_restart_response), NULL);
+	gtk_window_present(GTK_WINDOW(dlg));
+}
+
 // --- change handlers -------------------------------------------------------
 
 static void
@@ -256,6 +284,12 @@ on_language(GObject *row, GParamSpec *pspec, gpointer user_data)
 	// GObject holds a ref on it for the duration of the emission, so rebuilding
 	// synchronously here is safe.
 	populate_content(ctx);
+
+	// The settings window is re-translated live above, but the on-screen overlay only
+	// switches language on a fresh start (recreating a mapped layer-shell surface risks
+	// a COSMIC crash) — prompt a clean restart, like the monitor switch. Parent on the
+	// window (survives the rebuild), not the now-replaced combo row.
+	prompt_language_restart(GTK_WINDOW(ctx->window));
 }
 
 // Change the overlay keyboard layout (display only), persist it, and let the settings
@@ -447,7 +481,7 @@ add_spin(AdwPreferencesGroup *group, WinCtx *ctx, const char *title, FieldId fie
 		// hexpand TRUE gives the control a full-width cell; halign END then draws
 		// it at its natural (5-char) size flush against the RIGHT edge, so the
 		// digits+/- sit on the right instead of stretching or drifting left.
-		gtk_widget_set_hexpand(GTK_WIDGET(sb), TRUE);
+		gtk_widget_set_hexpand(GTK_WIDGET(sb), FALSE);
 		gtk_widget_set_halign(GTK_WIDGET(sb), GTK_ALIGN_END);
 	}
 
@@ -1040,8 +1074,8 @@ keysclicks_window_new(GtkApplication *app, KeysClicksSettings *settings,
 	gtk_widget_add_css_class(window, "keysclicks-settings"); // dark-green frame
 	// Wide enough that the full title and the version subtitle fit in the header
 	// without truncation, alongside the "Hide keys" button and the window controls.
-	gtk_window_set_default_size(GTK_WINDOW(window), 720, 680);
-	gtk_widget_set_size_request(window, 640, -1); // don't shrink below fitting
+	gtk_window_set_default_size(GTK_WINDOW(window), 820, 680);
+	gtk_widget_set_size_request(window, 700, -1); // don't shrink below fitting
 	gtk_window_set_resizable(GTK_WINDOW(window), TRUE);
 	g_object_set_data_full(G_OBJECT(window), "ctx", ctx, win_ctx_free);
 
