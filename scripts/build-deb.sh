@@ -35,9 +35,10 @@ DEPENDS="$(
 )"
 rm -rf "$SHLIB"
 [ -n "$DEPENDS" ] || { echo "ОШИБКА: dpkg-shlibdeps не дал зависимостей" >&2; exit 1; }
-# pkexec — бинарь спавнит бэкенд через него (не слинкованная либа); провайдер этой системы
-pkexec_pkg="$(dpkg -S "$(command -v pkexec 2>/dev/null)" 2>/dev/null | head -1 | cut -d: -f1 || true)"
-[ -n "$pkexec_pkg" ] && DEPENDS="$DEPENDS, $pkexec_pkg"
+# pkexec — бинарь спавнит бэкенд через него (рантайм, не слинкованная либа). Хардкодим alternation:
+# на build-хосте (CI-раннере) pkexec может отсутствовать → авто-резолв дал бы пусто. Пакет с pkexec —
+# `pkexec` (Ubuntu 24.04+/Debian) или `policykit-1` (старее).
+DEPENDS="$DEPENDS, pkexec | policykit-1"
 
 # gtk4-layer-shell НЕТ в apt Ubuntu 24.04 / Pop!_OS → пакет с зависимостью на него не поставится.
 # Статически линковать нельзя: либа перехватывает символы libwayland, а статические символы бинарь
