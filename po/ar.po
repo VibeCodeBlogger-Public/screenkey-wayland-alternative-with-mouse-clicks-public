@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keysclicks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-09 19:17-0600\n"
+"POT-Creation-Date: 2026-07-09 19:36-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: keysclicks\n"
 "Language-Team: keysclicks\n"
@@ -94,11 +94,11 @@ msgstr "الإبلاغ عن خطأ"
 msgid "On-Screen Keys & Clicks Visualizer"
 msgstr "مُصوِّر المفاتيح والنقرات على الشاشة"
 
-#: src/frontend/keysclicks-window.c:141
+#: src/frontend/keysclicks-window.c:142
 msgid "Close to switch monitor"
 msgstr "أغلِق للتبديل بين الشاشات"
 
-#: src/frontend/keysclicks-window.c:142
+#: src/frontend/keysclicks-window.c:143
 msgid ""
 "The overlay moves to the new monitor the next time you open the app. Your "
 "settings are already saved — closing now is safe."
@@ -106,84 +106,86 @@ msgstr ""
 "تنتقل الطبقة إلى الشاشة الجديدة في المرة التالية التي تفتح فيها التطبيق. تم "
 "حفظ إعداداتك بالفعل — الإغلاق الآن آمن."
 
-#: src/frontend/keysclicks-window.c:152 src/frontend/keysclicks-window.c:180
+#: src/frontend/keysclicks-window.c:153 src/frontend/keysclicks-window.c:181
 msgid "Close"
 msgstr "إغلاق"
 
-#: src/frontend/keysclicks-window.c:169
+#: src/frontend/keysclicks-window.c:170
 msgid "Close to switch language"
 msgstr "أغلِق لتبديل اللغة"
 
-#: src/frontend/keysclicks-window.c:170
+#: src/frontend/keysclicks-window.c:171
 msgid ""
 "The overlay switches to the new language the next time you open the app. "
 "Your settings are already saved — closing now is safe."
-msgstr "تتبدّل الطبقة إلى اللغة الجديدة في المرة التالية التي تفتح فيها التطبيق. تم حفظ إعداداتك بالفعل — الإغلاق الآن آمن."
+msgstr ""
+"تتبدّل الطبقة إلى اللغة الجديدة في المرة التالية التي تفتح فيها التطبيق. تم "
+"حفظ إعداداتك بالفعل — الإغلاق الآن آمن."
 
 #. Language --------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:555 src/frontend/keysclicks-window.c:966
+#: src/frontend/keysclicks-window.c:561 src/frontend/keysclicks-window.c:972
 msgid "Language"
 msgstr "اللغة"
 
-#: src/frontend/keysclicks-window.c:566 src/frontend/keysclicks-window.c:614
+#: src/frontend/keysclicks-window.c:572 src/frontend/keysclicks-window.c:620
 msgid "System (default)"
 msgstr "النظام (افتراضي)"
 
-#: src/frontend/keysclicks-window.c:596
+#: src/frontend/keysclicks-window.c:602
 msgid "Keyboard layout"
 msgstr "تخطيط لوحة المفاتيح"
 
-#: src/frontend/keysclicks-window.c:664
+#: src/frontend/keysclicks-window.c:670
 msgid "Automatic"
 msgstr "تلقائي"
 
-#: src/frontend/keysclicks-window.c:670
+#: src/frontend/keysclicks-window.c:676
 #, c-format
 msgid "Monitor %u"
 msgstr "الشاشة %u"
 
-#: src/frontend/keysclicks-window.c:689
+#: src/frontend/keysclicks-window.c:695
 msgid "Overlay monitor"
 msgstr "شاشة الطبقة"
 
-#: src/frontend/keysclicks-window.c:720
+#: src/frontend/keysclicks-window.c:726
 msgid "Pin to dock"
 msgstr "تثبيت في الرصيف"
 
-#: src/frontend/keysclicks-window.c:720
+#: src/frontend/keysclicks-window.c:726
 msgid "Unpin from dock"
 msgstr "إلغاء التثبيت من الرصيف"
 
-#: src/frontend/keysclicks-window.c:722
+#: src/frontend/keysclicks-window.c:728
 msgid "Remove this app from the COSMIC dock"
 msgstr "إزالة هذا التطبيق من رصيف COSMIC"
 
-#: src/frontend/keysclicks-window.c:723
+#: src/frontend/keysclicks-window.c:729
 msgid "Pin this app to the COSMIC dock"
 msgstr "تثبيت هذا التطبيق في رصيف COSMIC"
 
-#: src/frontend/keysclicks-window.c:761
+#: src/frontend/keysclicks-window.c:767
 msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
 msgstr ""
 "لا شيء — انقر على تعيين، ثم اضغط مع الاستمرار على اختصار (مثل Ctrl+Shift+H)"
 
-#: src/frontend/keysclicks-window.c:789 src/frontend/keysclicks-window.c:868
+#: src/frontend/keysclicks-window.c:795 src/frontend/keysclicks-window.c:874
 msgid "Press keys…"
 msgstr "اضغط المفاتيح…"
 
-#: src/frontend/keysclicks-window.c:789 src/frontend/keysclicks-window.c:1003
+#: src/frontend/keysclicks-window.c:795 src/frontend/keysclicks-window.c:1009
 msgid "Set"
 msgstr "تعيين"
 
-#: src/frontend/keysclicks-window.c:819
+#: src/frontend/keysclicks-window.c:825
 msgid "Hold the shortcut…  "
 msgstr "اضغط مع الاستمرار على الاختصار…  "
 
-#: src/frontend/keysclicks-window.c:867
+#: src/frontend/keysclicks-window.c:873
 msgid "Hold the shortcut, then release to save. Esc cancels."
 msgstr "اضغط مع الاستمرار على الاختصار، ثم حرِّره للحفظ. مفتاح Esc يُلغي."
 
-#: src/frontend/keysclicks-window.c:911 src/frontend/keysclicks-window.c:924
+#: src/frontend/keysclicks-window.c:917 src/frontend/keysclicks-window.c:930
 msgid ""
 "On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for "
 "Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
@@ -192,29 +194,29 @@ msgstr ""
 "Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
 
 #. Privacy master toggle, prominent on the left of the header.
-#: src/frontend/keysclicks-window.c:929
+#: src/frontend/keysclicks-window.c:935
 msgid "Hide keys"
 msgstr "إخفاء المفاتيح"
 
-#: src/frontend/keysclicks-window.c:932
+#: src/frontend/keysclicks-window.c:938
 msgid "Hide keystrokes (privacy): show • instead of keys"
 msgstr "إخفاء ضغطات المفاتيح (الخصوصية): إظهار • بدلاً من المفاتيح"
 
 #. overlay display layout, right below
 #. Privacy ---------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:971
+#: src/frontend/keysclicks-window.c:977
 msgid "Privacy"
 msgstr "الخصوصية"
 
-#: src/frontend/keysclicks-window.c:973
+#: src/frontend/keysclicks-window.c:979
 msgid "Hide keystrokes (privacy)"
 msgstr "إخفاء ضغطات المفاتيح (الخصوصية)"
 
-#: src/frontend/keysclicks-window.c:982
+#: src/frontend/keysclicks-window.c:988
 msgid "Automatic password hiding"
 msgstr "إخفاء كلمات المرور تلقائيًا"
 
-#: src/frontend/keysclicks-window.c:990
+#: src/frontend/keysclicks-window.c:996
 msgid ""
 "On (PRO) — passwords are hidden automatically in password fields. This "
 "module is still in development."
@@ -222,7 +224,7 @@ msgstr ""
 "مُفعّل (PRO) — تُخفى كلمات المرور تلقائيًا في حقول كلمات المرور. لا تزال هذه "
 "الوحدة قيد التطوير."
 
-#: src/frontend/keysclicks-window.c:992
+#: src/frontend/keysclicks-window.c:998
 msgid ""
 "PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
 "\"Hide keys\" toggle/shortcut works now."
@@ -230,104 +232,109 @@ msgstr ""
 "PRO — قيد التطوير. يأتي الإخفاء التلقائي مع إضافة PRO؛ أما مفتاح/اختصار "
 "\"Hide keys\" اليدوي فيعمل الآن."
 
-#: src/frontend/keysclicks-window.c:1001
+#: src/frontend/keysclicks-window.c:1007
 msgid "Hide-keys shortcut"
 msgstr "اختصار إخفاء المفاتيح"
 
-#: src/frontend/keysclicks-window.c:1006
+#: src/frontend/keysclicks-window.c:1012
 msgid "Click, then hold a key combination to assign it"
 msgstr "انقر، ثم اضغط مع الاستمرار على تركيبة مفاتيح لتعيينها"
 
-#: src/frontend/keysclicks-window.c:1015
+#: src/frontend/keysclicks-window.c:1021
 msgid "System keyboard shortcuts"
 msgstr "اختصارات لوحة المفاتيح للنظام"
 
-#: src/frontend/keysclicks-window.c:1018
+#: src/frontend/keysclicks-window.c:1024
 msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
 msgstr ""
 "تُضبط الاختصارات العامة في نظام التشغيل — افتح COSMIC → لوحة المفاتيح → "
 "الاختصارات"
 
-#: src/frontend/keysclicks-window.c:1020
+#: src/frontend/keysclicks-window.c:1026
 msgid "Open settings"
 msgstr "فتح الإعدادات"
 
 #. Keys & clicks display -------------------------------------------------
-#: src/frontend/keysclicks-window.c:1027
+#: src/frontend/keysclicks-window.c:1033
 msgid "Keys and clicks display"
 msgstr "عرض المفاتيح والنقرات"
 
-#: src/frontend/keysclicks-window.c:1028
+#. Master on/off for the on-screen overlay bar (turn it off without quitting).
+#: src/frontend/keysclicks-window.c:1035
+msgid "Show overlay"
+msgstr "إظهار الطبقة"
+
+#: src/frontend/keysclicks-window.c:1037
 msgid "Compact"
 msgstr "مُدمَج"
 
-#: src/frontend/keysclicks-window.c:1028
+#: src/frontend/keysclicks-window.c:1037
 msgid "Composed"
 msgstr "مُركَّب"
 
-#: src/frontend/keysclicks-window.c:1028
+#: src/frontend/keysclicks-window.c:1037
 msgid "Raw"
 msgstr "خام"
 
-#: src/frontend/keysclicks-window.c:1029
+#: src/frontend/keysclicks-window.c:1038
 msgid "Label style"
 msgstr "نمط التسمية"
 
-#: src/frontend/keysclicks-window.c:1030
+#: src/frontend/keysclicks-window.c:1039
 msgid "Font size"
 msgstr "حجم الخط"
 
-#: src/frontend/keysclicks-window.c:1031
+#: src/frontend/keysclicks-window.c:1040
 msgid "Show keyboard"
 msgstr "إظهار لوحة المفاتيح"
 
-#: src/frontend/keysclicks-window.c:1033
+#: src/frontend/keysclicks-window.c:1042
 msgid "Show mouse"
 msgstr "إظهار الفأرة"
 
-#: src/frontend/keysclicks-window.c:1034
+#: src/frontend/keysclicks-window.c:1043
 msgid "Show Shift separately"
 msgstr "إظهار Shift بشكل منفصل"
 
-#: src/frontend/keysclicks-window.c:1036
+#: src/frontend/keysclicks-window.c:1045
 msgid "Draw border"
 msgstr "رسم إطار"
 
 #. Position & behaviour --------------------------------------------------
-#: src/frontend/keysclicks-window.c:1039
+#: src/frontend/keysclicks-window.c:1048
 msgid "Position and behaviour"
 msgstr "الموضع والسلوك"
 
-#: src/frontend/keysclicks-window.c:1040
+#: src/frontend/keysclicks-window.c:1049
 msgid "Bottom"
 msgstr "أسفل"
 
-#: src/frontend/keysclicks-window.c:1040
+#: src/frontend/keysclicks-window.c:1049
 msgid "Top"
 msgstr "أعلى"
 
-#: src/frontend/keysclicks-window.c:1041
+#: src/frontend/keysclicks-window.c:1050
 msgid "Screen edge"
 msgstr "حافة الشاشة"
 
 #. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
-#: src/frontend/keysclicks-window.c:1043
+#: src/frontend/keysclicks-window.c:1052
 msgid "Horizontal margin (%)"
 msgstr "الهامش الأفقي (%)"
 
-#: src/frontend/keysclicks-window.c:1045
+#: src/frontend/keysclicks-window.c:1054
 msgid "Vertical margin (%)"
 msgstr "الهامش العمودي (%)"
 
-#: src/frontend/keysclicks-window.c:1048
+#: src/frontend/keysclicks-window.c:1057
 msgid "Keep visible (no timeout)"
 msgstr "إبقاؤه ظاهرًا (بدون مهلة)"
 
-#: src/frontend/keysclicks-window.c:1051
+#: src/frontend/keysclicks-window.c:1060
 msgid "Timeout (ms)"
 msgstr "المهلة (ms)"
 
-#: src/frontend/keysclicks-window.c:1054
+#: src/frontend/keysclicks-window.c:1063
 msgid "Bar opacity (%)"
 msgstr "عتامة الشريط (%)"
 
@@ -361,9 +368,6 @@ msgstr "البدء دون فتح نافذة الإعدادات"
 
 #~ msgid "Monitor"
 #~ msgstr "الشاشة"
-
-#~ msgid "Show overlay"
-#~ msgstr "إظهار التراكب"
 
 #~ msgid "Privacy provider"
 #~ msgstr "مزوّد الخصوصية"

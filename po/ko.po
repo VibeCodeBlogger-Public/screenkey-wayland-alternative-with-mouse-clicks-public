@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keysclicks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-09 19:17-0600\n"
+"POT-Creation-Date: 2026-07-09 19:36-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: keysclicks\n"
 "Language-Team: keysclicks\n"
@@ -95,11 +95,11 @@ msgstr "버그 신고"
 msgid "On-Screen Keys & Clicks Visualizer"
 msgstr "화면 키 및 클릭 시각화 도구"
 
-#: src/frontend/keysclicks-window.c:141
+#: src/frontend/keysclicks-window.c:142
 msgid "Close to switch monitor"
 msgstr "모니터를 전환하려면 닫기"
 
-#: src/frontend/keysclicks-window.c:142
+#: src/frontend/keysclicks-window.c:143
 msgid ""
 "The overlay moves to the new monitor the next time you open the app. Your "
 "settings are already saved — closing now is safe."
@@ -107,83 +107,85 @@ msgstr ""
 "다음에 앱을 열면 오버레이가 새 모니터로 이동합니다. 설정은 이미 저장되었으므"
 "로 지금 닫아도 안전합니다."
 
-#: src/frontend/keysclicks-window.c:152 src/frontend/keysclicks-window.c:180
+#: src/frontend/keysclicks-window.c:153 src/frontend/keysclicks-window.c:181
 msgid "Close"
 msgstr "닫기"
 
-#: src/frontend/keysclicks-window.c:169
+#: src/frontend/keysclicks-window.c:170
 msgid "Close to switch language"
 msgstr "언어를 전환하려면 닫기"
 
-#: src/frontend/keysclicks-window.c:170
+#: src/frontend/keysclicks-window.c:171
 msgid ""
 "The overlay switches to the new language the next time you open the app. "
 "Your settings are already saved — closing now is safe."
-msgstr "다음에 앱을 열면 오버레이가 새 언어로 전환됩니다. 설정은 이미 저장되었으므로 지금 닫아도 안전합니다."
+msgstr ""
+"다음에 앱을 열면 오버레이가 새 언어로 전환됩니다. 설정은 이미 저장되었으므로 "
+"지금 닫아도 안전합니다."
 
 #. Language --------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:555 src/frontend/keysclicks-window.c:966
+#: src/frontend/keysclicks-window.c:561 src/frontend/keysclicks-window.c:972
 msgid "Language"
 msgstr "언어"
 
-#: src/frontend/keysclicks-window.c:566 src/frontend/keysclicks-window.c:614
+#: src/frontend/keysclicks-window.c:572 src/frontend/keysclicks-window.c:620
 msgid "System (default)"
 msgstr "시스템 (기본값)"
 
-#: src/frontend/keysclicks-window.c:596
+#: src/frontend/keysclicks-window.c:602
 msgid "Keyboard layout"
 msgstr "키보드 레이아웃"
 
-#: src/frontend/keysclicks-window.c:664
+#: src/frontend/keysclicks-window.c:670
 msgid "Automatic"
 msgstr "자동"
 
-#: src/frontend/keysclicks-window.c:670
+#: src/frontend/keysclicks-window.c:676
 #, c-format
 msgid "Monitor %u"
 msgstr "모니터 %u"
 
-#: src/frontend/keysclicks-window.c:689
+#: src/frontend/keysclicks-window.c:695
 msgid "Overlay monitor"
 msgstr "오버레이 모니터"
 
-#: src/frontend/keysclicks-window.c:720
+#: src/frontend/keysclicks-window.c:726
 msgid "Pin to dock"
 msgstr "독에 고정"
 
-#: src/frontend/keysclicks-window.c:720
+#: src/frontend/keysclicks-window.c:726
 msgid "Unpin from dock"
 msgstr "독에서 고정 해제"
 
-#: src/frontend/keysclicks-window.c:722
+#: src/frontend/keysclicks-window.c:728
 msgid "Remove this app from the COSMIC dock"
 msgstr "이 앱을 COSMIC 독에서 제거"
 
-#: src/frontend/keysclicks-window.c:723
+#: src/frontend/keysclicks-window.c:729
 msgid "Pin this app to the COSMIC dock"
 msgstr "이 앱을 COSMIC 독에 고정"
 
-#: src/frontend/keysclicks-window.c:761
+#: src/frontend/keysclicks-window.c:767
 msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
 msgstr "없음 — 설정을 클릭한 다음 단축키를 길게 누르세요 (예: Ctrl+Shift+H)"
 
-#: src/frontend/keysclicks-window.c:789 src/frontend/keysclicks-window.c:868
+#: src/frontend/keysclicks-window.c:795 src/frontend/keysclicks-window.c:874
 msgid "Press keys…"
 msgstr "키를 누르세요…"
 
-#: src/frontend/keysclicks-window.c:789 src/frontend/keysclicks-window.c:1003
+#: src/frontend/keysclicks-window.c:795 src/frontend/keysclicks-window.c:1009
 msgid "Set"
 msgstr "설정"
 
-#: src/frontend/keysclicks-window.c:819
+#: src/frontend/keysclicks-window.c:825
 msgid "Hold the shortcut…  "
 msgstr "단축키를 길게 누르세요…  "
 
-#: src/frontend/keysclicks-window.c:867
+#: src/frontend/keysclicks-window.c:873
 msgid "Hold the shortcut, then release to save. Esc cancels."
 msgstr "단축키를 길게 누른 다음 손을 떼면 저장됩니다. Esc를 누르면 취소됩니다."
 
-#: src/frontend/keysclicks-window.c:911 src/frontend/keysclicks-window.c:924
+#: src/frontend/keysclicks-window.c:917 src/frontend/keysclicks-window.c:930
 msgid ""
 "On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for "
 "Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
@@ -192,29 +194,29 @@ msgstr ""
 "Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
 
 #. Privacy master toggle, prominent on the left of the header.
-#: src/frontend/keysclicks-window.c:929
+#: src/frontend/keysclicks-window.c:935
 msgid "Hide keys"
 msgstr "키 숨기기"
 
-#: src/frontend/keysclicks-window.c:932
+#: src/frontend/keysclicks-window.c:938
 msgid "Hide keystrokes (privacy): show • instead of keys"
 msgstr "키 입력 숨기기 (개인정보 보호): 키 대신 • 표시"
 
 #. overlay display layout, right below
 #. Privacy ---------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:971
+#: src/frontend/keysclicks-window.c:977
 msgid "Privacy"
 msgstr "개인정보 보호"
 
-#: src/frontend/keysclicks-window.c:973
+#: src/frontend/keysclicks-window.c:979
 msgid "Hide keystrokes (privacy)"
 msgstr "키 입력 숨기기 (개인정보 보호)"
 
-#: src/frontend/keysclicks-window.c:982
+#: src/frontend/keysclicks-window.c:988
 msgid "Automatic password hiding"
 msgstr "자동 비밀번호 숨기기"
 
-#: src/frontend/keysclicks-window.c:990
+#: src/frontend/keysclicks-window.c:996
 msgid ""
 "On (PRO) — passwords are hidden automatically in password fields. This "
 "module is still in development."
@@ -222,7 +224,7 @@ msgstr ""
 "켜짐 (PRO) — 비밀번호 필드에서 비밀번호가 자동으로 숨겨집니다. 이 모듈은 아"
 "직 개발 중입니다."
 
-#: src/frontend/keysclicks-window.c:992
+#: src/frontend/keysclicks-window.c:998
 msgid ""
 "PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
 "\"Hide keys\" toggle/shortcut works now."
@@ -230,102 +232,107 @@ msgstr ""
 "PRO — 개발 중. 자동 숨기기는 PRO 추가 기능과 함께 제공됩니다. 수동 \"Hide "
 "keys\" 토글/단축키는 지금 작동합니다."
 
-#: src/frontend/keysclicks-window.c:1001
+#: src/frontend/keysclicks-window.c:1007
 msgid "Hide-keys shortcut"
 msgstr "키 숨기기 단축키"
 
-#: src/frontend/keysclicks-window.c:1006
+#: src/frontend/keysclicks-window.c:1012
 msgid "Click, then hold a key combination to assign it"
 msgstr "클릭한 다음 키 조합을 길게 눌러 지정하세요"
 
-#: src/frontend/keysclicks-window.c:1015
+#: src/frontend/keysclicks-window.c:1021
 msgid "System keyboard shortcuts"
 msgstr "시스템 키보드 단축키"
 
-#: src/frontend/keysclicks-window.c:1018
+#: src/frontend/keysclicks-window.c:1024
 msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
 msgstr "전역 단축키는 OS에서 설정합니다 — COSMIC → 키보드 → 단축키를 여세요"
 
-#: src/frontend/keysclicks-window.c:1020
+#: src/frontend/keysclicks-window.c:1026
 msgid "Open settings"
 msgstr "설정 열기"
 
 #. Keys & clicks display -------------------------------------------------
-#: src/frontend/keysclicks-window.c:1027
+#: src/frontend/keysclicks-window.c:1033
 msgid "Keys and clicks display"
 msgstr "키 및 클릭 표시"
 
-#: src/frontend/keysclicks-window.c:1028
+#. Master on/off for the on-screen overlay bar (turn it off without quitting).
+#: src/frontend/keysclicks-window.c:1035
+msgid "Show overlay"
+msgstr "오버레이 표시"
+
+#: src/frontend/keysclicks-window.c:1037
 msgid "Compact"
 msgstr "간결"
 
-#: src/frontend/keysclicks-window.c:1028
+#: src/frontend/keysclicks-window.c:1037
 msgid "Composed"
 msgstr "조합"
 
-#: src/frontend/keysclicks-window.c:1028
+#: src/frontend/keysclicks-window.c:1037
 msgid "Raw"
 msgstr "원본"
 
-#: src/frontend/keysclicks-window.c:1029
+#: src/frontend/keysclicks-window.c:1038
 msgid "Label style"
 msgstr "레이블 스타일"
 
-#: src/frontend/keysclicks-window.c:1030
+#: src/frontend/keysclicks-window.c:1039
 msgid "Font size"
 msgstr "글꼴 크기"
 
-#: src/frontend/keysclicks-window.c:1031
+#: src/frontend/keysclicks-window.c:1040
 msgid "Show keyboard"
 msgstr "키보드 표시"
 
-#: src/frontend/keysclicks-window.c:1033
+#: src/frontend/keysclicks-window.c:1042
 msgid "Show mouse"
 msgstr "마우스 표시"
 
-#: src/frontend/keysclicks-window.c:1034
+#: src/frontend/keysclicks-window.c:1043
 msgid "Show Shift separately"
 msgstr "Shift 별도 표시"
 
-#: src/frontend/keysclicks-window.c:1036
+#: src/frontend/keysclicks-window.c:1045
 msgid "Draw border"
 msgstr "테두리 그리기"
 
 #. Position & behaviour --------------------------------------------------
-#: src/frontend/keysclicks-window.c:1039
+#: src/frontend/keysclicks-window.c:1048
 msgid "Position and behaviour"
 msgstr "위치 및 동작"
 
-#: src/frontend/keysclicks-window.c:1040
+#: src/frontend/keysclicks-window.c:1049
 msgid "Bottom"
 msgstr "아래"
 
-#: src/frontend/keysclicks-window.c:1040
+#: src/frontend/keysclicks-window.c:1049
 msgid "Top"
 msgstr "위"
 
-#: src/frontend/keysclicks-window.c:1041
+#: src/frontend/keysclicks-window.c:1050
 msgid "Screen edge"
 msgstr "화면 가장자리"
 
 #. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
-#: src/frontend/keysclicks-window.c:1043
+#: src/frontend/keysclicks-window.c:1052
 msgid "Horizontal margin (%)"
 msgstr "가로 여백 (%)"
 
-#: src/frontend/keysclicks-window.c:1045
+#: src/frontend/keysclicks-window.c:1054
 msgid "Vertical margin (%)"
 msgstr "세로 여백 (%)"
 
-#: src/frontend/keysclicks-window.c:1048
+#: src/frontend/keysclicks-window.c:1057
 msgid "Keep visible (no timeout)"
 msgstr "항상 표시 (시간 제한 없음)"
 
-#: src/frontend/keysclicks-window.c:1051
+#: src/frontend/keysclicks-window.c:1060
 msgid "Timeout (ms)"
 msgstr "시간 제한 (ms)"
 
-#: src/frontend/keysclicks-window.c:1054
+#: src/frontend/keysclicks-window.c:1063
 msgid "Bar opacity (%)"
 msgstr "막대 불투명도 (%)"
 
@@ -359,9 +366,6 @@ msgstr "설정 창을 열지 않고 시작"
 
 #~ msgid "Monitor"
 #~ msgstr "모니터"
-
-#~ msgid "Show overlay"
-#~ msgstr "오버레이 표시"
 
 #~ msgid "Privacy provider"
 #~ msgstr "개인정보 보호 제공자"

@@ -32,6 +32,7 @@ typedef enum {
 	F_KEEP,
 	F_TIMEOUT,
 	F_BAR_OPACITY,
+	F_OVERLAY_VISIBLE, // master on/off for the on-screen overlay bar
 } FieldId;
 
 typedef struct {
@@ -210,6 +211,11 @@ on_switch(GObject *row, GParamSpec *pspec, gpointer user_data)
 		ctx->settings->keep_forever = v;
 		if (ctx->timeout_row != NULL)
 			gtk_widget_set_sensitive(ctx->timeout_row, !v);
+		break;
+	case F_OVERLAY_VISIBLE:
+		// Master on/off: the overlay listener (keysclicks-overlay.c) shows/hides the
+		// layer-shell bar live from this flag, so no restart needed.
+		ctx->settings->overlay_visible = v;
 		break;
 	default:
 		break;
@@ -1025,6 +1031,9 @@ populate_content(WinCtx *ctx)
 
 	// Keys & clicks display -------------------------------------------------
 	AdwPreferencesGroup *g_display = add_group(page, _("Keys and clicks display"));
+	// Master on/off for the on-screen overlay bar (turn it off without quitting).
+	add_switch(g_display, ctx, _("Show overlay"), F_OVERLAY_VISIBLE,
+		   settings->overlay_visible);
 	const char *modes[] = { _("Composed"), _("Raw"), _("Compact"), NULL };
 	add_combo(g_display, ctx, _("Label style"), F_MODE, modes, settings->mode);
 	add_spin(g_display, ctx, _("Font size"), F_FONT_SIZE, 10, 48, 1, settings->font_size);
@@ -1057,6 +1066,21 @@ populate_content(WinCtx *ctx)
 	ctx->rebuilding = FALSE;
 }
 
+// Closing the settings window quits the whole app — that also tears down the on-screen
+// overlay (it is an application window that would otherwise keep the app, and its bar,
+// alive after the settings window is gone). Matches "close the app = it's gone"; the
+// "Show overlay" toggle hides the bar without quitting.
+static gboolean
+on_settings_close_request(GtkWindow *window, gpointer user_data)
+{
+	(void)window;
+	(void)user_data;
+	GApplication *app = g_application_get_default();
+	if (app != NULL)
+		g_application_quit(app);
+	return FALSE; // proceed with the default close/destroy too
+}
+
 GtkWidget *
 keysclicks_window_new(GtkApplication *app, KeysClicksSettings *settings,
 		      KeysClicksPrivacy *privacy)
@@ -1078,6 +1102,9 @@ keysclicks_window_new(GtkApplication *app, KeysClicksSettings *settings,
 	gtk_widget_set_size_request(window, 700, -1); // don't shrink below fitting
 	gtk_window_set_resizable(GTK_WINDOW(window), TRUE);
 	g_object_set_data_full(G_OBJECT(window), "ctx", ctx, win_ctx_free);
+
+	// Closing the settings window quits the app (tears down the overlay too).
+	g_signal_connect(window, "close-request", G_CALLBACK(on_settings_close_request), NULL);
 
 	// Key controller for capturing the "Hide keys" shortcut chord (window-level,
 	// added once — survives content rebuilds on language change).

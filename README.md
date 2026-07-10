@@ -55,8 +55,9 @@ bar is a separate layer-shell surface; the window just configures it, and
 **every change applies live** and is saved immediately. The window is organised
 into groups:
 
-- **Keys and clicks display** — label style (Composed / Raw / Compact), font
-  size, *Show keyboard*, *Show mouse*, *Show Shift separately* and *Draw border*.
+- **Keys and clicks display** — *Show overlay* (master on/off for the on-screen
+  bar), label style (Composed / Raw / Compact), font size, *Show keyboard*, *Show
+  mouse*, *Show Shift separately* and *Draw border*.
 - **Position and behaviour** — screen edge (Top / Bottom); **horizontal and
   vertical margins as a percentage** of the monitor, so placement is
   resolution- and zoom-independent (the horizontal slider runs from −100 % =
@@ -68,7 +69,9 @@ into groups:
 - **Privacy** — the *Hide keys* toggle and the *Hide-keys shortcut* (see
   [Privacy](#privacy-hide-keystrokes)).
 
-The overlay is always on while the app runs — to stop it, quit the app.
+The **Show overlay** toggle (in *Keys and clicks display*) turns the on-screen bar
+off and on live, without quitting. Closing the settings window quits the app, which
+also removes the overlay.
 
 ### Persistence
 
