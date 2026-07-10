@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2026 VibeCodeBlogger -->
+<component type="desktop-application">
+  <id>io.github.vibecodeblogger.KeysAndClicksVisualizer</id>
+  <name>On-Screen Keyboard &amp; Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)</name>
+  <summary>Always-on-top keyboard and mouse-click overlay for Wayland screencasts</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Apache-2.0</project_license>
+  <developer id="io.github.vibecodeblogger">
+    <name>VibeCodeBlogger</name>
+  </developer>
+  <description>
+    <p>
+      Always-on-top overlay that shows the keys you press and the mouse buttons you
+      click, for screencasts, tutorials and streams. Built natively for Wayland with
+      GTK4 and gtk4-layer-shell (COSMIC, sway, Hyprland, KDE Plasma, wlroots); it reads
+      input via libinput and translates keys with xkbcommon.
+    </p>
+    <p>A screenkey / KeyCastr alternative for Linux/Wayland.</p>
+  </description>
+  <launchable type="desktop-id">io.github.vibecodeblogger.KeysAndClicksVisualizer.desktop</launchable>
+  <url type="homepage">https://github.com/VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public</url>
+  <url type="bugtracker">https://github.com/VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public/issues</url>
+  <categories>
+    <category>Utility</category>
+    <category>AudioVideo</category>
+  </categories>
+  <keywords>
+    <keyword>screencast</keyword>
+    <keyword>keystroke</keyword>
+    <keyword>overlay</keyword>
+    <keyword>screenkey</keyword>
+    <keyword>keycastr</keyword>
+    <keyword>wayland</keyword>
+  </keywords>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.1.0" date="2026-07-09"/>
+  </releases>
+</component>

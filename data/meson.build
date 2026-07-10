@@ -16,6 +16,14 @@ install_data(
   install_dir: get_option('datadir') / 'applications',
 )
 
+# AppStream metainfo — software centres (COSMIC Store, GNOME Software) show the
+# product NAME/summary/description from here (the .deb Package field is a lowercase
+# identifier, not a display name). This is what makes the store title the full name.
+install_data(
+  'io.github.vibecodeblogger.KeysAndClicksVisualizer.metainfo.xml',
+  install_dir: get_option('datadir') / 'metainfo',
+)
+
 # Application icon in the hicolor theme. The window/dock icon is resolved by the
 # compositor from the GTK application id (Icon= in the .desktop / app_id) against
 # the installed icon theme, so we ship every hicolor raster size. The 1024px
