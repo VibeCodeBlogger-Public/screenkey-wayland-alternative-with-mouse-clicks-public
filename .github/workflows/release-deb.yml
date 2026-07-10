@@ -21,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history so the build-count in the version is real & grows
 
       - name: Install build dependencies
         run: |
@@ -44,15 +46,11 @@ jobs:
           sudo ninja -C _b install
           sudo ldconfig
 
-      - name: Resolve version
+      - name: Resolve version (3.8.<public-commit-count>, mirrors the in-app header)
         id: ver
         run: |
-          if [ "${{ github.event_name }}" = "push" ]; then
-            V="${GITHUB_REF_NAME#v}"
-          else
-            V="${{ github.event.inputs.version }}"
-          fi
-          echo "version=$V" >> "$GITHUB_OUTPUT"
+          COUNT="$(git rev-list --count HEAD)"
+          echo "version=3.8.$COUNT" >> "$GITHUB_OUTPUT"
 
       - name: Build .deb
         run: bash scripts/build-deb.sh "${{ steps.ver.outputs.version }}"

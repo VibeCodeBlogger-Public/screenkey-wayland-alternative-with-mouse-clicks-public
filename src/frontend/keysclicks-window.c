@@ -924,8 +924,10 @@ populate_content(WinCtx *ctx)
 
 	// Show the running version in the header (subtitle) so it is always obvious
 	// which build is on screen. KEYSCLICKS_BUILD auto-increments per commit.
-	char *version = g_strdup_printf("v%s · build %s", KEYSCLICKS_VERSION,
-					KEYSCLICKS_BUILD);
+	// "v<major.minor>.<build-count>.<short-hash>" — e.g. v3.8.364.09488c3. The
+	// major.minor is the mirrored meson version; the count grows per public commit,
+	// the hash pins the exact build (handy for searching).
+	char *version = g_strdup_printf("v%s.%s", KEYSCLICKS_VERSION, KEYSCLICKS_BUILD);
 	GtkWidget *title_widget =
 		adw_window_title_new(_("On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"), version);
 	adw_header_bar_set_title_widget(ADW_HEADER_BAR(header), title_widget);
@@ -967,6 +969,12 @@ populate_content(WinCtx *ctx)
 	adw_toolbar_view_add_top_bar(ADW_TOOLBAR_VIEW(toolbar), header);
 	adw_toolbar_view_set_content(ADW_TOOLBAR_VIEW(toolbar), GTK_WIDGET(page));
 	adw_application_window_set_content(ADW_APPLICATION_WINDOW(window), toolbar);
+
+	// Overlay master switch — the very first thing, so the on-screen bar can be
+	// turned off and on without quitting. Title-less group keeps it at the top.
+	AdwPreferencesGroup *g_overlay = add_group(page, "");
+	add_switch(g_overlay, ctx, _("Show overlay"), F_OVERLAY_VISIBLE,
+		   settings->overlay_visible);
 
 	// Language --------------------------------------------------------------
 	AdwPreferencesGroup *g_lang = add_group(page, _("Language"));
@@ -1031,9 +1039,6 @@ populate_content(WinCtx *ctx)
 
 	// Keys & clicks display -------------------------------------------------
 	AdwPreferencesGroup *g_display = add_group(page, _("Keys and clicks display"));
-	// Master on/off for the on-screen overlay bar (turn it off without quitting).
-	add_switch(g_display, ctx, _("Show overlay"), F_OVERLAY_VISIBLE,
-		   settings->overlay_visible);
 	const char *modes[] = { _("Composed"), _("Raw"), _("Compact"), NULL };
 	add_combo(g_display, ctx, _("Label style"), F_MODE, modes, settings->mode);
 	add_spin(g_display, ctx, _("Font size"), F_FONT_SIZE, 10, 48, 1, settings->font_size);
