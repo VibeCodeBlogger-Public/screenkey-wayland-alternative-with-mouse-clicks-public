@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keysclicks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"POT-Creation-Date: 2026-07-09 18:45-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: keysclicks\n"
 "Language-Team: keysclicks\n"
@@ -90,121 +90,125 @@ msgstr "发送"
 msgid "Report a bug"
 msgstr "报告问题"
 
-#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+#: src/frontend/keysclicks-overlay.c:404
 msgid "On-Screen Keys & Clicks Visualizer"
 msgstr "屏幕按键与点击可视化工具"
 
-#: src/frontend/keysclicks-window.c:140
+#: src/frontend/keysclicks-window.c:141
 msgid "Close to switch monitor"
 msgstr "关闭以切换显示器"
 
-#: src/frontend/keysclicks-window.c:141
+#: src/frontend/keysclicks-window.c:142
 msgid ""
 "The overlay moves to the new monitor the next time you open the app. Your "
 "settings are already saved — closing now is safe."
 msgstr ""
 "下次打开应用时，浮层会移动到新的显示器。您的设置已保存 — 现在关闭是安全的。"
 
-#: src/frontend/keysclicks-window.c:151
+#: src/frontend/keysclicks-window.c:152
 msgid "Close"
 msgstr "关闭"
 
 #. Language --------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+#: src/frontend/keysclicks-window.c:521 src/frontend/keysclicks-window.c:932
 msgid "Language"
 msgstr "语言"
 
-#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+#: src/frontend/keysclicks-window.c:532 src/frontend/keysclicks-window.c:580
 msgid "System (default)"
 msgstr "系统（默认）"
 
-#: src/frontend/keysclicks-window.c:512
+#: src/frontend/keysclicks-window.c:562
 msgid "Keyboard layout"
 msgstr "键盘布局"
 
-#: src/frontend/keysclicks-window.c:547
+#: src/frontend/keysclicks-window.c:630
 msgid "Automatic"
 msgstr "自动"
 
-#: src/frontend/keysclicks-window.c:553
+#: src/frontend/keysclicks-window.c:636
 #, c-format
 msgid "Monitor %u"
 msgstr "显示器 %u"
 
-#: src/frontend/keysclicks-window.c:572
+#: src/frontend/keysclicks-window.c:655
 msgid "Overlay monitor"
 msgstr "浮层显示器"
 
-#: src/frontend/keysclicks-window.c:603
+#: src/frontend/keysclicks-window.c:686
 msgid "Pin to dock"
 msgstr "固定到程序坞"
 
-#: src/frontend/keysclicks-window.c:603
+#: src/frontend/keysclicks-window.c:686
 msgid "Unpin from dock"
 msgstr "从程序坞取消固定"
 
-#: src/frontend/keysclicks-window.c:605
+#: src/frontend/keysclicks-window.c:688
 msgid "Remove this app from the COSMIC dock"
 msgstr "从 COSMIC 程序坞中移除此应用"
 
-#: src/frontend/keysclicks-window.c:606
+#: src/frontend/keysclicks-window.c:689
 msgid "Pin this app to the COSMIC dock"
 msgstr "将此应用固定到 COSMIC 程序坞"
 
-#: src/frontend/keysclicks-window.c:644
+#: src/frontend/keysclicks-window.c:727
 msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
 msgstr "无 — 点击“设置”，然后按住快捷键（例如 Ctrl+Shift+H）"
 
-#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+#: src/frontend/keysclicks-window.c:755 src/frontend/keysclicks-window.c:834
 msgid "Press keys…"
 msgstr "请按键…"
 
-#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+#: src/frontend/keysclicks-window.c:755 src/frontend/keysclicks-window.c:969
 msgid "Set"
 msgstr "设置"
 
-#: src/frontend/keysclicks-window.c:702
+#: src/frontend/keysclicks-window.c:785
 msgid "Hold the shortcut…  "
 msgstr "按住快捷键…  "
 
-#: src/frontend/keysclicks-window.c:750
+#: src/frontend/keysclicks-window.c:833
 msgid "Hold the shortcut, then release to save. Esc cancels."
 msgstr "按住快捷键，然后松开以保存。按 Esc 取消。"
 
-#: src/frontend/keysclicks-window.c:780
-msgid "On-Screen Keys & Clicks Visualizer — Settings"
-msgstr "屏幕按键与点击可视化工具 — 设置"
+#: src/frontend/keysclicks-window.c:877 src/frontend/keysclicks-window.c:890
+msgid ""
+"On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for "
+"Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
+msgstr ""
+"On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for "
+"Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
 
 #. Privacy master toggle, prominent on the left of the header.
-#: src/frontend/keysclicks-window.c:798
+#: src/frontend/keysclicks-window.c:895
 msgid "Hide keys"
 msgstr "隐藏按键"
 
-#: src/frontend/keysclicks-window.c:801
+#: src/frontend/keysclicks-window.c:898
 msgid "Hide keystrokes (privacy): show • instead of keys"
 msgstr "隐藏按键输入（隐私）：以 • 代替按键显示"
 
 #. overlay display layout, right below
 #. Privacy ---------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:833
+#: src/frontend/keysclicks-window.c:937
 msgid "Privacy"
 msgstr "隐私"
 
-#: src/frontend/keysclicks-window.c:835
+#: src/frontend/keysclicks-window.c:939
 msgid "Hide keystrokes (privacy)"
 msgstr "隐藏按键输入（隐私）"
 
-#: src/frontend/keysclicks-window.c:844
+#: src/frontend/keysclicks-window.c:948
 msgid "Automatic password hiding"
 msgstr "自动隐藏密码"
 
-#: src/frontend/keysclicks-window.c:852
+#: src/frontend/keysclicks-window.c:956
 msgid ""
 "On (PRO) — passwords are hidden automatically in password fields. This "
 "module is still in development."
 msgstr "开启（PRO）— 在密码字段中自动隐藏密码。此模块仍在开发中。"
 
-#: src/frontend/keysclicks-window.c:854
+#: src/frontend/keysclicks-window.c:958
 msgid ""
 "PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
 "\"Hide keys\" toggle/shortcut works now."
@@ -212,125 +216,128 @@ msgstr ""
 "PRO — 开发中。自动隐藏功能将随 PRO 附加组件提供；手动的“Hide keys”开关/快捷键"
 "现已可用。"
 
-#: src/frontend/keysclicks-window.c:863
+#: src/frontend/keysclicks-window.c:967
 msgid "Hide-keys shortcut"
 msgstr "隐藏按键快捷键"
 
-#: src/frontend/keysclicks-window.c:868
+#: src/frontend/keysclicks-window.c:972
 msgid "Click, then hold a key combination to assign it"
 msgstr "点击，然后按住组合键以进行分配"
 
-#: src/frontend/keysclicks-window.c:877
+#: src/frontend/keysclicks-window.c:981
 msgid "System keyboard shortcuts"
 msgstr "系统键盘快捷键"
 
-#: src/frontend/keysclicks-window.c:880
+#: src/frontend/keysclicks-window.c:984
 msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
 msgstr "全局快捷键在操作系统中设置 — 打开 COSMIC → 键盘 → 快捷键"
 
-#: src/frontend/keysclicks-window.c:882
+#: src/frontend/keysclicks-window.c:986
 msgid "Open settings"
 msgstr "打开设置"
 
 #. Keys & clicks display -------------------------------------------------
-#: src/frontend/keysclicks-window.c:889
+#: src/frontend/keysclicks-window.c:993
 msgid "Keys and clicks display"
 msgstr "按键与点击显示"
 
-#: src/frontend/keysclicks-window.c:890
+#: src/frontend/keysclicks-window.c:994
 msgid "Compact"
 msgstr "紧凑"
 
-#: src/frontend/keysclicks-window.c:890
+#: src/frontend/keysclicks-window.c:994
 msgid "Composed"
 msgstr "组合"
 
-#: src/frontend/keysclicks-window.c:890
+#: src/frontend/keysclicks-window.c:994
 msgid "Raw"
 msgstr "原始"
 
-#: src/frontend/keysclicks-window.c:891
+#: src/frontend/keysclicks-window.c:995
 msgid "Label style"
 msgstr "标签样式"
 
-#: src/frontend/keysclicks-window.c:892
+#: src/frontend/keysclicks-window.c:996
 msgid "Font size"
 msgstr "字体大小"
 
-#: src/frontend/keysclicks-window.c:893
+#: src/frontend/keysclicks-window.c:997
 msgid "Show keyboard"
 msgstr "显示键盘"
 
-#: src/frontend/keysclicks-window.c:895
+#: src/frontend/keysclicks-window.c:999
 msgid "Show mouse"
 msgstr "显示鼠标"
 
-#: src/frontend/keysclicks-window.c:896
+#: src/frontend/keysclicks-window.c:1000
 msgid "Show Shift separately"
 msgstr "单独显示 Shift"
 
-#: src/frontend/keysclicks-window.c:898
+#: src/frontend/keysclicks-window.c:1002
 msgid "Draw border"
 msgstr "绘制边框"
 
 #. Position & behaviour --------------------------------------------------
-#: src/frontend/keysclicks-window.c:901
+#: src/frontend/keysclicks-window.c:1005
 msgid "Position and behaviour"
 msgstr "位置与行为"
 
-#: src/frontend/keysclicks-window.c:902
+#: src/frontend/keysclicks-window.c:1006
 msgid "Bottom"
 msgstr "底部"
 
-#: src/frontend/keysclicks-window.c:902
+#: src/frontend/keysclicks-window.c:1006
 msgid "Top"
 msgstr "顶部"
 
-#: src/frontend/keysclicks-window.c:903
+#: src/frontend/keysclicks-window.c:1007
 msgid "Screen edge"
 msgstr "屏幕边缘"
 
 #. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
-#: src/frontend/keysclicks-window.c:905
+#: src/frontend/keysclicks-window.c:1009
 msgid "Horizontal margin (%)"
 msgstr "水平边距 (%)"
 
-#: src/frontend/keysclicks-window.c:907
+#: src/frontend/keysclicks-window.c:1011
 msgid "Vertical margin (%)"
 msgstr "垂直边距 (%)"
 
-#: src/frontend/keysclicks-window.c:910
+#: src/frontend/keysclicks-window.c:1014
 msgid "Keep visible (no timeout)"
 msgstr "保持可见（无超时）"
 
-#: src/frontend/keysclicks-window.c:913
+#: src/frontend/keysclicks-window.c:1017
 msgid "Timeout (ms)"
 msgstr "超时 (ms)"
 
-#: src/frontend/keysclicks-window.c:916
+#: src/frontend/keysclicks-window.c:1020
 msgid "Bar opacity (%)"
 msgstr "栏不透明度 (%)"
 
-#: src/frontend/main.c:106
+#: src/frontend/main.c:107
 msgid "Left Click"
 msgstr "左键点击"
 
-#: src/frontend/main.c:108
+#: src/frontend/main.c:109
 msgid "Right Click"
 msgstr "右键点击"
 
-#: src/frontend/main.c:110
+#: src/frontend/main.c:111
 msgid "Middle Click"
 msgstr "中键点击"
 
-#: src/frontend/main.c:122
+#: src/frontend/main.c:123
 #, c-format
 msgid "Mouse(%u)"
 msgstr "鼠标(%u)"
 
-#: src/frontend/main.c:407
+#: src/frontend/main.c:418
 msgid "Start without opening the settings window"
 msgstr "启动时不打开设置窗口"
+
+#~ msgid "On-Screen Keys & Clicks Visualizer — Settings"
+#~ msgstr "屏幕按键与点击可视化工具 — 设置"
 
 #, c-format
 #~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keysclicks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"POT-Creation-Date: 2026-07-09 18:45-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: keysclicks\n"
 "Language-Team: keysclicks\n"
@@ -90,15 +90,15 @@ msgstr "Жіберу"
 msgid "Report a bug"
 msgstr "Қате туралы хабарлау"
 
-#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+#: src/frontend/keysclicks-overlay.c:404
 msgid "On-Screen Keys & Clicks Visualizer"
 msgstr "Экрандағы пернелер мен басулар визуализаторы"
 
-#: src/frontend/keysclicks-window.c:140
+#: src/frontend/keysclicks-window.c:141
 msgid "Close to switch monitor"
 msgstr "Мониторды ауыстыру үшін жабыңыз"
 
-#: src/frontend/keysclicks-window.c:141
+#: src/frontend/keysclicks-window.c:142
 msgid ""
 "The overlay moves to the new monitor the next time you open the app. Your "
 "settings are already saved — closing now is safe."
@@ -106,103 +106,107 @@ msgstr ""
 "Қолданбаны келесі жолы ашқанда қабат жаңа мониторға ауысады. Параметрлеріңіз "
 "әлдеқашан сақталған — қазір жабу қауіпсіз."
 
-#: src/frontend/keysclicks-window.c:151
+#: src/frontend/keysclicks-window.c:152
 msgid "Close"
 msgstr "Жабу"
 
 #. Language --------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+#: src/frontend/keysclicks-window.c:521 src/frontend/keysclicks-window.c:932
 msgid "Language"
 msgstr "Тіл"
 
-#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+#: src/frontend/keysclicks-window.c:532 src/frontend/keysclicks-window.c:580
 msgid "System (default)"
 msgstr "Жүйе (әдепкі)"
 
-#: src/frontend/keysclicks-window.c:512
+#: src/frontend/keysclicks-window.c:562
 msgid "Keyboard layout"
 msgstr "Пернетақта орналасуы"
 
-#: src/frontend/keysclicks-window.c:547
+#: src/frontend/keysclicks-window.c:630
 msgid "Automatic"
 msgstr "Автоматты"
 
-#: src/frontend/keysclicks-window.c:553
+#: src/frontend/keysclicks-window.c:636
 #, c-format
 msgid "Monitor %u"
 msgstr "Монитор %u"
 
-#: src/frontend/keysclicks-window.c:572
+#: src/frontend/keysclicks-window.c:655
 msgid "Overlay monitor"
 msgstr "Қабат мониторы"
 
-#: src/frontend/keysclicks-window.c:603
+#: src/frontend/keysclicks-window.c:686
 msgid "Pin to dock"
 msgstr "Докқа бекіту"
 
-#: src/frontend/keysclicks-window.c:603
+#: src/frontend/keysclicks-window.c:686
 msgid "Unpin from dock"
 msgstr "Доктан босату"
 
-#: src/frontend/keysclicks-window.c:605
+#: src/frontend/keysclicks-window.c:688
 msgid "Remove this app from the COSMIC dock"
 msgstr "Бұл қолданбаны COSMIC докінен алып тастау"
 
-#: src/frontend/keysclicks-window.c:606
+#: src/frontend/keysclicks-window.c:689
 msgid "Pin this app to the COSMIC dock"
 msgstr "Бұл қолданбаны COSMIC докіне бекіту"
 
-#: src/frontend/keysclicks-window.c:644
+#: src/frontend/keysclicks-window.c:727
 msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
 msgstr ""
 "Жоқ — Орнату түймесін басыңыз, содан кейін тіркесімді басып тұрыңыз (мыс. "
 "Ctrl+Shift+H)"
 
-#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+#: src/frontend/keysclicks-window.c:755 src/frontend/keysclicks-window.c:834
 msgid "Press keys…"
 msgstr "Пернелерді басыңыз…"
 
-#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+#: src/frontend/keysclicks-window.c:755 src/frontend/keysclicks-window.c:969
 msgid "Set"
 msgstr "Орнату"
 
-#: src/frontend/keysclicks-window.c:702
+#: src/frontend/keysclicks-window.c:785
 msgid "Hold the shortcut…  "
 msgstr "Тіркесімді басып тұрыңыз…  "
 
-#: src/frontend/keysclicks-window.c:750
+#: src/frontend/keysclicks-window.c:833
 msgid "Hold the shortcut, then release to save. Esc cancels."
 msgstr ""
 "Тіркесімді басып тұрыңыз, содан кейін сақтау үшін жіберіңіз. Esc бас тартады."
 
-#: src/frontend/keysclicks-window.c:780
-msgid "On-Screen Keys & Clicks Visualizer — Settings"
-msgstr "Экрандағы пернелер мен басулар визуализаторы — Баптаулар"
+#: src/frontend/keysclicks-window.c:877 src/frontend/keysclicks-window.c:890
+msgid ""
+"On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for "
+"Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
+msgstr ""
+"On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for "
+"Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
 
 #. Privacy master toggle, prominent on the left of the header.
-#: src/frontend/keysclicks-window.c:798
+#: src/frontend/keysclicks-window.c:895
 msgid "Hide keys"
 msgstr "Пернелерді жасыру"
 
-#: src/frontend/keysclicks-window.c:801
+#: src/frontend/keysclicks-window.c:898
 msgid "Hide keystrokes (privacy): show • instead of keys"
 msgstr "Перне басуларын жасыру (құпиялылық): пернелердің орнына • көрсету"
 
 #. overlay display layout, right below
 #. Privacy ---------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:833
+#: src/frontend/keysclicks-window.c:937
 msgid "Privacy"
 msgstr "Құпиялылық"
 
-#: src/frontend/keysclicks-window.c:835
+#: src/frontend/keysclicks-window.c:939
 msgid "Hide keystrokes (privacy)"
 msgstr "Перне басуларын жасыру (құпиялылық)"
 
-#: src/frontend/keysclicks-window.c:844
+#: src/frontend/keysclicks-window.c:948
 msgid "Automatic password hiding"
 msgstr "Құпия сөзді автоматты жасыру"
 
-#: src/frontend/keysclicks-window.c:852
+#: src/frontend/keysclicks-window.c:956
 msgid ""
 "On (PRO) — passwords are hidden automatically in password fields. This "
 "module is still in development."
@@ -210,7 +214,7 @@ msgstr ""
 "Қосулы (PRO) — құпия сөздер құпия сөз өрістерінде автоматты түрде "
 "жасырылады. Бұл модуль әлі әзірленуде."
 
-#: src/frontend/keysclicks-window.c:854
+#: src/frontend/keysclicks-window.c:958
 msgid ""
 "PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
 "\"Hide keys\" toggle/shortcut works now."
@@ -218,127 +222,130 @@ msgstr ""
 "PRO — әзірленуде. Автоматты жасыру PRO қосымшасымен келеді; қолмен "
 "басқарылатын \"Hide keys\" ауыстырғышы/тіркесімі қазір жұмыс істейді."
 
-#: src/frontend/keysclicks-window.c:863
+#: src/frontend/keysclicks-window.c:967
 msgid "Hide-keys shortcut"
 msgstr "Пернелерді жасыру тіркесімі"
 
-#: src/frontend/keysclicks-window.c:868
+#: src/frontend/keysclicks-window.c:972
 msgid "Click, then hold a key combination to assign it"
 msgstr "Тағайындау үшін басыңыз, содан кейін перне тіркесімін басып тұрыңыз"
 
-#: src/frontend/keysclicks-window.c:877
+#: src/frontend/keysclicks-window.c:981
 msgid "System keyboard shortcuts"
 msgstr "Жүйелік пернетақта тіркесімдері"
 
-#: src/frontend/keysclicks-window.c:880
+#: src/frontend/keysclicks-window.c:984
 msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
 msgstr ""
 "Ғаламдық тіркесімдер ОЖ-де орнатылады — COSMIC → Пернетақта → Тіркесімдер "
 "ашыңыз"
 
-#: src/frontend/keysclicks-window.c:882
+#: src/frontend/keysclicks-window.c:986
 msgid "Open settings"
 msgstr "Параметрлерді ашу"
 
 #. Keys & clicks display -------------------------------------------------
-#: src/frontend/keysclicks-window.c:889
+#: src/frontend/keysclicks-window.c:993
 msgid "Keys and clicks display"
 msgstr "Пернелер мен басуларды көрсету"
 
-#: src/frontend/keysclicks-window.c:890
+#: src/frontend/keysclicks-window.c:994
 msgid "Compact"
 msgstr "Ықшам"
 
-#: src/frontend/keysclicks-window.c:890
+#: src/frontend/keysclicks-window.c:994
 msgid "Composed"
 msgstr "Құрамдастырылған"
 
-#: src/frontend/keysclicks-window.c:890
+#: src/frontend/keysclicks-window.c:994
 msgid "Raw"
 msgstr "Өңделмеген"
 
-#: src/frontend/keysclicks-window.c:891
+#: src/frontend/keysclicks-window.c:995
 msgid "Label style"
 msgstr "Белгі мәнері"
 
-#: src/frontend/keysclicks-window.c:892
+#: src/frontend/keysclicks-window.c:996
 msgid "Font size"
 msgstr "Қаріп өлшемі"
 
-#: src/frontend/keysclicks-window.c:893
+#: src/frontend/keysclicks-window.c:997
 msgid "Show keyboard"
 msgstr "Пернетақтаны көрсету"
 
-#: src/frontend/keysclicks-window.c:895
+#: src/frontend/keysclicks-window.c:999
 msgid "Show mouse"
 msgstr "Тінтуірді көрсету"
 
-#: src/frontend/keysclicks-window.c:896
+#: src/frontend/keysclicks-window.c:1000
 msgid "Show Shift separately"
 msgstr "Shift пернесін бөлек көрсету"
 
-#: src/frontend/keysclicks-window.c:898
+#: src/frontend/keysclicks-window.c:1002
 msgid "Draw border"
 msgstr "Жиек сызу"
 
 #. Position & behaviour --------------------------------------------------
-#: src/frontend/keysclicks-window.c:901
+#: src/frontend/keysclicks-window.c:1005
 msgid "Position and behaviour"
 msgstr "Орналасуы мен әрекеті"
 
-#: src/frontend/keysclicks-window.c:902
+#: src/frontend/keysclicks-window.c:1006
 msgid "Bottom"
 msgstr "Төменгі"
 
-#: src/frontend/keysclicks-window.c:902
+#: src/frontend/keysclicks-window.c:1006
 msgid "Top"
 msgstr "Жоғарғы"
 
-#: src/frontend/keysclicks-window.c:903
+#: src/frontend/keysclicks-window.c:1007
 msgid "Screen edge"
 msgstr "Экран шеті"
 
 #. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
-#: src/frontend/keysclicks-window.c:905
+#: src/frontend/keysclicks-window.c:1009
 msgid "Horizontal margin (%)"
 msgstr "Көлденең жиек (%)"
 
-#: src/frontend/keysclicks-window.c:907
+#: src/frontend/keysclicks-window.c:1011
 msgid "Vertical margin (%)"
 msgstr "Тік жиек (%)"
 
-#: src/frontend/keysclicks-window.c:910
+#: src/frontend/keysclicks-window.c:1014
 msgid "Keep visible (no timeout)"
 msgstr "Көрініп тұрсын (уақыт бітпейді)"
 
-#: src/frontend/keysclicks-window.c:913
+#: src/frontend/keysclicks-window.c:1017
 msgid "Timeout (ms)"
 msgstr "Күту уақыты (ms)"
 
-#: src/frontend/keysclicks-window.c:916
+#: src/frontend/keysclicks-window.c:1020
 msgid "Bar opacity (%)"
 msgstr "Панель мөлдірлігі (%)"
 
-#: src/frontend/main.c:106
+#: src/frontend/main.c:107
 msgid "Left Click"
 msgstr "Сол басу"
 
-#: src/frontend/main.c:108
+#: src/frontend/main.c:109
 msgid "Right Click"
 msgstr "Оң басу"
 
-#: src/frontend/main.c:110
+#: src/frontend/main.c:111
 msgid "Middle Click"
 msgstr "Орта басу"
 
-#: src/frontend/main.c:122
+#: src/frontend/main.c:123
 #, c-format
 msgid "Mouse(%u)"
 msgstr "Тінтуір(%u)"
 
-#: src/frontend/main.c:407
+#: src/frontend/main.c:418
 msgid "Start without opening the settings window"
 msgstr "Баптаулар терезесін ашпай іске қосу"
+
+#~ msgid "On-Screen Keys & Clicks Visualizer — Settings"
+#~ msgstr "Экрандағы пернелер мен басулар визуализаторы — Баптаулар"
 
 #, c-format
 #~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"

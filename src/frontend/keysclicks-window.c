@@ -874,7 +874,7 @@ populate_content(WinCtx *ctx)
 	KeysClicksSettings *settings = ctx->settings;
 
 	gtk_window_set_title(GTK_WINDOW(window),
-			     _("On-Screen Keys & Clicks Visualizer — Settings"));
+			     _("On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"));
 
 	// A plain toplevel with an AdwHeaderBar exposes the full window controls
 	// (minimise, maximise, close) on the right and stays resizable/maximisable.
@@ -887,7 +887,7 @@ populate_content(WinCtx *ctx)
 	char *version = g_strdup_printf("v%s · build %s", KEYSCLICKS_VERSION,
 					KEYSCLICKS_BUILD);
 	GtkWidget *title_widget =
-		adw_window_title_new(_("On-Screen Keys & Clicks Visualizer"), version);
+		adw_window_title_new(_("On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"), version);
 	adw_header_bar_set_title_widget(ADW_HEADER_BAR(header), title_widget);
 	g_free(version);
 

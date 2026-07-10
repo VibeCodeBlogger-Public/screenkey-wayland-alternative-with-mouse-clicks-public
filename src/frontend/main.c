@@ -1,8 +1,9 @@
 // SPDX-License-Identifier: Apache-2.0
 // Copyright 2026 VibeCodeBlogger
 //
-// keysclicks: the GTK4/libadwaita front-end of the On-Screen Keys & Clicks
-// Visualizer. It presents the settings window plus an always-on-top layer-shell
+// keysclicks: the GTK4/libadwaita front-end of the On-Screen Keyboard &
+// Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC,
+// sway, Hyprland, KDE Plasma, wlroots). It presents the settings window plus an always-on-top layer-shell
 // label bar, spawns the privileged keysclicks-input backend through pkexec, and
 // renders each keyboard key and mouse button the backend reports as a chip.
 

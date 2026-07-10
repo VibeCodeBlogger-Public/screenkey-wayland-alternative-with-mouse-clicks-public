@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keysclicks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-09 12:29-0600\n"
+"POT-Creation-Date: 2026-07-09 18:45-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: keysclicks\n"
 "Language-Team: keysclicks\n"
@@ -92,15 +92,15 @@ msgstr "送信"
 msgid "Report a bug"
 msgstr "バグを報告"
 
-#: src/frontend/keysclicks-overlay.c:404 src/frontend/keysclicks-window.c:793
+#: src/frontend/keysclicks-overlay.c:404
 msgid "On-Screen Keys & Clicks Visualizer"
 msgstr "オンスクリーン キー＆クリック ビジュアライザー"
 
-#: src/frontend/keysclicks-window.c:140
+#: src/frontend/keysclicks-window.c:141
 msgid "Close to switch monitor"
 msgstr "閉じてモニターを切り替え"
 
-#: src/frontend/keysclicks-window.c:141
+#: src/frontend/keysclicks-window.c:142
 msgid ""
 "The overlay moves to the new monitor the next time you open the app. Your "
 "settings are already saved — closing now is safe."
@@ -108,103 +108,107 @@ msgstr ""
 "次回アプリを開いたときに、オーバーレイが新しいモニターに移動します。設定はす"
 "でに保存されています — 今すぐ閉じても安全です。"
 
-#: src/frontend/keysclicks-window.c:151
+#: src/frontend/keysclicks-window.c:152
 msgid "Close"
 msgstr "閉じる"
 
 #. Language --------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:478 src/frontend/keysclicks-window.c:828
+#: src/frontend/keysclicks-window.c:521 src/frontend/keysclicks-window.c:932
 msgid "Language"
 msgstr "言語"
 
-#: src/frontend/keysclicks-window.c:483 src/frontend/keysclicks-window.c:517
+#: src/frontend/keysclicks-window.c:532 src/frontend/keysclicks-window.c:580
 msgid "System (default)"
 msgstr "システム（既定）"
 
-#: src/frontend/keysclicks-window.c:512
+#: src/frontend/keysclicks-window.c:562
 msgid "Keyboard layout"
 msgstr "キーボードレイアウト"
 
-#: src/frontend/keysclicks-window.c:547
+#: src/frontend/keysclicks-window.c:630
 msgid "Automatic"
 msgstr "自動"
 
-#: src/frontend/keysclicks-window.c:553
+#: src/frontend/keysclicks-window.c:636
 #, c-format
 msgid "Monitor %u"
 msgstr "モニター %u"
 
-#: src/frontend/keysclicks-window.c:572
+#: src/frontend/keysclicks-window.c:655
 msgid "Overlay monitor"
 msgstr "オーバーレイのモニター"
 
-#: src/frontend/keysclicks-window.c:603
+#: src/frontend/keysclicks-window.c:686
 msgid "Pin to dock"
 msgstr "ドックに固定"
 
-#: src/frontend/keysclicks-window.c:603
+#: src/frontend/keysclicks-window.c:686
 msgid "Unpin from dock"
 msgstr "ドックの固定を解除"
 
-#: src/frontend/keysclicks-window.c:605
+#: src/frontend/keysclicks-window.c:688
 msgid "Remove this app from the COSMIC dock"
 msgstr "このアプリを COSMIC ドックから削除"
 
-#: src/frontend/keysclicks-window.c:606
+#: src/frontend/keysclicks-window.c:689
 msgid "Pin this app to the COSMIC dock"
 msgstr "このアプリを COSMIC ドックに固定"
 
-#: src/frontend/keysclicks-window.c:644
+#: src/frontend/keysclicks-window.c:727
 msgid "None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"
 msgstr ""
 "なし —「設定」をクリックしてからショートカットを押し続けてください（例: "
 "Ctrl+Shift+H）"
 
-#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:751
+#: src/frontend/keysclicks-window.c:755 src/frontend/keysclicks-window.c:834
 msgid "Press keys…"
 msgstr "キーを押してください…"
 
-#: src/frontend/keysclicks-window.c:672 src/frontend/keysclicks-window.c:865
+#: src/frontend/keysclicks-window.c:755 src/frontend/keysclicks-window.c:969
 msgid "Set"
 msgstr "設定"
 
-#: src/frontend/keysclicks-window.c:702
+#: src/frontend/keysclicks-window.c:785
 msgid "Hold the shortcut…  "
 msgstr "ショートカットを押し続けてください…  "
 
-#: src/frontend/keysclicks-window.c:750
+#: src/frontend/keysclicks-window.c:833
 msgid "Hold the shortcut, then release to save. Esc cancels."
 msgstr ""
 "ショートカットを押し続けてから離すと保存されます。Esc でキャンセルします。"
 
-#: src/frontend/keysclicks-window.c:780
-msgid "On-Screen Keys & Clicks Visualizer — Settings"
-msgstr "オンスクリーン キー＆クリック ビジュアライザー — 設定"
+#: src/frontend/keysclicks-window.c:877 src/frontend/keysclicks-window.c:890
+msgid ""
+"On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for "
+"Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
+msgstr ""
+"On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for "
+"Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"
 
 #. Privacy master toggle, prominent on the left of the header.
-#: src/frontend/keysclicks-window.c:798
+#: src/frontend/keysclicks-window.c:895
 msgid "Hide keys"
 msgstr "キーを非表示"
 
-#: src/frontend/keysclicks-window.c:801
+#: src/frontend/keysclicks-window.c:898
 msgid "Hide keystrokes (privacy): show • instead of keys"
 msgstr "キー入力を非表示（プライバシー）: キーの代わりに • を表示"
 
 #. overlay display layout, right below
 #. Privacy ---------------------------------------------------------------
-#: src/frontend/keysclicks-window.c:833
+#: src/frontend/keysclicks-window.c:937
 msgid "Privacy"
 msgstr "プライバシー"
 
-#: src/frontend/keysclicks-window.c:835
+#: src/frontend/keysclicks-window.c:939
 msgid "Hide keystrokes (privacy)"
 msgstr "キー入力を非表示（プライバシー）"
 
-#: src/frontend/keysclicks-window.c:844
+#: src/frontend/keysclicks-window.c:948
 msgid "Automatic password hiding"
 msgstr "パスワードの自動非表示"
 
-#: src/frontend/keysclicks-window.c:852
+#: src/frontend/keysclicks-window.c:956
 msgid ""
 "On (PRO) — passwords are hidden automatically in password fields. This "
 "module is still in development."
@@ -212,7 +216,7 @@ msgstr ""
 "オン（PRO）— パスワード欄でパスワードが自動的に非表示になります。このモジュー"
 "ルはまだ開発中です。"
 
-#: src/frontend/keysclicks-window.c:854
+#: src/frontend/keysclicks-window.c:958
 msgid ""
 "PRO — in development. Automatic hiding ships with the PRO add-on; the manual "
 "\"Hide keys\" toggle/shortcut works now."
@@ -220,127 +224,130 @@ msgstr ""
 "PRO — 開発中。自動非表示は PRO アドオンで提供されます。手動の「Hide keys」ト"
 "グル/ショートカットは現在ご利用いただけます。"
 
-#: src/frontend/keysclicks-window.c:863
+#: src/frontend/keysclicks-window.c:967
 msgid "Hide-keys shortcut"
 msgstr "キー非表示のショートカット"
 
-#: src/frontend/keysclicks-window.c:868
+#: src/frontend/keysclicks-window.c:972
 msgid "Click, then hold a key combination to assign it"
 msgstr "クリックしてからキーの組み合わせを押し続けて割り当てます"
 
-#: src/frontend/keysclicks-window.c:877
+#: src/frontend/keysclicks-window.c:981
 msgid "System keyboard shortcuts"
 msgstr "システムのキーボードショートカット"
 
-#: src/frontend/keysclicks-window.c:880
+#: src/frontend/keysclicks-window.c:984
 msgid "Global shortcuts are set in the OS — open COSMIC → Keyboard → Shortcuts"
 msgstr ""
 "グローバルショートカットは OS で設定します — COSMIC → キーボード → ショート"
 "カット を開いてください"
 
-#: src/frontend/keysclicks-window.c:882
+#: src/frontend/keysclicks-window.c:986
 msgid "Open settings"
 msgstr "設定を開く"
 
 #. Keys & clicks display -------------------------------------------------
-#: src/frontend/keysclicks-window.c:889
+#: src/frontend/keysclicks-window.c:993
 msgid "Keys and clicks display"
 msgstr "キーとクリックの表示"
 
-#: src/frontend/keysclicks-window.c:890
+#: src/frontend/keysclicks-window.c:994
 msgid "Compact"
 msgstr "コンパクト"
 
-#: src/frontend/keysclicks-window.c:890
+#: src/frontend/keysclicks-window.c:994
 msgid "Composed"
 msgstr "合成"
 
-#: src/frontend/keysclicks-window.c:890
+#: src/frontend/keysclicks-window.c:994
 msgid "Raw"
 msgstr "そのまま"
 
-#: src/frontend/keysclicks-window.c:891
+#: src/frontend/keysclicks-window.c:995
 msgid "Label style"
 msgstr "ラベルスタイル"
 
-#: src/frontend/keysclicks-window.c:892
+#: src/frontend/keysclicks-window.c:996
 msgid "Font size"
 msgstr "フォントサイズ"
 
-#: src/frontend/keysclicks-window.c:893
+#: src/frontend/keysclicks-window.c:997
 msgid "Show keyboard"
 msgstr "キーボードを表示"
 
-#: src/frontend/keysclicks-window.c:895
+#: src/frontend/keysclicks-window.c:999
 msgid "Show mouse"
 msgstr "マウスを表示"
 
-#: src/frontend/keysclicks-window.c:896
+#: src/frontend/keysclicks-window.c:1000
 msgid "Show Shift separately"
 msgstr "Shift を個別に表示"
 
-#: src/frontend/keysclicks-window.c:898
+#: src/frontend/keysclicks-window.c:1002
 msgid "Draw border"
 msgstr "枠線を描画"
 
 #. Position & behaviour --------------------------------------------------
-#: src/frontend/keysclicks-window.c:901
+#: src/frontend/keysclicks-window.c:1005
 msgid "Position and behaviour"
 msgstr "位置と動作"
 
-#: src/frontend/keysclicks-window.c:902
+#: src/frontend/keysclicks-window.c:1006
 msgid "Bottom"
 msgstr "下"
 
-#: src/frontend/keysclicks-window.c:902
+#: src/frontend/keysclicks-window.c:1006
 msgid "Top"
 msgstr "上"
 
-#: src/frontend/keysclicks-window.c:903
+#: src/frontend/keysclicks-window.c:1007
 msgid "Screen edge"
 msgstr "画面の端"
 
 #. Margins are PERCENT (zoom/resolution independent). Horizontal is bidirectional.
-#: src/frontend/keysclicks-window.c:905
+#: src/frontend/keysclicks-window.c:1009
 msgid "Horizontal margin (%)"
 msgstr "水平マージン (%)"
 
-#: src/frontend/keysclicks-window.c:907
+#: src/frontend/keysclicks-window.c:1011
 msgid "Vertical margin (%)"
 msgstr "垂直マージン (%)"
 
-#: src/frontend/keysclicks-window.c:910
+#: src/frontend/keysclicks-window.c:1014
 msgid "Keep visible (no timeout)"
 msgstr "常に表示（タイムアウトなし）"
 
-#: src/frontend/keysclicks-window.c:913
+#: src/frontend/keysclicks-window.c:1017
 msgid "Timeout (ms)"
 msgstr "タイムアウト (ms)"
 
-#: src/frontend/keysclicks-window.c:916
+#: src/frontend/keysclicks-window.c:1020
 msgid "Bar opacity (%)"
 msgstr "バーの不透明度 (%)"
 
-#: src/frontend/main.c:106
+#: src/frontend/main.c:107
 msgid "Left Click"
 msgstr "左クリック"
 
-#: src/frontend/main.c:108
+#: src/frontend/main.c:109
 msgid "Right Click"
 msgstr "右クリック"
 
-#: src/frontend/main.c:110
+#: src/frontend/main.c:111
 msgid "Middle Click"
 msgstr "中クリック"
 
-#: src/frontend/main.c:122
+#: src/frontend/main.c:123
 #, c-format
 msgid "Mouse(%u)"
 msgstr "マウス(%u)"
 
-#: src/frontend/main.c:407
+#: src/frontend/main.c:418
 msgid "Start without opening the settings window"
 msgstr "設定ウィンドウを開かずに起動"
+
+#~ msgid "On-Screen Keys & Clicks Visualizer — Settings"
+#~ msgstr "オンスクリーン キー＆クリック ビジュアライザー — 設定"
 
 #, c-format
 #~ msgid "Calibration: click the marker  (%u / %u)   —   right-click to cancel"

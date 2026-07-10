@@ -73,7 +73,7 @@ Depends: $DEPENDS
 Section: utils
 Priority: optional
 Homepage: https://github.com/VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public
-Description: On-screen keyboard & mouse-click overlay for Wayland
+Description: On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)
  Always-on-top overlay that shows the keys you press and the mouse buttons you
  click, for screencasts, tutorials and streams. Built natively for Wayland with
  GTK4 and gtk4-layer-shell (COSMIC, sway, Hyprland, KDE Plasma, wlroots); reads

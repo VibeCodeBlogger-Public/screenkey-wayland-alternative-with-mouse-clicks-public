@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2026 VibeCodeBlogger
 #
-# Build the On-Screen Keys & Clicks Visualizer and install it system-wide
+# Build the On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots) and install it system-wide
 # (prefix /usr) so that:
 #   - the privileged input backend lives in /usr/libexec/keysclicks-input, and
 #   - its polkit policy is installed, letting the GUI launch it via pkexec.
@@ -21,7 +21,7 @@ cd "$repo_root"
 build_dir="$repo_root/build"
 
 cat <<'EOF'
-On-Screen Keys & Clicks Visualizer — install
+On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots) — install
 --------------------------------------------
 Build dependencies (Debian / Pop!_OS):
   sudo apt install meson ninja-build gcc \

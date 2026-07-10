@@ -1,6 +1,6 @@
-# Contributing to the On-Screen Keys & Clicks Visualizer
+# Contributing to the On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)
 
-Thanks for your interest in improving the On-Screen Keys & Clicks Visualizer,
+Thanks for your interest in improving the On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots),
 the always-on-top keyboard and mouse-click overlay for Wayland. Contributions of
 all sizes are welcome.
 
@@ -59,7 +59,7 @@ New contributors are especially welcome to pick up work labelled
 
 ## Licensing of contributions
 
-The On-Screen Keys & Clicks Visualizer is licensed under the **Apache License,
+The On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots) is licensed under the **Apache License,
 Version 2.0**. Unless you state otherwise, any contribution you intentionally
 submit for inclusion in the work is provided under the terms of Apache-2.0
 Section 5 ("Submission of Contributions"), without any additional terms or

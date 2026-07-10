@@ -4,7 +4,7 @@
 
 Screenkey/KeyCastr alternative for Wayland: an always-on-top overlay showing keyboard keystrokes and mouse clicks for screencasts, tutorials and streams (COSMIC, sway, Hyprland, KDE Plasma, wlroots).
 
-The **On-Screen Keys & Clicks Visualizer** draws a small bar at the edge of your
+The **On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)** draws a small bar at the edge of your
 screen that lights up with the keys you press and the mouse buttons you click,
 so your audience can follow along in recordings and live streams. It is built
 natively for Wayland with GTK4 and `gtk4-layer-shell`, stays pinned on top, and

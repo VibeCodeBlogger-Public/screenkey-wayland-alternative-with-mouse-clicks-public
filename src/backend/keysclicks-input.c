@@ -1,8 +1,9 @@
 // SPDX-License-Identifier: Apache-2.0
 // Copyright 2026 VibeCodeBlogger
 //
-// keysclicks-input: the privileged half of the On-Screen Keys & Clicks
-// Visualizer.
+// keysclicks-input: the privileged half of the On-Screen Keyboard & Mouse-Click
+// Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland,
+// KDE Plasma, wlroots).
 //
 // It opens libinput through the udev backend on seat0, waits on the libinput
 // file descriptor with poll() (fully event-driven: it blocks until the kernel

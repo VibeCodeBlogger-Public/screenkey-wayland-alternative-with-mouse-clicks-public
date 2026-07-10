@@ -3,7 +3,7 @@
  "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
  "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
 <policyconfig>
-  <vendor>On-Screen Keys &amp; Clicks Visualizer</vendor>
+  <vendor>On-Screen Keyboard &amp; Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)</vendor>
   <vendor_url>https://github.com/vibecodeblogger/screenkey-wayland-alternative-with-mouse-clicks</vendor_url>
 
   <action id="io.github.vibecodeblogger.KeysAndClicksVisualizer">
