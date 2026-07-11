@@ -149,6 +149,15 @@
   .yes{color:var(--green-bright);font-weight:700}
   .no{color:var(--muted-2)}
   .part{color:var(--amber)}
+  /* Ячейки сравнения: ✓ да · ✗ нет · ⚠ «иначе» + пояснение */
+  .mark{font-size:17px;font-weight:800;line-height:1;display:inline-block}
+  .mark.yes{color:var(--green-bright)}
+  .mark.no{color:var(--danger)}
+  .mark.warn{color:var(--amber)}
+  .cap{display:block;font-size:11.5px;line-height:1.32;color:var(--muted-2);margin:5px auto 0;max-width:22ch;font-weight:400;white-space:normal}
+  td.us .cap{color:var(--muted)}
+  .date{font-family:var(--mono);font-size:13px;color:var(--muted)}
+  .date.fresh{color:var(--green-bright);font-weight:600}
   .pro{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;color:#fff;background:var(--deep);border:1px solid var(--frame);border-radius:5px;padding:1px 5px;vertical-align:middle;margin-left:2px}
   .col-note{font-size:12.5px;color:var(--muted-2);margin-top:12px;font-family:var(--mono)}
   .star{color:var(--green-bright)}
@@ -297,14 +306,16 @@
           </tr>
         </thead>
         <tbody>
-          <tr><th>Native Wayland</th><td class="us yes">Yes</td><td class="yes">Yes</td><td class="yes">wlroots</td><td class="no">X11 only</td><td class="no">macOS</td></tr>
-          <tr><th>Keyboard + mouse clicks</th><td class="us yes">Yes</td><td class="yes">Yes</td><td class="no">Keys only</td><td class="part">Keys</td><td class="yes">Yes</td></tr>
-          <tr><th>Stays above your windows (Wayland)</th><td class="us yes">Yes — overlay layer</td><td class="no">Drops behind</td><td class="yes">Yes</td><td class="no">X11 only</td><td class="no">macOS</td></tr>
-          <tr><th>Position by % / per-monitor</th><td class="us yes">Yes</td><td class="part">Manual drag</td><td class="no">?</td><td class="part">Basic</td><td class="yes">Yes</td></tr>
-          <tr><th>Hide input on recording</th><td class="us yes">Manual · Auto <span class="pro">PRO</span></td><td class="part">Manual</td><td class="no">No</td><td class="no">No</td><td class="no">No</td></tr>
-          <tr><th>Layout-aware (xkb)</th><td class="us yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="no">—</td></tr>
-          <tr><th>Works on GNOME</th><td class="no">No</td><td class="yes">Yes</td><td class="no">No</td><td class="no">—</td><td class="no">—</td></tr>
-          <tr><th>Last build</th><td class="us yes">Jul 2026</td><td class="yes">Mar 2026</td><td class="no">2021 · unmaintained</td><td class="part">Jan 2021</td><td class="yes">Nov 2025</td></tr>
+          <tr><th>Native Wayland</th><td class="us"><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark no" title="X11 only" aria-label="No">✗</span><span class="cap">X11 only</span></td><td><span class="mark no" title="macOS only" aria-label="No">✗</span><span class="cap">macOS</span></td></tr>
+          <tr><th>Keyboard</th><td class="us"><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td></tr>
+          <tr><th>Mouse clicks</th><td class="us"><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark no" title="Keys only" aria-label="No">✗</span><span class="cap">keys only</span></td><td><span class="mark no" title="Keys only" aria-label="No">✗</span><span class="cap">keys only</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td></tr>
+          <tr><th>Stays above your windows (Wayland)</th><td class="us"><span class="mark yes" title="Yes — overlay layer" aria-label="Yes">✓</span><span class="cap">overlay layer</span></td><td><span class="mark no" title="Drops behind other windows" aria-label="No">✗</span><span class="cap">drops behind</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark no" title="X11 only" aria-label="No">✗</span><span class="cap">X11 only</span></td><td><span class="mark no" title="macOS only" aria-label="No">✗</span><span class="cap">macOS</span></td></tr>
+          <tr><th>Position by % / per-monitor</th><td class="us"><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark warn" title="Manual drag only" aria-label="Partial">⚠</span><span class="cap">manual drag only</span></td><td><span class="mark warn" title="Undocumented" aria-label="Unknown">⚠</span><span class="cap">undocumented</span></td><td><span class="mark warn" title="Basic only" aria-label="Partial">⚠</span><span class="cap">basic only</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td></tr>
+          <tr><th>Manual hide-keys on recording</th><td class="us"><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark no" title="No" aria-label="No">✗</span></td><td><span class="mark no" title="No" aria-label="No">✗</span></td><td><span class="mark no" title="No" aria-label="No">✗</span></td></tr>
+          <tr><th>Automatic hide-keys on recording</th><td class="us"><span class="mark yes" title="Yes — PRO add-on" aria-label="Yes">✓</span> <span class="pro">PRO</span><span class="cap">auto-detects password fields</span></td><td><span class="mark no" title="No" aria-label="No">✗</span></td><td><span class="mark no" title="No" aria-label="No">✗</span></td><td><span class="mark no" title="No" aria-label="No">✗</span></td><td><span class="mark no" title="No" aria-label="No">✗</span></td></tr>
+          <tr><th>Layout-aware (xkb)</th><td class="us"><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark no" title="macOS — no xkb" aria-label="No">✗</span><span class="cap">macOS — no xkb</span></td></tr>
+          <tr><th>Works on GNOME</th><td class="us"><span class="mark no" title="No — needs wlr-layer-shell" aria-label="No">✗</span><span class="cap">needs layer-shell</span></td><td><span class="mark yes" title="Yes" aria-label="Yes">✓</span></td><td><span class="mark no" title="No" aria-label="No">✗</span></td><td><span class="mark no" title="X11 only" aria-label="No">✗</span><span class="cap">X11 only</span></td><td><span class="mark no" title="macOS only" aria-label="No">✗</span><span class="cap">macOS</span></td></tr>
+          <tr><th>Last build</th><td class="us"><span class="date fresh">Jul 2026</span></td><td><span class="date">Mar 2026</span></td><td><span class="mark warn" title="Unmaintained since 2021" aria-label="Warning">⚠</span><span class="cap">2021 · unmaintained</span></td><td><span class="mark warn" title="Stale — Jan 2021" aria-label="Warning">⚠</span><span class="cap">Jan 2021 · stale</span></td><td><span class="date">Nov 2025</span></td></tr>
         </tbody>
       </table>
     </div>

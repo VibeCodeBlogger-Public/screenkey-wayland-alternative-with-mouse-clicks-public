@@ -63,13 +63,22 @@ echo "    Depends: $DEPENDS"
 
 INSTALLED_KB="$(du -sk "$STAGE/usr" | cut -f1)"
 mkdir -p "$STAGE/DEBIAN"
+# Имя пакета = каноничное имя продукта в дефисной форме. Debian Policy §5.6.1 разрешает в имени
+# пакета только строчные буквы, цифры и '-', '+', '.' — пробелы, '&', тире '—' и заглавные
+# запрещены, поэтому приводим каноничное имя к дефисам. Красивое человекочитаемое имя (с
+# заглавными/пробелами/&) остаётся в витринных полях: Description ниже, AppStream <name>, .desktop Name=.
+# Conflicts/Replaces/Provides keysclicks: пакет ЗАМЕНЯЕТ прежний короткий `keysclicks` (те же файлы
+# /usr/bin/keysclicks, polkit-action и т.д.) — иначе установка конфликтнёт по файлам.
 cat > "$STAGE/DEBIAN/control" <<EOF
-Package: keysclicks
+Package: on-screen-keyboard-mouse-click-visualizer-always-on-top-overlay-for-linux-wayland-cosmic-sway-hyprland-kde-plasma-wlroots
 Version: $VERSION
 Architecture: $ARCH
 Maintainer: VibeCodeBlogger <289294152+VibeCodeBlogger@users.noreply.github.com>
 Installed-Size: $INSTALLED_KB
 Depends: $DEPENDS
+Conflicts: keysclicks
+Replaces: keysclicks
+Provides: keysclicks
 Section: utils
 Priority: optional
 Homepage: https://github.com/VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public
