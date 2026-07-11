@@ -48,6 +48,7 @@ set_defaults(KeysClicksSettings *s)
 
 	s->privacy_hide_keys = FALSE;
 	s->panic_chord = g_strdup(""); // disabled by default
+	s->overlay_toggle_chord = g_strdup(""); // disabled by default
 
 	s->language = g_strdup(""); // auto: follow the system locale
 	s->keyboard_layout = g_strdup(""); // system default xkb layout for the overlay
@@ -148,6 +149,11 @@ load_from_disk(KeysClicksSettings *s)
 			g_free(s->panic_chord);
 			s->panic_chord = chord;
 		}
+		char *ov_chord = g_key_file_get_string(kf, "overlay", "toggle_chord", NULL);
+		if (ov_chord != NULL) {
+			g_free(s->overlay_toggle_chord);
+			s->overlay_toggle_chord = ov_chord;
+		}
 
 		char *lang = g_key_file_get_string(kf, "general", "language", NULL);
 		if (lang != NULL) {
@@ -188,6 +194,7 @@ keysclicks_settings_free(KeysClicksSettings *self)
 	g_ptr_array_free(self->listeners, TRUE);
 	g_free(self->monitor_connector);
 	g_free(self->panic_chord);
+	g_free(self->overlay_toggle_chord);
 	g_free(self->language);
 	g_free(self->keyboard_layout);
 	g_free(self->keyboard_variant);
@@ -211,6 +218,8 @@ save_to_disk(KeysClicksSettings *s)
 	g_key_file_load_from_file(kf, path, G_KEY_FILE_KEEP_COMMENTS, NULL);
 
 	g_key_file_set_boolean(kf, "overlay", "visible", s->overlay_visible);
+	g_key_file_set_string(kf, "overlay", "toggle_chord",
+			      s->overlay_toggle_chord != NULL ? s->overlay_toggle_chord : "");
 
 	g_key_file_set_integer(kf, "keys", "mode", s->mode);
 	g_key_file_set_integer(kf, "keys", "font_size", s->font_size);

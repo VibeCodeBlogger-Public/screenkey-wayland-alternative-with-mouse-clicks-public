@@ -67,6 +67,10 @@ struct _KeysClicksSettings {
 	gboolean privacy_hide_keys; // manual master toggle: mask keystrokes
 	char *panic_chord;          // '+'-joined evdev keycodes; "" = disabled
 
+	// Global hotkey that toggles the whole overlay on/off (same mechanism as
+	// panic_chord: detected over the libinput stream). '+'-joined evdev keycodes; "" = disabled.
+	char *overlay_toggle_chord;
+
 	// UI language
 	char *language; // "" = auto (system locale); else a supported code, e.g. "ru"
 

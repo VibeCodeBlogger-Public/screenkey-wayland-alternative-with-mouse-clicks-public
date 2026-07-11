@@ -35,7 +35,23 @@ typedef enum {
 	F_OVERLAY_VISIBLE, // master on/off for the on-screen overlay bar
 } FieldId;
 
+typedef struct _WinCtx WinCtx;
+
+// Reusable chord-capture block: an AdwActionRow + "Set" button that captures a held
+// key combination and stores it into *target (a settings chord field). Two of these
+// live in WinCtx — one for the "Hide keys" chord, one for the "Show overlay" chord —
+// and the window's key controller dispatches to WinCtx.chord_active (the block whose
+// "Set" is currently armed). Two independent buttons, one shared implementation.
 typedef struct {
+	WinCtx *ctx;
+	GtkWidget *row;          // AdwActionRow: subtitle shows the current chord
+	GtkWidget *button;       // "Set" / "Press keys…"
+	GArray *captured;        // guint evdev codes captured this pass
+	char **target;           // settings field written on release
+	const char *placeholder; // subtitle shown while the chord is unset
+} ChordCapture;
+
+struct _WinCtx {
 	GtkApplication *app;
 	GtkWidget *window;
 	KeysClicksSettings *settings;
@@ -47,16 +63,17 @@ typedef struct {
 	GtkWidget *privacy_switch;
 	gboolean privacy_updating;
 
-	// "Hide keys" shortcut (panic chord) capture.
-	GtkWidget *chord_row;    // AdwActionRow showing the current chord + subtitle
-	GtkWidget *chord_button; // "Set" / "Press keys…" button
-	gboolean chord_capturing;
-	GArray *chord_captured; // guint evdev codes captured this pass
+	// Two hotkey-capture blocks sharing one implementation: the "Hide keys" panic
+	// chord and the "Show overlay" toggle chord. chord_active points at whichever
+	// block is capturing right now (or NULL).
+	ChordCapture chord_hide;
+	ChordCapture chord_overlay;
+	ChordCapture *chord_active;
 
 	// TRUE while (re)building the content, so the language combo's initial
 	// selection does not re-trigger a rebuild.
 	gboolean rebuilding;
-} WinCtx;
+};
 
 static void populate_content(WinCtx *ctx);
 
@@ -758,15 +775,16 @@ on_open_os_shortcuts(GtkButton *button, gpointer user_data)
 	}
 }
 
-// Human-readable rendering of a panic-chord string ("29+42+35" evdev codes) using
-// friendly evdev names with the "KEY_" prefix stripped ("LEFTCTRL + LEFTSHIFT + H").
+// Human-readable rendering of a chord string ("29+42+35" evdev codes) using friendly
+// evdev names with the "KEY_" prefix stripped ("LEFTCTRL + LEFTSHIFT + H"). Empty/NULL
+// yields NULL so callers can show their own placeholder.
 static char *
-chord_display(const char *panic_chord)
+chord_display(const char *chord)
 {
-	if (panic_chord == NULL || *panic_chord == '\0')
-		return g_strdup(_("None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"));
+	if (chord == NULL || *chord == '\0')
+		return NULL;
 	GString *s = g_string_new(NULL);
-	char **parts = g_strsplit(panic_chord, "+", -1);
+	char **parts = g_strsplit(chord, "+", -1);
 	for (int i = 0; parts[i] != NULL; i++) {
 		int code = (int)g_ascii_strtoll(g_strstrip(parts[i]), NULL, 10);
 		if (code <= 0)
@@ -785,20 +803,23 @@ chord_display(const char *panic_chord)
 	return g_string_free(s, FALSE);
 }
 
+// Refresh one capture block: its row shows the current chord (or the placeholder) and
+// its button reads "Press keys…" (green) while this block is the armed one, else "Set".
 static void
-refresh_chord_row(WinCtx *ctx)
+refresh_chord_row(ChordCapture *cap)
 {
-	char *disp = chord_display(ctx->settings->panic_chord);
-	adw_action_row_set_subtitle(ADW_ACTION_ROW(ctx->chord_row), disp);
+	char *disp = chord_display(cap->target != NULL ? *cap->target : NULL);
+	adw_action_row_set_subtitle(ADW_ACTION_ROW(cap->row),
+				    disp != NULL ? disp : cap->placeholder);
 	g_free(disp);
-	gtk_button_set_label(GTK_BUTTON(ctx->chord_button),
-			     ctx->chord_capturing ? _("Press keys…") : _("Set"));
+	gboolean armed = (cap->ctx->chord_active == cap);
+	gtk_button_set_label(GTK_BUTTON(cap->button), armed ? _("Press keys…") : _("Set"));
 	// Green while actively capturing (owner request): reuse the suggested-action
 	// deep-green fill so the button clearly reads as "armed / waiting for keys".
-	if (ctx->chord_capturing)
-		gtk_widget_add_css_class(ctx->chord_button, "suggested-action");
+	if (armed)
+		gtk_widget_add_css_class(cap->button, "suggested-action");
 	else
-		gtk_widget_remove_css_class(ctx->chord_button, "suggested-action");
+		gtk_widget_remove_css_class(cap->button, "suggested-action");
 }
 
 static gboolean
@@ -808,30 +829,31 @@ on_chord_key_pressed(GtkEventControllerKey *ctrl, guint keyval, guint keycode,
 	(void)ctrl;
 	(void)state;
 	WinCtx *ctx = user_data;
-	if (!ctx->chord_capturing)
+	ChordCapture *cap = ctx->chord_active; // which block (if any) is capturing
+	if (cap == NULL)
 		return GDK_EVENT_PROPAGATE;
 	if (keyval == GDK_KEY_Escape) { // cancel, keep the previous chord
-		ctx->chord_capturing = FALSE;
-		g_array_set_size(ctx->chord_captured, 0);
-		refresh_chord_row(ctx);
+		ctx->chord_active = NULL;
+		g_array_set_size(cap->captured, 0);
+		refresh_chord_row(cap);
 		return GDK_EVENT_STOP;
 	}
 	guint code = keycode >= 8 ? keycode - 8 : keycode; // hardware keycode = evdev + 8
-	for (guint i = 0; i < ctx->chord_captured->len; i++)
-		if (g_array_index(ctx->chord_captured, guint, i) == code)
+	for (guint i = 0; i < cap->captured->len; i++)
+		if (g_array_index(cap->captured, guint, i) == code)
 			return GDK_EVENT_STOP; // already held
-	g_array_append_val(ctx->chord_captured, code);
+	g_array_append_val(cap->captured, code);
 
 	GString *s = g_string_new(_("Hold the shortcut…  "));
-	for (guint i = 0; i < ctx->chord_captured->len; i++) {
-		guint c = g_array_index(ctx->chord_captured, guint, i);
+	for (guint i = 0; i < cap->captured->len; i++) {
+		guint c = g_array_index(cap->captured, guint, i);
 		const char *name = libevdev_event_code_get_name(EV_KEY, c);
 		if (i)
 			g_string_append(s, " + ");
 		g_string_append(s, (name && g_str_has_prefix(name, "KEY_")) ? name + 4
 					   : (name ? name : "?"));
 	}
-	adw_action_row_set_subtitle(ADW_ACTION_ROW(ctx->chord_row), s->str);
+	adw_action_row_set_subtitle(ADW_ACTION_ROW(cap->row), s->str);
 	g_string_free(s, TRUE);
 	return GDK_EVENT_STOP;
 }
@@ -845,35 +867,61 @@ on_chord_key_released(GtkEventControllerKey *ctrl, guint keyval, guint keycode,
 	(void)keycode;
 	(void)state;
 	WinCtx *ctx = user_data;
-	if (!ctx->chord_capturing || ctx->chord_captured->len == 0)
+	ChordCapture *cap = ctx->chord_active;
+	if (cap == NULL || cap->captured->len == 0)
 		return;
 	// First release finalises: the accumulated held keys are the chord.
 	GString *s = g_string_new(NULL);
-	for (guint i = 0; i < ctx->chord_captured->len; i++) {
+	for (guint i = 0; i < cap->captured->len; i++) {
 		if (s->len)
 			g_string_append_c(s, '+');
-		g_string_append_printf(s, "%u", g_array_index(ctx->chord_captured, guint, i));
+		g_string_append_printf(s, "%u", g_array_index(cap->captured, guint, i));
 	}
-	g_free(ctx->settings->panic_chord);
-	ctx->settings->panic_chord = g_string_free(s, FALSE);
-	ctx->chord_capturing = FALSE;
-	g_array_set_size(ctx->chord_captured, 0);
+	g_free(*cap->target);
+	*cap->target = g_string_free(s, FALSE);
+	ctx->chord_active = NULL;
+	g_array_set_size(cap->captured, 0);
 	keysclicks_settings_emit_changed(ctx->settings); // main.c re-parses the chord
-	refresh_chord_row(ctx);
+	refresh_chord_row(cap);
 }
 
 static void
 on_chord_set_clicked(GtkButton *button, gpointer user_data)
 {
-	WinCtx *ctx = user_data;
-	ctx->chord_capturing = TRUE;
-	g_array_set_size(ctx->chord_captured, 0);
+	ChordCapture *cap = user_data;
+	cap->ctx->chord_active = cap;
+	g_array_set_size(cap->captured, 0);
 	adw_action_row_set_subtitle(
-		ADW_ACTION_ROW(ctx->chord_row),
+		ADW_ACTION_ROW(cap->row),
 		_("Hold the shortcut, then release to save. Esc cancels."));
 	gtk_button_set_label(button, _("Press keys…"));
 	gtk_widget_add_css_class(GTK_WIDGET(button), "suggested-action"); // green: armed
 	gtk_widget_grab_focus(GTK_WIDGET(button));
+}
+
+// Build a chord-capture row (title + "Set" button) into `group`, bound to `target`
+// (a settings chord field), showing `placeholder` while the chord is unset. Two of
+// these are created — one per hotkey — sharing the handlers above.
+static void
+build_chord_capture(WinCtx *ctx, ChordCapture *cap, AdwPreferencesGroup *group,
+		    const char *title, char **target, const char *placeholder)
+{
+	cap->ctx = ctx;
+	cap->target = target;
+	cap->placeholder = placeholder;
+	if (cap->captured == NULL) // persists across content rebuilds (language change)
+		cap->captured = g_array_new(FALSE, FALSE, sizeof(guint));
+	cap->row = adw_action_row_new();
+	g_object_set(cap->row, "title", title, NULL);
+	adw_action_row_set_subtitle_lines(ADW_ACTION_ROW(cap->row), 0);
+	cap->button = gtk_button_new_with_label(_("Set"));
+	gtk_widget_set_valign(cap->button, GTK_ALIGN_CENTER);
+	gtk_widget_set_tooltip_text(cap->button,
+				    _("Click, then hold a key combination to assign it"));
+	g_signal_connect(cap->button, "clicked", G_CALLBACK(on_chord_set_clicked), cap);
+	adw_action_row_add_suffix(ADW_ACTION_ROW(cap->row), cap->button);
+	adw_preferences_group_add(group, cap->row);
+	refresh_chord_row(cap);
 }
 
 static void
@@ -883,8 +931,10 @@ win_ctx_free(gpointer data)
 	// Drop the privacy-sync listener first: settings outlive the window, so a
 	// stale listener would call into freed ctx on the next emit.
 	keysclicks_settings_remove_listener(ctx->settings, on_settings_privacy_sync, ctx);
-	if (ctx->chord_captured != NULL)
-		g_array_free(ctx->chord_captured, TRUE);
+	if (ctx->chord_hide.captured != NULL)
+		g_array_free(ctx->chord_hide.captured, TRUE);
+	if (ctx->chord_overlay.captured != NULL)
+		g_array_free(ctx->chord_overlay.captured, TRUE);
 	g_free(ctx);
 }
 
@@ -975,6 +1025,11 @@ populate_content(WinCtx *ctx)
 	AdwPreferencesGroup *g_overlay = add_group(page, "");
 	add_switch(g_overlay, ctx, _("Show overlay"), F_OVERLAY_VISIBLE,
 		   settings->overlay_visible);
+	// Global hotkey to toggle the overlay on/off — same capture block as Hide-keys,
+	// an independent second button writing its own setting.
+	build_chord_capture(ctx, &ctx->chord_overlay, g_overlay, _("Show-overlay shortcut"),
+			    &ctx->settings->overlay_toggle_chord,
+			    _("None — click Set, then hold a shortcut (e.g. Ctrl+Shift+O)"));
 
 	// Language --------------------------------------------------------------
 	AdwPreferencesGroup *g_lang = add_group(page, _("Language"));
@@ -1011,18 +1066,9 @@ populate_content(WinCtx *ctx)
 	adw_preferences_group_add(g_privacy, provider_row);
 
 	// Interactive "Hide keys" shortcut: click Set and hold a chord.
-	ctx->chord_row = adw_action_row_new();
-	g_object_set(ctx->chord_row, "title", _("Hide-keys shortcut"), NULL);
-	adw_action_row_set_subtitle_lines(ADW_ACTION_ROW(ctx->chord_row), 0);
-	ctx->chord_button = gtk_button_new_with_label(_("Set"));
-	gtk_widget_set_valign(ctx->chord_button, GTK_ALIGN_CENTER);
-	gtk_widget_set_tooltip_text(ctx->chord_button,
-				    _("Click, then hold a key combination to assign it"));
-	g_signal_connect(ctx->chord_button, "clicked", G_CALLBACK(on_chord_set_clicked), ctx);
-	adw_action_row_add_suffix(ADW_ACTION_ROW(ctx->chord_row), ctx->chord_button);
-	adw_preferences_group_add(g_privacy, ctx->chord_row);
-	ctx->chord_capturing = FALSE;
-	refresh_chord_row(ctx);
+	build_chord_capture(ctx, &ctx->chord_hide, g_privacy, _("Hide-keys shortcut"),
+			    &ctx->settings->panic_chord,
+			    _("None — click Set, then hold a shortcut (e.g. Ctrl+Shift+H)"));
 
 	// Direct link to the OS keyboard settings.
 	GtkWidget *os_row = adw_action_row_new();
@@ -1096,7 +1142,8 @@ keysclicks_window_new(GtkApplication *app, KeysClicksSettings *settings,
 	ctx->app = app;
 	ctx->settings = settings;
 	ctx->privacy = privacy;
-	ctx->chord_captured = g_array_new(FALSE, FALSE, sizeof(guint));
+	// chord_hide/chord_overlay capture arrays are allocated lazily by
+	// build_chord_capture() and persist across content rebuilds; chord_active = NULL.
 
 	GtkWidget *window = adw_application_window_new(app);
 	ctx->window = window;

@@ -227,6 +227,10 @@
   .install-lead p{margin:0;color:var(--muted);font-size:14.5px;max-width:60ch}
   .install-lead .btn{flex:none;white-space:nowrap}
   .install-or{margin:20px 0 12px;color:var(--muted-2);font-family:var(--mono);font-size:12.5px;text-transform:uppercase;letter-spacing:.14em}
+  /* "What to look for in your apps" — the installed icon + name, next to each install path */
+  .find-in-apps{display:flex;align-items:center;gap:13px;margin-top:14px;padding:12px 15px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:14px;color:var(--muted);line-height:1.45}
+  .find-in-apps b{color:var(--text)}
+  .find-in-apps .app-ico{width:48px;height:48px;flex:none;border-radius:12px;border:1px solid var(--line);box-shadow:0 2px 8px -3px rgba(0,0,0,.5)}
 </style>
 </head>
 <body>
@@ -417,6 +421,10 @@
       </div>
       <a class="btn btn-primary" href="https://github.com/VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public/releases/latest/download/keysclicks_amd64.deb">Download .deb&nbsp;↓</a>
     </div>
+    <div class="find-in-apps">
+      <img src="apple-touch-icon.png" alt="On-Screen Keyboard &amp; Mouse-Click Visualizer app icon" class="app-ico" width="48" height="48">
+      <span>Once it installs, open your <b>Applications</b> menu and launch this icon — <b>On-Screen Keyboard &amp; Mouse-Click Visualizer</b>.</span>
+    </div>
     <p class="install-or">Or build from source — any distro</p>
 
     <div class="term">
@@ -437,6 +445,10 @@
       </div>
     </div>
     <p class="install-note">On Debian/Ubuntu: <code>libgtk-4-dev</code>, <code>libadwaita-1-dev</code>, <code>libgtk4-layer-shell-dev</code>, <code>libxkbcommon-dev</code>, <code>libevdev-dev</code>, <code>libjson-glib-dev</code>, <code>libcurl4-openssl-dev</code>. Needs a compositor with <code>wlr-layer-shell</code> (COSMIC, sway, Hyprland, KDE Plasma).</p>
+    <div class="find-in-apps">
+      <img src="apple-touch-icon.png" alt="On-Screen Keyboard &amp; Mouse-Click Visualizer app icon" class="app-ico" width="48" height="48">
+      <span>Built &amp; installed — now open your <b>Applications</b> menu and launch this icon — <b>On-Screen Keyboard &amp; Mouse-Click Visualizer</b> (or run <code>keysclicks</code>).</span>
+    </div>
   </section>
 
   <section class="final wrap">

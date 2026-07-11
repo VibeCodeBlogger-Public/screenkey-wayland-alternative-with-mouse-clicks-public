@@ -45,6 +45,13 @@ typedef struct {
 	gboolean panic_satisfied;
 	char *parsed_chord; // chord string currently parsed into panic_keys
 
+	// Optional "toggle the whole overlay on/off" chord — same read-only detection
+	// over the backend's libinput stream, sharing held[].
+	int overlay_keys[8];
+	int overlay_count;
+	gboolean overlay_satisfied;
+	char *parsed_overlay_chord; // chord string currently parsed into overlay_keys
+
 	char *applied_layout; // keyboard_layout code currently applied to the keymap
 } KeysClicksApp;
 
@@ -96,6 +103,58 @@ panic_chord_update(KeysClicksApp *app)
 		keysclicks_settings_emit_changed(app->settings);
 	}
 	app->panic_satisfied = all_held;
+}
+
+// Parse settings->overlay_toggle_chord into app->overlay_keys (same format as the
+// panic chord: '+'-joined evdev keycodes). Mirrors parse_panic_chord.
+static void
+parse_overlay_chord(KeysClicksApp *app)
+{
+	g_free(app->parsed_overlay_chord);
+	app->parsed_overlay_chord = g_strdup(
+		app->settings->overlay_toggle_chord != NULL ? app->settings->overlay_toggle_chord : "");
+	app->overlay_count = 0;
+	app->overlay_satisfied = FALSE;
+	const char *chord = app->settings->overlay_toggle_chord;
+	if (chord == NULL || *chord == '\0')
+		return; // disabled by default
+
+	char **parts = g_strsplit(chord, "+", -1);
+	for (int i = 0; parts[i] != NULL &&
+			app->overlay_count < (int)G_N_ELEMENTS(app->overlay_keys);
+	     i++) {
+		char *token = g_strstrip(parts[i]);
+		if (*token == '\0')
+			continue;
+		gint64 code = g_ascii_strtoll(token, NULL, 10);
+		if (code > 0 && code < KEY_CNT)
+			app->overlay_keys[app->overlay_count++] = (int)code;
+	}
+	g_strfreev(parts);
+}
+
+// Toggle the whole overlay on/off on the rising edge of the configured chord.
+// Mirrors panic_chord_update; emits changed so the settings-window switch mirrors.
+static void
+overlay_chord_update(KeysClicksApp *app)
+{
+	if (app->overlay_count == 0) {
+		app->overlay_satisfied = FALSE;
+		return;
+	}
+	gboolean all_held = TRUE;
+	for (int i = 0; i < app->overlay_count; i++) {
+		int k = app->overlay_keys[i];
+		if (k < 0 || k >= KEY_CNT || !app->held[k]) {
+			all_held = FALSE;
+			break;
+		}
+	}
+	if (all_held && !app->overlay_satisfied) {
+		app->settings->overlay_visible = !app->settings->overlay_visible;
+		keysclicks_settings_emit_changed(app->settings);
+	}
+	app->overlay_satisfied = all_held;
 }
 
 // Composed label for a pointer button (evdev button code). Caller frees it.
@@ -184,6 +243,7 @@ on_input_event(KeysClicksEventKind kind, guint32 code, gboolean pressed, double 
 		if (code < KEY_CNT)
 			app->held[code] = pressed ? 1 : 0;
 		panic_chord_update(app);
+		overlay_chord_update(app);
 
 		if (pressed) {
 			// Effective mask, evaluated at render time. When masked, the real
@@ -261,6 +321,8 @@ on_settings_changed(KeysClicksSettings *settings, gpointer user_data)
 	// again with the same shortcut.
 	if (g_strcmp0(app->parsed_chord, app->settings->panic_chord) != 0)
 		parse_panic_chord(app);
+	if (g_strcmp0(app->parsed_overlay_chord, app->settings->overlay_toggle_chord) != 0)
+		parse_overlay_chord(app);
 	// Re-apply the overlay keyboard layout only when it actually changed (layout OR
 	// variant): a rebuild resets modifier state, so we must not do it on every
 	// unrelated settings change.
@@ -344,6 +406,7 @@ on_activate(GtkApplication *gtk_app, gpointer user_data)
 	app->settings->overlay_visible = TRUE;
 	app->privacy = keysclicks_privacy_new(); // fail-open plugin load
 	parse_panic_chord(app);
+	parse_overlay_chord(app);
 
 	// Apply the persisted UI language before building any window ("" = system), and
 	// mirror the layout for right-to-left languages (Arabic/Persian/Urdu).
@@ -431,6 +494,7 @@ main(int argc, char **argv)
 	if (app.settings != NULL)
 		keysclicks_settings_free(app.settings);
 	g_free(app.parsed_chord);
+	g_free(app.parsed_overlay_chord);
 	g_free(app.applied_layout);
 	g_object_unref(adw_app);
 	return status;
