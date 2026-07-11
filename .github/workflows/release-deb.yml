@@ -82,7 +82,7 @@ jobs:
               "keysclicks_${{ steps.ver.outputs.version }}_amd64.deb" keysclicks_amd64.deb --clobber
           else
             gh release create "$TAG" \
-              --title "keysclicks $TAG" \
+              --title "On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots) — $TAG" \
               --notes "Double-click .deb for Pop!_OS (COSMIC), Ubuntu and Debian — open it and press Install. On first launch the input reader asks for your password once (it reads libinput). Other distros: build from source (see README)." \
               "keysclicks_${{ steps.ver.outputs.version }}_amd64.deb" keysclicks_amd64.deb
           fi
