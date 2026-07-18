@@ -10,6 +10,8 @@ so your audience can follow along in recordings and live streams. It is built
 natively for Wayland with GTK4 and `gtk4-layer-shell`, stays pinned on top, and
 never steals keyboard focus.
 
+![On-Screen Keyboard & Mouse-Click Visualizer overlay in action — the settings window and the overlay bar showing the keys pressed and the mouse clicks](website/overlay-demo.png)
+
 ## A screenkey alternative for Wayland
 
 Classic tools like `screenkey` and `key-mon` rely on X11 and do not work under a
