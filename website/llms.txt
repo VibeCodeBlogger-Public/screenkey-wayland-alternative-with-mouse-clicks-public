@@ -1,0 +1,29 @@
+# On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)
+
+> A free, open-source (Apache-2.0) screenkey / KeyCastr alternative for Wayland that visualizes both keyboard keystrokes AND mouse clicks in an always-on-top overlay bar. Built natively with GTK4 and gtk4-layer-shell for Linux screencasts, tutorials and live streams: unlike a floating window it stays reliably above your other windows on Wayland, is click-through, never grabs keyboard focus, and is positioned by percentage so it survives resolution and fractional-scaling changes.
+
+## What it is
+- A desktop app for the Linux desktop on Wayland that shows, on screen, the keys you press and the mouse buttons you click — for screen recording, OBS captures, tutorials and demos.
+- Runs on COSMIC (Pop!_OS), sway, Hyprland, Wayfire, river, labwc and KDE Plasma (KWin) and other wlroots-based compositors via the `wlr-layer-shell` protocol. GNOME/Mutter is NOT supported for always-on-top (it does not implement `wlr-layer-shell`).
+- Keystrokes and combinations are translated through `xkbcommon` to match your active keyboard layout (including shifted symbols and modifiers). Mouse left / right / middle / side (back-forward) clicks are shown alongside the keys.
+- Privacy: a "Hide keys" toggle and a global Hide-keys hotkey mask keystrokes (shown as a neutral dot) so passwords and 2FA codes never appear in a recording. An optional, separately distributed PRO provider can auto-hide keys only while a password field is focused.
+- Localized into 30+ languages (right-to-left aware). Ships an installable Debian `.deb`. Apache-2.0. No background telemetry.
+
+## How it works
+- Two small programs: `keysclicks-input` (a privileged C backend that reads `libinput` events and prints them as JSON) and `keysclicks` (a GTK4 GUI that renders the overlay as a `gtk4-layer-shell` surface and a libadwaita settings window).
+
+## Links
+- Website: https://vibecodeblogger-public.github.io/screenkey-wayland-alternative-with-mouse-clicks-public/
+- Source code (GitHub): https://github.com/VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public
+- Download the .deb (latest release): https://github.com/VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public/releases/latest/download/keysclicks_amd64.deb
+- README / documentation: https://github.com/VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public#readme
+- License (Apache-2.0): https://github.com/VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public/blob/main/LICENSE
+
+## Common questions this project answers
+- "screenkey alternative for Wayland" / "screenkey doesn't work on Wayland" — this is a native Wayland replacement.
+- "KeyCastr for Linux" — same show-your-keys workflow that KeyCastr gives on macOS, for Linux/Wayland.
+- "show keyboard and mouse clicks on screen for OBS / screencast on Pop!_OS COSMIC / sway / Hyprland / KDE Plasma".
+- "always-on-top on-screen keyboard overlay that also displays mouse clicks and respects my keyboard layout".
+
+## Author
+VibeCodeBlogger — https://github.com/VibeCodeBlogger · YouTube: https://www.youtube.com/@VibeCodeBlogger · Open-source org: https://github.com/VibeCodeBlogger-Public
