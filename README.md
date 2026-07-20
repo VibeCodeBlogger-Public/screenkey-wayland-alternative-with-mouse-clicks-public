@@ -1,6 +1,6 @@
 # On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE) [![Landing-page views](https://vcb-views.pages.dev/badge/screenkey.svg)](https://vibecodeblogger-public.github.io/screenkey-wayland-alternative-with-mouse-clicks-public/)
 
 Screenkey/KeyCastr alternative for Wayland: an always-on-top overlay showing keyboard keystrokes and mouse clicks for screencasts, tutorials and streams (COSMIC, sway, Hyprland, KDE Plasma, wlroots).
 

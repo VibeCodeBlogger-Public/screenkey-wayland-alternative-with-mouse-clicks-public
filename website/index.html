@@ -220,6 +220,8 @@
   .foot-in{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
   footer a{color:var(--muted);text-decoration:none}
   footer a:hover{color:var(--text)}
+  .views{color:var(--muted-2)}
+  .views .n{color:var(--text);font-variant-numeric:tabular-nums;font-weight:600}
   .install-lead{display:flex;flex-wrap:wrap;gap:16px 22px;align-items:center;justify-content:space-between;margin:26px 0 6px;padding:20px 22px;border:1px solid var(--frame);border-radius:var(--radius);background:linear-gradient(180deg,color-mix(in srgb,var(--deep) 45%,var(--surface)),var(--surface))}
   .install-lead .il-txt{flex:1 1 340px}
   .install-lead h3{margin:0 0 5px;font-size:17px}
@@ -466,7 +468,7 @@
 <footer>
   <div class="wrap foot-in">
     <span>On-Screen Keyboard &amp; Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots) · repo: screenkey-wayland-alternative-with-mouse-clicks · Apache-2.0</span>
-    <span><a href="#compare">Compare</a> · <a href="#install">Install</a> · <a target="_blank" rel="noopener" href="https://github.com/VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public">GitHub</a></span>
+    <span><span class="views" id="viewsWrap" title="Landing-page views"><span aria-hidden="true">👁</span> <span class="n" id="viewCount">…</span> views</span> · <a href="#compare">Compare</a> · <a href="#install">Install</a> · <a target="_blank" rel="noopener" href="https://github.com/VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public">GitHub</a></span>
   </div>
 </footer>
 
@@ -493,6 +495,17 @@
         .then(function(r){return r.ok?r.json():null;})
         .then(function(d){done(d&&typeof d.stargazers_count==='number'?fmt(d.stargazers_count):'Star');})
         .catch(function(){done('Star');});
+    }
+    // живой счётчик просмотров лендинга: инкремент через наш Cloudflare Worker (KV);
+    // защита от двойного счёта в одной вкладке (window-флаг); недоступен → счётчик прячем честно
+    var vc=document.getElementById('viewCount');
+    if(vc&&!window.__vcbViewed){
+      window.__vcbViewed=true;
+      var fmtV=function(n){return n>=1000?(n/1000).toFixed(1).replace(/\.0$/,'')+'k':String(n);};
+      fetch('https://vcb-views.pages.dev/api/views/screenkey')
+        .then(function(r){return r.ok?r.json():null;})
+        .then(function(d){if(d&&typeof d.count==='number')vc.textContent=fmtV(d.count);else document.getElementById('viewsWrap').style.display='none';})
+        .catch(function(){var w=document.getElementById('viewsWrap');if(w)w.style.display='none';});
     }
   })();
 </script>
