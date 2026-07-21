@@ -1,11 +1,13 @@
 # VENDORED from the brand landing-nav source (managed centrally) — do not hand-edit.
 # Canonical: brand/landing-nav/guards/nav-check.yml.tmpl in the screenkey kitchen repo.
 name: nav-check
+# No paths filter: runs on every push to main and every PR, so it can be a required status check
+# without stuck "expected" checks on PRs that don't touch the landing (§20 — a gate must not block
+# unrelated work). The check itself is a ~1s dependency-free node script, so always running is cheap.
 on:
   push:
-    paths: ['website/index.html', '.github/nav-check.mjs', '.github/workflows/nav-check.yml']
+    branches: [main]
   pull_request:
-    paths: ['website/index.html', '.github/nav-check.mjs', '.github/workflows/nav-check.yml']
 permissions:
   contents: read
 jobs:
