@@ -1,0 +1,19 @@
+# VENDORED from the brand landing-nav source (managed centrally) — do not hand-edit.
+# Canonical: brand/landing-nav/guards/nav-check.yml.tmpl in the screenkey kitchen repo.
+name: nav-check
+on:
+  push:
+    paths: ['website/index.html', '.github/nav-check.mjs', '.github/workflows/nav-check.yml']
+  pull_request:
+    paths: ['website/index.html', '.github/nav-check.mjs', '.github/workflows/nav-check.yml']
+permissions:
+  contents: read
+jobs:
+  nav-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node .github/nav-check.mjs website/index.html
