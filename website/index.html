@@ -261,6 +261,9 @@
       <span class="btn btn-star btn-views" id="viewsWrap" title="Landing-page views" aria-label="Landing-page views">
         <span class="ico" aria-hidden="true">👁</span><span class="cnt loading" id="viewCount">…</span>
       </span>
+      <a target="_blank" rel="noopener" class="btn btn-star" id="dlWrap" data-dl-repo="VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public" href="https://github.com/VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public/releases" title="Total downloads" aria-label="Total downloads">
+        <span class="ico" aria-hidden="true">⬇</span><span class="cnt loading" id="dlCount">…</span>
+      </a>
       <a target="_blank" rel="noopener" class="btn btn-star" id="ghStar" data-repo="VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public" href="https://github.com/VibeCodeBlogger-Public/screenkey-wayland-alternative-with-mouse-clicks-public" aria-label="Star on GitHub" title="Star on GitHub">
         <span class="ico" aria-hidden="true">★</span><span class="cnt loading" id="ghStarCount">Star</span>
       </a>
@@ -511,6 +514,16 @@
         .then(function(r){return r.ok?r.json():null;})
         .then(function(d){if(d&&typeof d.count==='number'){vc.textContent=fmtV(d.count);vc.classList.remove('loading');}else document.getElementById('viewsWrap').style.display='none';})
         .catch(function(){var w=document.getElementById('viewsWrap');if(w)w.style.display='none';});
+    }
+    // живой счётчик скачиваний: сумма download_count по всем ассетам релизов (.deb); недоступен → пилюлю прячем честно
+    var dl=document.getElementById('dlWrap'), dc=document.getElementById('dlCount');
+    if(dl&&dc){
+      var dlrepo=dl.getAttribute('data-dl-repo');
+      var fmtD=function(n){return n>=1000?(n/1000).toFixed(1).replace(/\.0$/,'')+'k':String(n);};
+      fetch('https://api.github.com/repos/'+dlrepo+'/releases',{headers:{'Accept':'application/vnd.github+json'}})
+        .then(function(r){return r.ok?r.json():null;})
+        .then(function(a){if(Array.isArray(a)){var t=0;a.forEach(function(rel){(rel.assets||[]).forEach(function(x){t+=x.download_count||0;});});dc.textContent=fmtD(t);dc.classList.remove('loading');}else dl.style.display='none';})
+        .catch(function(){dl.style.display='none';});
     }
   })();
 </script>
