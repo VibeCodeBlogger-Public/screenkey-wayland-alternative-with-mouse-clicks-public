@@ -9,6 +9,7 @@
 #include "keysclicks-i18n.h"
 #include "keysclicks-languages.h"
 #include "keysclicks-layouts.h"
+#include "keysclicks-pro-links.h"
 #include "version.h"
 
 #include <glib/gi18n.h>
@@ -775,6 +776,33 @@ on_open_os_shortcuts(GtkButton *button, gpointer user_data)
 	}
 }
 
+// Open a URL in the user's default browser (xdg-open), fire-and-forget — same
+// spawn pattern as the OS-settings launcher above.
+static void
+open_external_url(const char *url)
+{
+	char *argv[] = { (char *)"xdg-open", (char *)url, NULL };
+	g_spawn_async(NULL, argv, NULL, G_SPAWN_SEARCH_PATH, NULL, NULL, NULL, NULL);
+}
+
+// "Automatic password hiding" row / "Get PRO" button → the Privacy Pro store.
+static void
+on_open_pro_store(GtkWidget *widget, gpointer user_data)
+{
+	(void)widget;
+	(void)user_data;
+	open_external_url(KEYSCLICKS_PRO_STORE_URL);
+}
+
+// "Passwords in browsers" row → the browser setup how-to on the site.
+static void
+on_open_pro_browser_help(GtkWidget *widget, gpointer user_data)
+{
+	(void)widget;
+	(void)user_data;
+	open_external_url(KEYSCLICKS_PRO_BROWSER_HELP_URL);
+}
+
 // Human-readable rendering of a chord string ("29+42+35" evdev codes) using friendly
 // evdev names with the "KEY_" prefix stripped ("LEFTCTRL + LEFTSHIFT + H"). Empty/NULL
 // yields NULL so callers can show their own placeholder.
@@ -977,7 +1005,11 @@ populate_content(WinCtx *ctx)
 	// "v<major.minor>.<build-count>.<short-hash>" — e.g. v3.8.364.09488c3. The
 	// major.minor is the mirrored meson version; the count grows per public commit,
 	// the hash pins the exact build (handy for searching).
-	char *version = g_strdup_printf("v%s.%s", KEYSCLICKS_VERSION, KEYSCLICKS_BUILD);
+	// Append the edition ("Free"/"Pro") so it is obvious whether the paid
+	// automatic-hiding provider is active on this machine.
+	char *version = g_strdup_printf(
+		"v%s.%s \xc2\xb7 %s", KEYSCLICKS_VERSION, KEYSCLICKS_BUILD,
+		keysclicks_pro_edition(keysclicks_privacy_loaded(ctx->privacy)));
 	GtkWidget *title_widget =
 		adw_window_title_new(_("On-Screen Keyboard & Mouse-Click Visualizer — Always-On-Top Overlay for Linux/Wayland (COSMIC, sway, Hyprland, KDE Plasma, wlroots)"), version);
 	adw_header_bar_set_title_widget(ADW_HEADER_BAR(header), title_widget);
@@ -1049,13 +1081,15 @@ populate_content(WinCtx *ctx)
 
 	GtkWidget *provider_row = adw_action_row_new();
 	g_object_set(provider_row, "title", _("Automatic password hiding"), NULL);
-	// Flag this as a PRO, still-in-development capability with a small green badge.
+	// Small green "PRO" badge to the left of the row.
 	GtkWidget *pro_badge = gtk_label_new("PRO");
 	gtk_widget_add_css_class(pro_badge, "pro-badge");
 	gtk_widget_set_valign(pro_badge, GTK_ALIGN_CENTER);
 	adw_action_row_add_prefix(ADW_ACTION_ROW(provider_row), pro_badge);
+
+	gboolean pro_loaded = keysclicks_privacy_loaded(ctx->privacy);
 	char *provider_status =
-		keysclicks_privacy_loaded(ctx->privacy)
+		pro_loaded
 			? g_strdup(_("On (PRO) — passwords are hidden automatically in password "
 				     "fields. This module is still in development."))
 			: g_strdup(_("PRO — in development. Automatic hiding ships with the PRO "
@@ -1063,7 +1097,38 @@ populate_content(WinCtx *ctx)
 	adw_action_row_set_subtitle(ADW_ACTION_ROW(provider_row), provider_status);
 	adw_action_row_set_subtitle_lines(ADW_ACTION_ROW(provider_row), 0);
 	g_free(provider_status);
+	// The whole row is clickable and opens the Privacy Pro store.
+	g_object_set(provider_row, "activatable", TRUE, NULL);
+	g_signal_connect(provider_row, "activated", G_CALLBACK(on_open_pro_store), NULL);
+	if (pro_loaded) {
+		// A green check on the right = PRO is active on this machine.
+		GtkWidget *check = gtk_image_new_from_icon_name("object-select-symbolic");
+		gtk_widget_add_css_class(check, "success");
+		gtk_widget_set_valign(check, GTK_ALIGN_CENTER);
+		adw_action_row_add_suffix(ADW_ACTION_ROW(provider_row), check);
+	} else {
+		GtkWidget *get_lbl = gtk_label_new("Get PRO \xe2\x86\x97"); /* i18n-ignore */
+		gtk_widget_add_css_class(get_lbl, "pro-badge");
+		gtk_widget_set_valign(get_lbl, GTK_ALIGN_CENTER);
+		adw_action_row_add_suffix(ADW_ACTION_ROW(provider_row), get_lbl);
+	}
 	adw_preferences_group_add(g_privacy, provider_row);
+
+	// How to make browsers expose their password fields to PRO — its own
+	// clickable row opening the setup how-to on the site.
+	GtkWidget *browser_row = adw_action_row_new();
+	g_object_set(browser_row, "title", "Passwords in browsers", NULL); /* i18n-ignore */
+	adw_action_row_set_subtitle(
+		ADW_ACTION_ROW(browser_row),
+		"Browsers hide password fields from accessibility by default; start them with accessibility on. Click for the how-to."); /* i18n-ignore */
+	adw_action_row_set_subtitle_lines(ADW_ACTION_ROW(browser_row), 0);
+	g_object_set(browser_row, "activatable", TRUE, NULL);
+	g_signal_connect(browser_row, "activated", G_CALLBACK(on_open_pro_browser_help),
+			 NULL);
+	GtkWidget *howto_lbl = gtk_label_new("\xe2\x86\x97"); /* i18n-ignore */
+	gtk_widget_set_valign(howto_lbl, GTK_ALIGN_CENTER);
+	adw_action_row_add_suffix(ADW_ACTION_ROW(browser_row), howto_lbl);
+	adw_preferences_group_add(g_privacy, browser_row);
 
 	// Interactive "Hide keys" shortcut: click Set and hold a chord.
 	build_chord_capture(ctx, &ctx->chord_hide, g_privacy, _("Hide-keys shortcut"),
