@@ -187,7 +187,11 @@
   .card h3{font-size:17px;font-weight:700}
   .card p{color:var(--muted);font-size:14.5px;margin:8px 0 0}
 
-  .promo{background:linear-gradient(180deg,var(--surface-2),var(--surface));border:1px solid var(--frame);border-radius:20px;padding:36px;display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;margin-top:20px}
+  .promo{background:linear-gradient(180deg,var(--surface-2),var(--surface));border:1px solid var(--frame);border-radius:20px;padding:36px;display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;margin-top:20px;text-decoration:none;color:inherit;cursor:pointer;transition:border-color .16s ease,transform .16s ease,box-shadow .16s ease}
+  .promo:hover,.promo:focus-visible{border-color:var(--green-bright);transform:translateY(-2px);box-shadow:0 10px 34px rgba(0,0,0,.28);outline:none}
+  .promo-cta{display:inline-block;margin-top:20px}
+  .promo:hover .promo-cta{filter:brightness(1.07)}
+  .pro-setup{margin-top:16px;font-size:14px}
   @media (max-width:860px){.promo{grid-template-columns:1fr;padding:24px;gap:22px}}
   .promo .badge{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--deep);border:1px solid var(--frame);border-radius:999px;padding:4px 11px;font-weight:600}
   .promo h2{font-size:clamp(22px,2.8vw,30px);font-weight:800;margin-top:14px}
@@ -403,19 +407,21 @@
 
   <!-- 4 · PRO upsell -->
   <section id="pro" class="wrap">
-    <div class="promo">
+    <a class="promo" target="_blank" rel="noopener" href="https://vibecodeblogger.gumroad.com/l/xhqau" aria-label="Get Privacy Pro on Gumroad — one-time $1">
       <div>
-        <span class="badge">◆ PRO · in development</span>
+        <span class="badge">◆ PRO · available now — $1</span>
         <h2>Automatic password hiding.</h2>
         <p>The free app hides keys when you press the <b>Hide-keys</b> hotkey. <b>PRO</b> goes further: it detects password fields and masks keystrokes <b>on its own</b>, so you can log in on camera without touching a thing — something no other on-screen key tool does.</p>
         <p class="muted">Password-field contents are never shown and never leave your machine. No background telemetry.</p>
+        <span class="btn btn-primary promo-cta">Get PRO — one-time&nbsp;$1&nbsp;↗</span>
       </div>
       <div class="pw-demo" aria-hidden="true">
         <div class="pw-row"><span class="lbl">username:</span><span class="val">alex</span><span class="tag">visible</span></div>
         <div class="pw-row"><span class="lbl">password:</span><span class="val mask">••••••••</span><span class="tag warn">auto-hidden ✓</span></div>
         <div class="pw-row"><span class="lbl">mode:</span><span class="val">automatic</span><span class="tag">PRO</span></div>
       </div>
-    </div>
+    </a>
+    <p class="muted pro-setup">Setup takes a minute: unzip, drop the <code>.so</code> in <code>~/.local/lib/keysclicks/</code>, run the included activator once with your licence key. Masks <b>native-app</b> password fields out of the box. For <b>browsers</b>, start them with accessibility on so their password fields are exposed (no screen reader, no narration): Chrome / Chromium / Edge with <code>--force-renderer-accessibility</code>, Firefox with <code>GNOME_ACCESSIBILITY=1</code>.</p>
   </section>
 
   <!-- 5 · INSTALL -->

@@ -101,8 +101,15 @@ group), or assign a **Hide-keys shortcut** — click **Set** and hold a
 combination.
 
 Automatic masking (hide keys **only** while a password field is focused) is
-provided by an **optional, separately distributed PRO provider module** that the
-app loads through a small frozen plugin ABI. The base app never requires it and
+provided by **Privacy Pro**, an optional paid add-on — a small native plugin the
+app loads through a frozen plugin ABI. It is **available now, one-time $1**:
+**[get Privacy Pro on Gumroad](https://vibecodeblogger.gumroad.com/l/xhqau)**.
+Install it in a minute: unzip, drop the `.so` in `~/.local/lib/keysclicks/`, and run
+the included activator once with your licence key. It masks **native-app** password
+fields automatically; for **browsers**, start them with accessibility enabled so
+their password fields are exposed to the plugin (no screen reader, no narration) —
+Chrome / Chromium / Edge with `--force-renderer-accessibility`, Firefox with the
+environment variable `GNOME_ACCESSIBILITY=1`. The base app never requires PRO and
 degrades gracefully when it is absent — the plugin ABI is documented in the public
 header [include/keysclicks-privacy-provider.h](include/keysclicks-privacy-provider.h).
 
